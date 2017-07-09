@@ -14,14 +14,19 @@ weight = 60
 
 +++
 
-This is an example of using the *custom* widget to create your own homepage section.
+I teach the following courses at Chico State. Where applicable, the links will take you to the current course page. 
 
-I am a teaching instructor for the following courses at University X:
+- MATH 105: Statistics
+- MATH 130: Introduction to R
+- MATH 315: Applied Statistical Methods I
+- MATH 385: Introduction to Data Science
+- MATH 456: Applied Statistical Methods II
+- MATH 485: Advanced Data Science
+- MATH 615: Statistical Methods for Graduate Research
 
-- CS101: An intro to computer science
-- CS102: An intro to computer science
-- CS103: An intro to computer science
-- CS104: An intro to computer science
-- CS105: An intro to computer science
-- CS106: An intro to computer science
-- CS107: An intro to computer science
+
+
+
+ 
+
+

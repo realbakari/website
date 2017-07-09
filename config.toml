@@ -29,7 +29,7 @@ defaultContentLanguageInSubdir = false
   address = "Holt Hall, Room 181, 400 West First Street, Chico, CA 95929, USA"
   office_hours = ""
   phone = ""
-  skype = "echo123"
+  skype = ""
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
@@ -86,7 +86,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
+  custom_css = ["green.css"]
   custom_js  = []
 
   # Publication types.
