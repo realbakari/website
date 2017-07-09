@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"  # End your URL with a `/` trailing slash.
+baseurl = "https://norcalbiostat.netlify.com/"  # End your URL with a `/` trailing slash.
 title = "Robin Donatello"
 copyright = "&copy; 2017 Robin Donatello"
 theme = "hugo-academic"
