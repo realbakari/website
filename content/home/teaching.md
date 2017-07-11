@@ -10,11 +10,11 @@ subtitle = ""
 widget = "custom"
 
 # Order that this section will appear in.
-weight = 60
+weight = 2
 
 +++
 
-I teach the following courses at Chico State. Where applicable, the links will take you to the current course page. 
+I teach the following courses at Chico State.
 
 - MATH 105: Statistics
 - MATH 130: Introduction to R
