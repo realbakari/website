@@ -17,15 +17,16 @@ weight = 2
 I teach the following courses at Chico State.
 
 - MATH 105: Statistics
-- MATH 130: Introduction to R
+- MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/)
 - MATH 315: Applied Statistical Methods I
 - MATH 385: Introduction to Data Science
 - MATH 456: Applied Statistical Methods II
 - MATH 485: Advanced Data Science
-- MATH 615: Statistical Methods for Graduate Research
+- MATH 615: [Statistical Methods for Graduate Research](https://norcalbiostat.github.io/MATH615/)
 
 
-
+This site is in alpha stages of being revamped. 
+Current and historic classes can be found at www.norcalbiostat.com 
 
  
 
