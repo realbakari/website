@@ -28,11 +28,12 @@ on (HW, exams), and notes about the assignment. Things in green are for my eyes 
 Note the asterisk between items in the cells. The line breaks are for easy visual separation of 
 items in a list, the asterisk will be used in code to create a formal html list. 
 
-![](/../static/img/excel_schedule.png)
+
+![](../../img/excel_schedule.PNG)
 
 
 So first let's load the necessary libraries and set options for `kable`
-```{r, eval=1, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(dplyr);library(readxl); library(kableExtra); library(stringr)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
 ```

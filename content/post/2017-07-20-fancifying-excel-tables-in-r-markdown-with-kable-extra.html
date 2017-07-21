@@ -16,12 +16,12 @@ tags:
 <p>This is a record of how I turned an Excel sheet into a nicely formatted web-ready schedule using <code>RMarkdown</code>.</p>
 <p>Here is the structure of my excel file. Week number, date, day of the week, the topics we’re covering, what the studnets can do to prep for class, what i’m going to evaluate them on (HW, exams), and notes about the assignment. Things in green are for my eyes only. Note the asterisk between items in the cells. The line breaks are for easy visual separation of items in a list, the asterisk will be used in code to create a formal html list.</p>
 <div class="figure">
-<img src="/../static/img/excel_schedule.png" />
+<img src="../../img/excel_schedule.PNG" />
 
 </div>
 <p>So first let’s load the necessary libraries and set options for <code>kable</code></p>
 <pre class="r"><code>library(dplyr);library(readxl); library(kableExtra); library(stringr)
-## options(knitr.table.format = &quot;html&quot;, knitr.kable.NA = &#39;&#39;)</code></pre>
+options(knitr.table.format = &quot;html&quot;, knitr.kable.NA = &#39;&#39;) </code></pre>
 <p>Read the data into <code>rawdat</code>, reformat the date, make copies of the columns that need list processing: <code>topic, prep, eval</code>. The filter is leftover from the Spring semester, after each exam I hide the weeks prior to that exam so that the most current and upoming weeks are presented at the top of the table.</p>
 <pre class="r"><code>rawdat &lt;- read_excel(&quot;schedule_615.xlsx&quot;)
 cdat   &lt;- rawdat %&gt;% mutate(Date = format(date, &quot;%m/%d&quot;), 
@@ -74,10 +74,10 @@ knitr::kable(out, align=&quot;l&quot;, escape=FALSE) %&gt;%
 ## [4] dplyr_0.5.0          
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.8     bookdown_0.4.1  assertthat_0.1  digest_0.6.12  
-##  [5] rprojroot_1.2   R6_2.1.2        DBI_0.5-1       backports_1.0.5
+##  [1] Rcpp_0.12.8     bookdown_0.4.1  digest_0.6.12   rprojroot_1.2  
+##  [5] assertthat_0.1  R6_2.1.2        DBI_0.5-1       backports_1.0.5
 ##  [9] magrittr_1.5    evaluate_0.10   httr_1.2.1      blogdown_0.0.50
-## [13] highr_0.6       stringi_1.1.1   xml2_1.1.1      rmarkdown_1.6  
-## [17] tools_3.3.1     readr_1.1.1     hms_0.2         yaml_2.1.14    
-## [21] rvest_0.3.2     htmltools_0.3.6 knitr_1.16      tibble_1.3.0</code></pre>
+## [13] stringi_1.1.1   xml2_1.1.1      rmarkdown_1.6   tools_3.3.1    
+## [17] readr_1.1.1     hms_0.2         yaml_2.1.14     rvest_0.3.2    
+## [21] htmltools_0.3.6 knitr_1.16      tibble_1.3.0</code></pre>
 </div>
