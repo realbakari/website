@@ -18,7 +18,7 @@ I teach the following courses at Chico State.
 
 - MATH 105: Statistics
 - MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/)
-- MATH 315: Applied Statistical Methods I
+- MATH 315: [Applied Statistical Methods I](https://norcalbiostat.github.io/MATH315/)
 - MATH 385: Introduction to Data Science
 - MATH 456: Applied Statistical Methods II
 - MATH 485: Advanced Data Science
