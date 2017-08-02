@@ -1,0 +1,54 @@
+---
+title: 'Raw Datasets'
+author: ''
+slug: data
+categories: [teaching]
+tags: [data]
+---
+
+```{r include = FALSE}
+library(dplyr)
+library(readr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Raw data with codebook and data management files. 
+These data sets are used in courses that emphasize data management as well as analysis including
+but not limited to MATH 456 (Applied Statistics II), MATH 385 (Intro to Data Science), 485 (Advanced Data Science Topics), and MATH 615 (Graduate Statistical Methods)
+
+
+```{r include = FALSE}
+rawdat <- read_csv("Datasets.csv")
+
+# location of files
+cdat  <- rawdat %>% mutate(dataloc = filename, 
+                           codeloc = codebook, 
+                           dmloc   = dm,
+                           Updated = format(file.info(dm)$mtime), "%m-%d-%y")
+
+# Add link to the data file, codebook, data management code file
+cdat2 <- cdat %>% mutate(File = paste('<a href="', cdat$dataloc, '">', cdat$filename, '</a>', sep=""), 
+                         Codebook = ifelse(is.na(codebook), "-", paste('<a href="', codeloc, '">', codebook, '</a>', sep="")), 
+                         `Data Management` = ifelse(is.na(dm), "-", paste('<a href="', dmloc, '">', dm, '</a>', sep="")), 
+                         Notes = ifelse(is.na(Notes), "-",Notes),
+                         Updated = ifelse(is.na(Updated), "-",Updated))
+
+# Select vars to display
+clean <- cdat2 %>% select(Data, File, Codebook, `Data Management`, Updated, Notes)
+
+```
+
+<!-- unholy hack to make following two tables less wide and the same wide -->
+<style type="text/css">
+table {
+   max-width: 50%;
+}
+</style>
+All data sets listed are in their raw format. Codebooks and data management
+files are supplied as available. The **Last Updated** column represents the
+last time the data management file was edited. You should ensure that
+you always have the most up to date data management file. 
+
+```{r results = 'asis', echo = FALSE}
+knitr::kable(clean)
+```
