@@ -45,13 +45,13 @@ weight = 1
 
 # Biography
 
-Robin Donatello an assistant professor of Statistics at CSU, Chico. 
+Robin Donatello an assistant professor of Statistics at CSU, Chico. Robin
 
-* Teaches Statistics and Data Science courses.
-* She leads the [Data Science Initative (DSI) at Chico State]( http://datascience.csuchico.edu). The DSI is an interdisciplinary community that provides support and training for Data Science to the Chico State Campus and community. 
-* Member of the CSUC Graduation Initative Team - helping to use data to achieve the GI2025 goals. 
-* Founder of the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
-* In training to become a [Software Carpentry](https://software-carpentry.org/) slash [Data Carpentry](http://www.datacarpentry.org/) instructor. 
+* Teaches Statistics and Data Science [courses](#teaching).
+* Working on modernizing current Undergraduate Statistics Curriculum to meet the 2016 GAISE Guidelines
+* Leads the [Data Science Initative (DSI) at Chico State](http://datascience.csuchico.edu). 
+* Member of the CSUC Graduation Initative Team - helping to use data to facilitate student success. * Founder of the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
+* Training to become a [Carpentry](https://software-carpentry.org/) instructor. 
 
 
 <span style="color:red">Current student of mine? Looking for your [course page](#teaching)? </span>

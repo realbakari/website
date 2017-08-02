@@ -24,9 +24,8 @@ I teach the following courses at Chico State.
 - MATH 485: Advanced Data Science
 - MATH 615: [Statistical Methods for Graduate Research](https://norcalbiostat.github.io/MATH615/)
 
-
-This site is in alpha stages of being revamped. 
-Current and historic classes can be found at www.norcalbiostat.com 
+# Data
+Wherever possible I try to use real world, non pre-processed data in the classroom. The [Data](/data/datasets.html) page provides links to download data, codebooks where available, and code to import these data sets into R. 
 
  
 
