@@ -6,13 +6,12 @@ Built using blogdown thanks to
 
 https://creativecommons.org/licenses/by/4.0/
 
-
-## todo -- easy
-* fix bio list - and grammar
-* change pitbull to *rpbo
-
-## todo -- harder
+## todo 
 * add social media links to sidebar
-* add jsm talk to recent talks
-* add student success to projects
-* remove one of the publications - link my actual one
+* Change browser tab icon
+* find out how to 
+    - not render RMD files
+    - hide draft posts
+    - not have post/subfolders show up as posts but instead links (dudes example)
+    - control post order
+* link to software overview slides in math 130

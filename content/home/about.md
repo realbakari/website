@@ -17,8 +17,10 @@ weight = 1
     "Data Editing and Imputation",
     "Data Visualization", 
     "Bayesian Methods for Analysis", 
+    "Statistical Programming", 
     "Gardening for food", 
-    "Dogs (pit bulls especially)"
+    "Resonsible pitbull owners", 
+    "Being outdoors"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -45,16 +47,18 @@ weight = 1
 
 # Biography
 
-Robin Donatello an assistant professor of Statistics at CSU, Chico. Robin
+When Robin is not working in the garden to grow food for her family, playing in Upper Park with her dogs, or getting in some video game time, she is  
 
-* Teaches Statistics and Data Science [courses](#teaching).
-* Working on modernizing current Undergraduate Statistics Curriculum to meet the 2016 GAISE Guidelines
-* Leads the [Data Science Initative (DSI) at Chico State](http://datascience.csuchico.edu). 
-* Member of the CSUC Graduation Initative Team - helping to use data to facilitate student success. * Founder of the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
+* [Teaching](#teaching) courses in Statistics and Data Science.
+* Helping modernize the current Undergraduate Statistics Curriculum to meet the 2016 GAISE Guidelines
+* Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
+* Participating in the CSUC Graduation Initative Team - helping to use data to facilitate student success. 
+* Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
 * Training to become a [Carpentry](https://software-carpentry.org/) instructor. 
+* Providing statistical consulting and data analysis assistance for researchers on, and off campus. 
 
 
-<span style="color:red">Current student of mine? Looking for your [course page](#teaching)? </span>
+<span style="color:red">Current student looking for your [class page](#teaching)? </span>
 
 
 
