@@ -1,9 +1,9 @@
 ---
-title: 'Cleaned Datasets'
+title: 'Cleaned Data'
 author: ''
-slug: data
-categories: [teaching]
-tags: [data]
+date: '`r Sys.time()`'
+type: page
+weight: 1
 ---
 
 ```{r include = FALSE}
@@ -14,7 +14,7 @@ library(readxl)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The code to read the data set into R is provided, along with a glimpse of the data and it's dimensions. Use this information to confirm that the data set you download and import into R matches this information. 
+These data sets are typically used in entry level classes such as MATH 130 and MATH 315. Some data sets still have missing values but have been tidyed up a little bit. The code to read the data set into R is provided, along with a glimpse of the data and it's dimensions. Use this information to confirm that the data set you download and import into R matches this information. 
 
 * [Depress](Depress_041616.txt) Tab delimited text file.  [Add info]
   More details on the origin and study design can be found in Practial Multivariate Analysis, 5th edition by Afifi, May and Clark.
@@ -24,11 +24,7 @@ depress <- read.delim("Depress_041616.txt", header=TRUE,sep="\t")
 str(depress)
 ```
 
-* [Lung](Lung_020716.txt) Tab-delimited text file. This data come from a study on chronic respiratory 
-  disease and the effects of varoius types of smog on lung function of children and adults in the 
-  Los Angeles area. More details on the origin and study design can be found in Practial 
-  Multivariate Analysis, 5th edition by Afifi, May and Clark.
-  The [codebook](LungCodebook.txt) can be downloaded using this link (same as the link at the bottom of the page).
+* [Lung](Lung_020716.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of varoius types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practial Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](LungCodebook.txt) can be downloaded using this link (same as the link at the bottom of the page).
 ```{r}
 fev <- read.delim("Lung_020716.txt", header=TRUE,sep="\t")
 str(fev)
@@ -41,11 +37,7 @@ pabmi <- read.delim("PABMI.txt", header=TRUE,sep="\t")
 str(pabmi)
 ```
 
-* [Index of Biotic integrity](IBI.txt). The index of biotic integrity (IBI) is a measure of the water quality 
-in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas 
-were collected as part of a study. This data contains the percent of the watershed that was forest, and the 
-area of the watershed in square kilometers for streams in the original sample with watershed area less 
-than or equal to 70km$^2$.
+* [Index of Biotic integrity](IBI.txt). The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km$^2$.
 ```{r}
 qual <- read.delim("ibi.txt", header=TRUE,sep="\t")
 str(qual)

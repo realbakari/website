@@ -157,7 +157,8 @@ defaultContentLanguageInSubdir = false
     icon = "stack-exchange"
     icon_pack = "fa"
     link = "https://stackexchange.com/users/4537509/robin-donatello"
-    
+
+
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.

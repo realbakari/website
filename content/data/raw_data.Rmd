@@ -1,9 +1,8 @@
 ---
-title: 'Raw Datasets'
+title: 'Raw Data'
 author: ''
-slug: data
-categories: [teaching]
-tags: [data]
+date: '`r Sys.time()`'
+weight: 2
 ---
 
 ```{r include = FALSE}
@@ -12,10 +11,12 @@ library(readr)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Raw data with codebook and data management files. 
-These data sets are used in courses that emphasize data management as well as analysis including
-but not limited to MATH 456 (Applied Statistics II), MATH 385 (Intro to Data Science), 485 (Advanced Data Science Topics), and MATH 615 (Graduate Statistical Methods)
+These data sets are used in courses that emphasize data management as well as analysis including but not limited to MATH 456 (Applied Statistics II), MATH 385 (Intro to Data Science), 485 (Advanced Data Science Topics), and MATH 615 (Graduate Statistical Methods).
 
+All data sets listed are in their raw format. Codebooks and data management
+files are supplied as available. The **Updated** column represents the
+last time the data management file was edited. You should ensure that
+you always have the most up to date data management file. 
 
 ```{r include = FALSE}
 rawdat <- read_csv("Datasets.csv")
@@ -44,10 +45,6 @@ table {
    max-width: 50%;
 }
 </style>
-All data sets listed are in their raw format. Codebooks and data management
-files are supplied as available. The **Last Updated** column represents the
-last time the data management file was edited. You should ensure that
-you always have the most up to date data management file. 
 
 ```{r results = 'asis', echo = FALSE}
 knitr::kable(clean)

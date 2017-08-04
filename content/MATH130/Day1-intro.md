@@ -2,6 +2,7 @@
 title: Day 1- Introductions
 author: ''
 date: '2017-08-22'
+weight: 2
 slug: day-1-intro
 categories: [intro]
 tags: [r, rstudio]
@@ -39,7 +40,7 @@ tags: [r, rstudio]
 * Fast paced 1 unit course conducted over 6 days
 * Not designed to teach you everything about R, just enough to make you dangerous. 
 
-![](/hard.jpg)
+![](../../static/img/hard.jpg)
 
 
 ## Grading 

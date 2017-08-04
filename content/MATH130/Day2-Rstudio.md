@@ -2,10 +2,12 @@
 title: 'Day 2 - Reproducible Research using R Studio'
 author: ''
 date: '2017-08-24'
+weight: 3
+publishDate: '2017-08-04'
 slug: day-2-Rstudio
 categories: [intro]
 tags: [rstudio, reproducible_research]
-draft: TRUE
+draft: false
 ---
 
 # Introduction

@@ -2,6 +2,7 @@
 title: Syllabus
 author: ''
 date: '2017-08-21'
+weight: 1
 slug: syllabus
 categories: []
 tags: []
