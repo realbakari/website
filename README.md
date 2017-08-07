@@ -9,4 +9,4 @@ https://creativecommons.org/licenses/by/4.0/
 ## todo 
 * add social media links to sidebar
 * Change browser tab icon
-* link to software overview slides in math 130
+* apply CNAME

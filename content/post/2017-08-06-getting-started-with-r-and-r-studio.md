@@ -45,12 +45,12 @@ Install via [Homebrew](http://datascience.csuchico.edu/materials/install_r_with_
 ### Layout of R Studio - Initial Start
 
 When you first (like very first time) open R studio you will see three panels.
-![](../../static/img/rstudio/rstudio-start.png)
+![](/img/rstudio/rstudio-start.png)
 
 ### Layout of R Studio - Console
 
 The *console* is the full panel on the left
-![](../../static/img/rstudio/rstudio-console.png)
+![](/img/rstudio/rstudio-console.png)
 
 
 ### Layout of R Studio - Console
@@ -65,49 +65,49 @@ console telling you the version of R that you're running.
 ### Layout of R Studio - Console
 The console is where you type commands and have them immediately performed. 
 
-![](../../static/img/rstudio/rstudio-console-add.png)
+![](/img/rstudio/rstudio-console-add.png)
 
 ### Layout of R Studio - Environment
 The panel in the upper right contains your *workspace* (aka Environment)
 
-![](../../static/img/rstudio/rstudio-env.png)
+![](/img/rstudio/rstudio-env.png)
 
 ### Layout of R Studio - Environment items
 
 - This shows you a list of objects/variables that R has saved. 
 - For example here a value of 3 has been _assigned_ to the object `a`.
 
-![](../../static/img/rstudio/rstudio-env-items.png)
+![](/img/rstudio/rstudio-env-items.png)
 
 
 ### Layout of R Studio - History
 
 Up here there is an additional tab to see the *history* of the commands that you've previously entered.  
 
-![](../../static/img/rstudio/rstudio-history.png)
+![](/img/rstudio/rstudio-history.png)
 
 ### Layout of R Studio - Files
 The files tab allows you to open code/script files within R studio.
 
-![](../../static/img/rstudio/rstudio-files.png)
+![](/img/rstudio/rstudio-files.png)
 
 ### Layout of R Studio - Plots
 Any plots that you generate will show up in the panel in the lower right corner.
 
-![](../../static/img/rstudio/rstudio-plot.png)
+![](/img/rstudio/rstudio-plot.png)
 
 
 ### Layout of R Studio - Getting Help
 To check the syntax of any function in `R`, type `?` in front of the function name to pull up the help file. 
 
-![](../../static/img/rstudio/rstudio-help.png)
+![](/img/rstudio/rstudio-help.png)
 
 For example here I typed `?mean` to get the help file for the `mean` function. 
 
 ### Layout of R Studio - Working file
 Most often your R studio window will have 4 panels. The top left is where you write code or script, the console is now at the bottom. 
 
-![](../../static/img/rstudio/rstudio-working.png)
+![](/img/rstudio/rstudio-working.png)
 
 ## Layout of R Studio - Working file
 When we type R code in a specific way up here, the results show up both 
@@ -116,7 +116,7 @@ right below the code you just typed, and in the console itself.
 2+2
 ```
 
-![](../../static/img/rstudio/rstudio-working-command.png)
+![](/img/rstudio/rstudio-working-command.png)
 
 ## Setting Preferences to retain sanity
 
