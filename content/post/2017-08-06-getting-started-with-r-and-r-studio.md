@@ -42,18 +42,15 @@ Install via [Homebrew](http://datascience.csuchico.edu/materials/install_r_with_
 
 # R Studio - A tour
 
-### Layout of R Studio - Initial Start
+###  Initial Start
 
 When you first (like very first time) open R studio you will see three panels.
 ![](/img/rstudio/rstudio-start.png)
 
-### Layout of R Studio - Console
+###  Console
 
 The *console* is the full panel on the left
 ![](/img/rstudio/rstudio-console.png)
-
-
-### Layout of R Studio - Console
 
 - Everytime you launch RStudio, it will have the same text at the top of the 
 console telling you the version of R that you're running.  
@@ -62,54 +59,52 @@ console telling you the version of R that you're running.
 - These commands and their syntax have evolved over decades (literally) and now provide what many users feel is a fairly natural way to access data and organize, describe, and invoke statistical computations.
 
 
-### Layout of R Studio - Console
 The console is where you type commands and have them immediately performed. 
 
 ![](/img/rstudio/rstudio-console-add.png)
 
-### Layout of R Studio - Environment
+###  Environment
 The panel in the upper right contains your *workspace* (aka Environment)
 
 ![](/img/rstudio/rstudio-env.png)
 
-### Layout of R Studio - Environment items
 
 - This shows you a list of objects/variables that R has saved. 
 - For example here a value of 3 has been _assigned_ to the object `a`.
 
 ![](/img/rstudio/rstudio-env-items.png)
 
-
-### Layout of R Studio - History
+###  History
 
 Up here there is an additional tab to see the *history* of the commands that you've previously entered.  
 
 ![](/img/rstudio/rstudio-history.png)
 
-### Layout of R Studio - Files
+###  Files
 The files tab allows you to open code/script files within R studio.
 
 ![](/img/rstudio/rstudio-files.png)
 
-### Layout of R Studio - Plots
+###  Plots
 Any plots that you generate will show up in the panel in the lower right corner.
 
 ![](/img/rstudio/rstudio-plot.png)
 
 
-### Layout of R Studio - Getting Help
+### Getting Help
 To check the syntax of any function in `R`, type `?` in front of the function name to pull up the help file. 
 
 ![](/img/rstudio/rstudio-help.png)
 
-For example here I typed `?mean` to get the help file for the `mean` function. 
+For example here I typed `?mean` to get the help file for the `mean` function. Admittedly these aren't the most helpful of files at times. This is where Google / stack overflow / R help list serves and [R user groups](https://groups.google.com/forum/#!forum/chico-rug) can be your friend. 
 
-### Layout of R Studio - Working file
-Most often your R studio window will have 4 panels. The top left is where you write code or script, the console is now at the bottom. 
+
+### Script file (a.k.a code file)
+* Most often your R studio window will have 4 panels. 
+* The top left is your editor window, where you write code or script, the console is now at the bottom. Sometimes it's minimized, you can use the boxes in the top right corner of the console window to bring up the console. 
 
 ![](/img/rstudio/rstudio-working.png)
 
-## Layout of R Studio - Working file
 When we type R code in a specific way up here, the results show up both 
 right below the code you just typed, and in the console itself. 
 ```r
