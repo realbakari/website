@@ -1,0 +1,41 @@
+---
+title: "Article List"
+output: 
+  html_document: 
+    highlight: pygments
+    theme: cerulean
+---
+
+```{r include = FALSE}
+library(dplyr)
+library(stringr)
+library(readr)
+library(readxl)
+```
+
+Navbar: [[Robins Teaching Home Page]](../index.html)
+
+# Purpose
+This page provides a list of articles organized by content type. Some are required readings, all contain information
+that I think is helpful to share. 
+
+
+# Learning how to Learn
+
+* [Learning Your First Job (Leamnson 2002)](Learning Your First Job (Leamnson 2002).pdf)
+* [MAI and academic achievement in college students (Young, Fry, 2008)](MAI and academic achievement in college students (Young, Fry, 2008).pdf)
+* [Metacognition Awareness Inventory](Metacognition Awareness Inventory.pdf)
+* [Self Regulated Learning Questions (Neilson)](Self Regulated Learning Questions (Neilson).pdf)
+ 
+ 
+# Reproducibility
+
+* [Journals unite for reproducibility (Nature 2014)](Journals unite for reproducibility (Nature 2014).pdf)
+* [Thou Shalt Be Reproducible in Psychology (Mair 2016)](Thou Shalt Be Reproducible in Psychology (Mair 2016).pdf)
+* [Why you should care about reproducible research (Blog post Revolution R 2011)](Why you should care about reproducible research (Blog post Revolution R 2011).pdf)
+ 
+ 
+# Scientific Programming
+* [Programming tools can speed up and strengthen analyses, but mastering the skills takes time and can be daunting. (Baker, 2017, Nature)](http://www.nature.com/naturejobs/science/articles/10.1038/nj7638-563a?WT.mc_id=TWT_NatureNews)
+* [Importance of sharing code (Nature 2014)](Importance of sharing code (Nature 2014).pdf)
+* [Adventures in R (Tippmann 2015)]("Adventures in R (Tippmann 2015).pdf")
