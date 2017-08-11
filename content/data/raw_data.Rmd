@@ -19,7 +19,10 @@ last time the data management file was edited. You should ensure that
 you always have the most up to date data management file. 
 
 ```{r include = FALSE}
-rawdat <- read_excel("Datasets.xlsx")
+rawdat <- read_excel("../../static/data/Datasets.xlsx")
+
+#rawdat <- read_excel("public/data/Datasets.xlsx")
+
 
 # location of files
 cdat  <- rawdat %>% mutate(dataloc = filename, 

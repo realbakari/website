@@ -25,7 +25,7 @@ names(chemdta) <- c("PE", "ROR5", "DE", "SALESGR5", "EPS5", "NPM1", "PAYOUTR1")
 # Save the clean data as a tab-delimited text file. 
 ```{r}
 date <- format(Sys.Date(), "%m%d%y")
-filename <- paste("chem_", date, ".txt", sep="")
+filename <- paste("../chem_", date, ".txt", sep="")
 write.table(chemdta, filename, sep="\t", row.names=FALSE)
 ```
 
