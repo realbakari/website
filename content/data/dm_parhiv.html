@@ -1,0 +1,953 @@
+---
+title: "Parental HIV data management"
+output: html_document
+---
+
+
+
+<div id="purpose" class="section level1">
+<h1>Purpose</h1>
+<p>The purpose of this file is to clean and recode the parental data set. Each time this file is run it will write a new data set to the hard drive with the current date.</p>
+<p>Each time a new recode or edit is added a note should be written about when and why this edit was made, and this file should be compiled.</p>
+</div>
+<div id="import-the-raw-data" class="section level1">
+<h1>Import the raw data</h1>
+<pre class="r"><code>library(readxl); library(car); library(dplyr)
+hiv &lt;- read_excel(&quot;Parhiv.xlsx&quot;) </code></pre>
+<div id="update-the-parental-hiv-data-set-by-creating-all-the-subscales-listed-at-the-bottom-of-the-codebook." class="section level2">
+<h2>Update the Parental HIV data set by creating all the subscales listed at the bottom of the codebook.</h2>
+<p>I will use this space to show many different ways to approach this task. The methods are not numbered by any real characteristic. For each scale in the list I just thought of a method that would work easily for the variable at hand, that I had not already demonstrated. Some methods are more advanced than others. You will find the method(s) that work best for you.</p>
+<div id="method-1-reverse-code-all-sub-items-that-require-it-by-making-new-variables.-then-apply-the-mean-function-across-that-matrix-cbind-of-variables." class="section level4">
+<h4>Method 1: Reverse code all sub items that require it by making new variables. Then apply the mean function across that matrix (<code>cbind</code>) of variables.</h4>
+<pre class="r"><code>rpb02 &lt;- recode(hiv$PB02, &#39;1=4; 2=3; 3=2; 4=1&#39;) # using recode()</code></pre>
+<pre><code>## Warning: Unreplaced values treated as NA as .x is not compatible. Please
+## specify replacements exhaustively or supply .default</code></pre>
+<pre class="r"><code>table(rpb02, hiv$PB02, useNA=&quot;always&quot;) </code></pre>
+<pre><code>##                     
+## rpb02                  1   2   3   4 &lt;NA&gt;
+##   1=4; 2=3; 3=2; 4=1 131   0   0   0    0
+##   &lt;NA&gt;                 0  56  38  26    1</code></pre>
+<pre class="r"><code>rpb04 &lt;- 5-hiv$PB04 #easier way to flip a scale
+rpb14 &lt;- 5-hiv$PB14
+rpb16 &lt;- 5-hiv$PB16
+rpb18 &lt;- 5-hiv$PB18
+rpb24 &lt;- 5-hiv$PB24
+
+hiv$parent_care &lt;- apply(cbind(hiv$PB01, rpb02, rpb04, hiv$PB05, hiv$PB06, hiv$PB11, hiv$PB12, 
+                          rpb14, rpb16, hiv$PB17, rpb18, rpb24), 1, mean)</code></pre>
+<pre><code>## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA</code></pre>
+<pre><code>## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(newX[, i], ...): argument is not numeric or
+## logical: returning NA</code></pre>
+<pre class="r"><code># confirm recode
+summary(hiv$parent_care)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+##      NA      NA      NA     NaN      NA      NA     252</code></pre>
+</div>
+<div id="method-2-reverse-code-sub-items-at-the-time-of-combining-cbind." class="section level4">
+<h4>Method 2: Reverse code sub-items at the time of combining (<code>cbind</code>).</h4>
+<pre class="r"><code>hiv$parent_overprotection &lt;- apply(cbind(5-hiv$PB03, 5-hiv$PB07, hiv$PB08, hiv$PB09, hiv$PB10, 
+                                         hiv$PB13, 5-hiv$PB15, hiv$PB19, hiv$PB20, 5-hiv$PB21, 
+                                         5-hiv$PB22, hiv$PB23, 5-hiv$PB25), 1, mean)
+summary(hiv$parent_overprotection)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+##   1.000   1.769   2.154   2.117   2.385   4.000       2</code></pre>
+</div>
+<div id="method-3-take-the-row-wise-mean-across-columns-with-a-variable-name-that-starts-with-bsi" class="section level4">
+<h4>Method 3: Take the row-wise mean across columns with a variable name that starts with BSI</h4>
+<pre class="r"><code># Find the column numbers whose variable names start with the string BSI
+bsi.columns &lt;- grep(&quot;^BSI&quot;, names(hiv))
+# Apply the function mean() row-wise (1) across the column numbers found  above. 
+hiv$BSI_overall &lt;- apply(hiv[,bsi.columns], 1, mean)
+# confirm that some numbers were created and that the variable is not fully missing, 
+# and all values are in the appropriate range of 0 to 4. 
+summary(hiv$BSI_overall) </code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+##  0.0000  0.2075  0.3962  0.6517  1.0380  3.3020       3</code></pre>
+</div>
+<div id="method-4-take-the-row-wise-mean-across-specified-columns-using-the-variable-names" class="section level4">
+<h4>Method 4: Take the row-wise mean across specified columns using the variable names</h4>
+<pre class="r"><code>hiv$BSI_somat &lt;- apply(hiv[,c(&quot;BSI02&quot;,&quot;BSI07&quot;,&quot;BSI23&quot;,&quot;BSI29&quot;,&quot;BSI30&quot;,&quot;BSI33&quot;,&quot;BSI37&quot;)], 1, mean)
+summary(hiv$BSI_somat)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+##  0.0000  0.0000  0.1429  0.4166  0.5714  3.4290       1</code></pre>
+</div>
+<div id="method-5-using-the-mutate-function-rowwise-in-dplyr" class="section level4">
+<h4>Method 5: Using the <code>mutate</code> function, <code>rowwise</code>, in <code>dplyr</code></h4>
+<pre class="r"><code>hiv &lt;- hiv %&gt;% 
+       rowwise() %&gt;% 
+       mutate(BSI_obcomp = mean(c(BSI05, BSI15, BSI26, BSI27, BSI32, BSI36)))
+summary(hiv$BSI_obcomp)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+##  0.0000  0.1667  0.5000  0.7961  1.3330  4.0000       1</code></pre>
+</div>
+<div id="method-6-using-method-5-but-for-all-the-remaining-variables." class="section level4">
+<h4>Method 6: Using Method #5 but for <em>all</em> the remaining variables.</h4>
+<pre class="r"><code>hiv &lt;- hiv %&gt;% 
+       rowwise() %&gt;% 
+       mutate(BSI_interp = mean(c(BSI20:BSI22, BSI42)),
+              BSI_depress = mean(c(BSI09, BSI16, BSI17, BSI18 ,BSI35, BSI50)),
+              BSI_anxiety = mean(c(BSI01, BSI12, BSI19, BSI38 ,BSI45, BSI49)),
+              BSI_hostil = mean(c(BSI06 ,BSI13, BSI40, BSI41, BSI46)),
+              BSI_phobic = mean(c(BSI08, BSI28, BSI31, BSI43, BSI47)),
+              BSI_paranoid = mean(c(BSI04 ,BSI10 ,BSI24, BSI48 ,BSI51)),
+              BSI_psycho = mean(c(BSI03, BSI14, BSI34, BSI44, BSI53))
+              ) %&gt;% 
+        ungroup() # to prevent further operations from being done row-wise
+
+summary(cbind(hiv$BSI_interp, hiv$BSI_depress, hiv$BSI_anxiety, hiv$BSI_hostil, hiv$BSI_phobic, 
+        hiv$BSI_paranoid, hiv$BSI_psycho))</code></pre>
+<pre><code>##        V1               V2               V3               V4        
+##  Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+##  1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.2000  
+##  Median :0.3333   Median :0.3333   Median :0.3333   Median :0.6000  
+##  Mean   :0.7147   Mean   :0.6359   Mean   :0.5186   Mean   :0.9675  
+##  3rd Qu.:1.2333   3rd Qu.:1.0000   3rd Qu.:0.8333   3rd Qu.:1.6000  
+##  Max.   :4.0000   Max.   :3.8333   Max.   :3.3333   Max.   :4.0000  
+##                   NA&#39;s   :3        NA&#39;s   :1                        
+##        V5               V6               V7      
+##  Min.   :0.0000   Min.   :0.0000   Min.   :0.00  
+##  1st Qu.:0.0000   1st Qu.:0.2000   1st Qu.:0.00  
+##  Median :0.2000   Median :0.8000   Median :0.40  
+##  Mean   :0.4421   Mean   :0.9778   Mean   :0.54  
+##  3rd Qu.:0.6000   3rd Qu.:1.4000   3rd Qu.:0.80  
+##  Max.   :3.6000   Max.   :3.6000   Max.   :3.20  
+##                                    NA&#39;s   :2</code></pre>
+<p>The column names here are listed as V1-V7, which is fine. This was just for the <code>summary()</code> information. Nothing that we are going to keep. You can confirm that the variables were created with the names you intended to create using the <code>names()</code> function.</p>
+<pre class="r"><code>names(hiv)</code></pre>
+<pre><code>##   [1] &quot;ID&quot;                    &quot;AGE&quot;                  
+##   [3] &quot;GENDER&quot;                &quot;LIVWITH&quot;              
+##   [5] &quot;SIBLINGS&quot;              &quot;JOBMO&quot;                
+##   [7] &quot;EDUMO&quot;                 &quot;HOWREL&quot;               
+##   [9] &quot;ATTSERV&quot;               &quot;NGHB1&quot;                
+##  [11] &quot;NGHB2&quot;                 &quot;NGHB3&quot;                
+##  [13] &quot;NGHB4&quot;                 &quot;NGHB5&quot;                
+##  [15] &quot;NGHB6&quot;                 &quot;NGHB7&quot;                
+##  [17] &quot;NGHB8&quot;                 &quot;NGHB9&quot;                
+##  [19] &quot;NGHB10&quot;                &quot;NGHB11&quot;               
+##  [21] &quot;MONFOOD&quot;               &quot;FINSIT&quot;               
+##  [23] &quot;ETHN&quot;                  &quot;AGESMOKE&quot;             
+##  [25] &quot;SMOKEP3M&quot;              &quot;AGEALC&quot;               
+##  [27] &quot;AGEMAR&quot;                &quot;FRNDS&quot;                
+##  [29] &quot;SCHOOL&quot;                &quot;LIKESCH&quot;              
+##  [31] &quot;HOOKEY&quot;                &quot;NHOOKEY&quot;              
+##  [33] &quot;HMONTH&quot;                &quot;PB01&quot;                 
+##  [35] &quot;PB02&quot;                  &quot;PB03&quot;                 
+##  [37] &quot;PB04&quot;                  &quot;PB05&quot;                 
+##  [39] &quot;PB06&quot;                  &quot;PB07&quot;                 
+##  [41] &quot;PB08&quot;                  &quot;PB09&quot;                 
+##  [43] &quot;PB10&quot;                  &quot;PB11&quot;                 
+##  [45] &quot;PB12&quot;                  &quot;PB13&quot;                 
+##  [47] &quot;PB14&quot;                  &quot;PB15&quot;                 
+##  [49] &quot;PB16&quot;                  &quot;PB17&quot;                 
+##  [51] &quot;PB18&quot;                  &quot;PB19&quot;                 
+##  [53] &quot;PB20&quot;                  &quot;PB21&quot;                 
+##  [55] &quot;PB22&quot;                  &quot;PB23&quot;                 
+##  [57] &quot;PB24&quot;                  &quot;PB25&quot;                 
+##  [59] &quot;BSI01&quot;                 &quot;BSI02&quot;                
+##  [61] &quot;BSI03&quot;                 &quot;BSI04&quot;                
+##  [63] &quot;BSI05&quot;                 &quot;BSI06&quot;                
+##  [65] &quot;BSI07&quot;                 &quot;BSI08&quot;                
+##  [67] &quot;BSI09&quot;                 &quot;BSI10&quot;                
+##  [69] &quot;BSI11&quot;                 &quot;BSI12&quot;                
+##  [71] &quot;BSI13&quot;                 &quot;BSI14&quot;                
+##  [73] &quot;BSI15&quot;                 &quot;BSI16&quot;                
+##  [75] &quot;BSI17&quot;                 &quot;BSI18&quot;                
+##  [77] &quot;BSI19&quot;                 &quot;BSI20&quot;                
+##  [79] &quot;BSI21&quot;                 &quot;BSI22&quot;                
+##  [81] &quot;BSI23&quot;                 &quot;BSI24&quot;                
+##  [83] &quot;BSI25&quot;                 &quot;BSI26&quot;                
+##  [85] &quot;BSI27&quot;                 &quot;BSI28&quot;                
+##  [87] &quot;BSI29&quot;                 &quot;BSI30&quot;                
+##  [89] &quot;BSI31&quot;                 &quot;BSI32&quot;                
+##  [91] &quot;BSI33&quot;                 &quot;BSI34&quot;                
+##  [93] &quot;BSI35&quot;                 &quot;BSI36&quot;                
+##  [95] &quot;BSI37&quot;                 &quot;BSI38&quot;                
+##  [97] &quot;BSI39&quot;                 &quot;BSI40&quot;                
+##  [99] &quot;BSI41&quot;                 &quot;BSI42&quot;                
+## [101] &quot;BSI43&quot;                 &quot;BSI44&quot;                
+## [103] &quot;BSI45&quot;                 &quot;BSI46&quot;                
+## [105] &quot;BSI47&quot;                 &quot;BSI48&quot;                
+## [107] &quot;BSI49&quot;                 &quot;BSI50&quot;                
+## [109] &quot;BSI51&quot;                 &quot;BSI52&quot;                
+## [111] &quot;BSI53&quot;                 &quot;parent_care&quot;          
+## [113] &quot;parent_overprotection&quot; &quot;BSI_overall&quot;          
+## [115] &quot;BSI_somat&quot;             &quot;BSI_obcomp&quot;           
+## [117] &quot;BSI_interp&quot;            &quot;BSI_depress&quot;          
+## [119] &quot;BSI_anxiety&quot;           &quot;BSI_hostil&quot;           
+## [121] &quot;BSI_phobic&quot;            &quot;BSI_paranoid&quot;         
+## [123] &quot;BSI_psycho&quot;</code></pre>
+<p>See, all the subscales have been appended to the end of the data set in columns 112 through 123.</p>
+</div>
+</div>
+<div id="other-recodes" class="section level2">
+<h2>Other recodes</h2>
+<div id="change-factor-variables-from-numeric-to-categorical." class="section level3">
+<h3>Change factor variables from numeric to categorical.</h3>
+<p>Gender(1=M, 2=F)</p>
+<pre class="r"><code>hiv$GENDER &lt;- factor(hiv$GENDER, labels=c(&quot;Male&quot;, &quot;Female&quot;))</code></pre>
+</div>
+<div id="set-missing-values" class="section level3">
+<h3>Set missing values</h3>
+<p>Age at smoking = 0 for those who have not started smoking by the time of the survey.</p>
+<pre class="r"><code>hiv$AGESMOKE &lt;- ifelse(hiv$AGESMOKE == 0, NA, hiv$AGESMOKE)</code></pre>
+</div>
+</div>
+</div>
+<div id="save-the-cleaned-data-set-with-todays-date." class="section level1">
+<h1>Save the cleaned data set with todays date.</h1>
+<p>The <code>sys.date()</code> function takes the current date from your computer. The value is then formatted nicely for human consumption and added (pasted) to the file name before written to the working directory as a new text file.</p>
+<pre class="r"><code>date &lt;- format(Sys.Date(), &quot;%m%d%y&quot;)
+filename &lt;- paste(&quot;PARHIV_&quot;, date, &quot;.txt&quot;, sep=&quot;&quot;)
+write.table(hiv, filename, sep=&quot;\t&quot;, row.names=FALSE)</code></pre>
+</div>

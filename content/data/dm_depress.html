@@ -1,0 +1,91 @@
+---
+title: "depression data - Data Management Record"
+output: html_document
+---
+
+
+
+<div id="purpose" class="section level1">
+<h1>Purpose</h1>
+<p>The purpose of this file is to clean and recode the depression data set. Each time this file is run it will write a new data set to the hard drive with the current date.</p>
+<p>Each time a new recode or edit is added a note should be written about when and why this edit was made, and this file should be compiled.</p>
+</div>
+<div id="import-the-raw-data" class="section level1">
+<h1>Import the raw data</h1>
+<pre class="r"><code>depress &lt;- read.table(&quot;Depress.txt&quot;, sep=&quot;\t&quot;, header=TRUE) 
+names(depress) &lt;- tolower(names(depress))</code></pre>
+</div>
+<div id="create-factor-variables." class="section level1">
+<h1>Create factor variables.</h1>
+<p>This section is where catgorical variables are defined as factors and have labels and ordering applied.</p>
+<ul>
+<li>01-31-16 redefine <code>MARITAL</code> and <code>EDUCAT</code> as factor variables.</li>
+</ul>
+<pre class="r"><code>library(dplyr)
+depress &lt;- depress %&gt;% 
+              mutate(marital = factor(marital, 
+                                      labels = c(&quot;Never Married&quot;, &quot;Married&quot;, &quot;Divorced&quot;, &quot;Separated&quot;, &quot;Widowed&quot;)), 
+                     educat = factor(educat, 
+                                     labels = c(&quot;&lt;HS&quot;, &quot;Some HS&quot;, &quot;HS Grad&quot;, &quot;Some college&quot;, &quot;BS&quot;, &quot;MS&quot;, &quot;PhD&quot;)), 
+                     employ = factor(employ, 
+                                     labels = c(&quot;FT&quot;, &quot;PT&quot;, &quot;Unemp&quot;, &quot;Retired&quot;, &quot;Houseperson&quot;, &quot;In School&quot;, &quot;Other&quot;)), 
+                     relig = factor(relig, 
+                                    labels = c(&quot;Protestant&quot;, &quot;Catholic&quot;, &quot;Jewish&quot;, &quot;None&quot;, &quot;Other&quot;))
+                     )</code></pre>
+</div>
+<div id="edits-and-recodes" class="section level1">
+<h1>Edits and recodes</h1>
+<p>This section is for real changes to the data. Non-trivial edits should include a justification.</p>
+<ul>
+<li>01-31-16. Fix a typo in <code>AGE</code>.</li>
+</ul>
+<pre class="r"><code>depress$age[depress$age==9] &lt;- 19</code></pre>
+<ul>
+<li>01-31-16. Two values for religion were out of range, so they have been set to missing. (Update: These got classified as “Other” in the above dplyr recoding.)</li>
+</ul>
+<pre class="r"><code>depress$relig &lt;- ifelse(depress$relig == &quot;Other&quot;, NA, depress$relig)</code></pre>
+<ul>
+<li>Rescale gender to be an indicator of female</li>
+</ul>
+<pre class="r"><code>depress$sex &lt;- depress$sex -1 </code></pre>
+<ul>
+<li>Convert 1/2 (Yes/No) binary variables to 0/1 No/Yes</li>
+</ul>
+<pre class="r"><code>convert_these_columns &lt;- which(colnames(depress) %in% c(&quot;drink&quot;, &quot;regdoc&quot;, &quot;treat&quot;))
+depress[,convert_these_columns] &lt;- sapply(depress[,convert_these_columns], function(x){x &lt;- ifelse(x==2, 0, x)})</code></pre>
+</div>
+<div id="save-the-cleaned-data-set-with-todays-date." class="section level1">
+<h1>Save the cleaned data set with todays date.</h1>
+<p>The <code>sys.date()</code> function takes the current date from your computer. The value is then formatted nicely for human consumption and added (pasted) to the file name before written to the working directory as a new text file.</p>
+<pre class="r"><code>date &lt;- format(Sys.Date(), &quot;%m%d%y&quot;)
+filename &lt;- paste(&quot;Depress_&quot;, date, &quot;.txt&quot;, sep=&quot;&quot;)
+write.table(depress, filename, sep=&quot;\t&quot;, row.names=FALSE)</code></pre>
+</div>
+<div id="session-info" class="section level1">
+<h1>Session Info</h1>
+<p>This document was compiled on 2017-08-10 21:58:02 and with the following system information:</p>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R version 3.3.1 (2016-06-21)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 10 x64 (build 15063)
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
+## 
+## attached base packages:
+## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] dplyr_0.5.0
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.8     bookdown_0.4.1  digest_0.6.12   rprojroot_1.2  
+##  [5] assertthat_0.1  R6_2.1.2        DBI_0.5-1       backports_1.0.5
+##  [9] magrittr_1.5    evaluate_0.10   blogdown_0.0.50 stringi_1.1.1  
+## [13] lazyeval_0.2.0  rmarkdown_1.6   tools_3.3.1     stringr_1.2.0  
+## [17] yaml_2.1.14     htmltools_0.3.6 knitr_1.16      tibble_1.3.0</code></pre>
+</div>

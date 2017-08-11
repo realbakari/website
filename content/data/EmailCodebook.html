@@ -1,0 +1,118 @@
+---
+title: 'Codebook for the data frame representing information about a collection of emails'
+output: html_document
+---
+
+
+
+<div id="usage" class="section level1">
+<h1>Usage</h1>
+<p>This data is available in the <code>openintro</code> package as the data frame <code>email</code>.</p>
+</div>
+<div id="description" class="section level1">
+<h1>Description</h1>
+<p>These data represent incoming emails for the first three months of 2012 for David Diez’s Gmail Account, early months of 2012. All personally identifiable information has been removed.</p>
+</div>
+<div id="format" class="section level1">
+<h1>Format</h1>
+<p>A data frame with 3921 observations on the following 21 variables.</p>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>spam</code></td>
+<td>Indicator for whether the email was spam.</td>
+</tr>
+<tr class="even">
+<td><code>to_multiple</code></td>
+<td>Indicator for whether the email was addressed to more than one recipient.</td>
+</tr>
+<tr class="odd">
+<td><code>from</code></td>
+<td>Whether the message was listed as from anyone (this is usually set by default for regular outgoing email).</td>
+</tr>
+<tr class="even">
+<td><code>cc</code></td>
+<td>Indicator for whether anyone was CCed.</td>
+</tr>
+<tr class="odd">
+<td><code>sent_email</code></td>
+<td>Indicator for whether the sender had been sent an email in the last 30 days.</td>
+</tr>
+<tr class="even">
+<td><code>time</code></td>
+<td>Time at which email was sent.</td>
+</tr>
+<tr class="odd">
+<td><code>image</code></td>
+<td>The number of images attached.</td>
+</tr>
+<tr class="even">
+<td><code>attach</code></td>
+<td>The number of attached files.</td>
+</tr>
+<tr class="odd">
+<td><code>dollar</code></td>
+<td>The number of times a dollar sign or the word “dollar” appeared in the email.</td>
+</tr>
+<tr class="even">
+<td><code>winner</code></td>
+<td>Indicates whether “winner” appeared in the email.</td>
+</tr>
+<tr class="odd">
+<td><code>inherit</code></td>
+<td>The number of times “inherit” (or an extension, such as “inheritance”) appeared in the email.</td>
+</tr>
+<tr class="even">
+<td><code>viagra</code></td>
+<td>The number of times “viagra” appeared in the email.</td>
+</tr>
+<tr class="odd">
+<td><code>password</code></td>
+<td>The number of times “password” appeared in the email.</td>
+</tr>
+<tr class="even">
+<td><code>num_char</code></td>
+<td>The number of characters in the email, in thousands.</td>
+</tr>
+<tr class="odd">
+<td><code>line_breaks</code></td>
+<td>The number of line breaks in the email (does not count text wrapping).</td>
+</tr>
+<tr class="even">
+<td><code>format</code></td>
+<td>Indicates whether the email was written using HTML (e.g. may have included bolding or active links).</td>
+</tr>
+<tr class="odd">
+<td><code>re_subj</code></td>
+<td>Whether the subject started with “Re:”, “RE:”, “re:”, or “rE:”</td>
+</tr>
+<tr class="even">
+<td><code>exclaim_subj</code></td>
+<td>Whether there was an exclamation point in the subject.</td>
+</tr>
+<tr class="odd">
+<td><code>urgent_subj</code></td>
+<td>Whether the word “urgent” was in the email subject.</td>
+</tr>
+<tr class="even">
+<td><code>exclaim_mess</code></td>
+<td>The number of exclamation points in the email message.</td>
+</tr>
+<tr class="odd">
+<td><code>number</code></td>
+<td>Factor variable saying whether there was no number, a small number (under 1 million), or a big number.</td>
+</tr>
+</tbody>
+</table>
+<p><em>This information was copied from <code>?email</code> on March 20, 2016</em></p>
+</div>

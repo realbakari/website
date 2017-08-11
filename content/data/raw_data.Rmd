@@ -7,7 +7,7 @@ weight: 2
 
 ```{r include = FALSE}
 library(dplyr)
-library(readr)
+library(readxl)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -19,13 +19,13 @@ last time the data management file was edited. You should ensure that
 you always have the most up to date data management file. 
 
 ```{r include = FALSE}
-rawdat <- read_csv("Datasets.csv")
+rawdat <- read_excel("Datasets.xlsx")
 
 # location of files
 cdat  <- rawdat %>% mutate(dataloc = filename, 
                            codeloc = codebook, 
                            dmloc   = dm,
-                           Updated = format(file.info(dm)$mtime), "%m-%d-%y")
+                           Updated = format(file.info(dm)$mtime, "%m-%d-%y"))
 
 # Add link to the data file, codebook, data management code file
 cdat2 <- cdat %>% mutate(File = paste('<a href="', cdat$dataloc, '">', cdat$filename, '</a>', sep=""), 

@@ -13,8 +13,6 @@ library(readr)
 library(readxl)
 ```
 
-Navbar: [[Robins Teaching Home Page]](../index.html)
-
 # Purpose
 This page provides a list of articles organized by content type. Some are required readings, all contain information
 that I think is helpful to share. 

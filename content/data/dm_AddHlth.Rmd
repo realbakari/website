@@ -1,0 +1,34 @@
+---
+title: "Add Health"
+output: html_document
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life.
+
+More info at: http://www.cpc.unc.edu/projects/addhealth 
+
+# Import
+This is a CSV file, so we could read it in using `read.csv` but I prefer the functionality of `read_csv` found in the `readr` package. 
+```{r}
+library(readr)
+add_raw <- read_csv(file="AddHealth_Wave_IV.csv")
+```
+
+Confirm the dimensions of the data. 
+```{r}
+dim(add_raw)
+```
+ 
+# Data Management
+TBD
+
+# Session Info
+This document was compiled on `r Sys.time()` and with the following system
+information:
+```{r}
+sessionInfo()
+```
