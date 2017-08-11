@@ -1,6 +1,7 @@
 ---
 title: "Parental HIV data management"
 output: html_document
+css: github-light.css
 ---
 
 # Purpose

@@ -1,6 +1,7 @@
 ---
 title: "Add Health"
 output: html_document
+css: github-light.css
 ---
 
 ```{r, echo=FALSE}

@@ -1,6 +1,7 @@
 ---
-title: "depression data - Data Management Record"
+title: "Depression data - Data Management Record"
 output: html_document
+css: github-light.css
 ---
 
 ```{r, echo=FALSE}
