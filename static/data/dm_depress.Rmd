@@ -1,7 +1,9 @@
 ---
 title: "Depression data - Data Management Record"
-output: html_document
-css: github-light.css
+output: 
+  html_document: 
+    highlight: tango
+    theme: flatly
 ---
 
 ```{r, echo=FALSE}
@@ -82,8 +84,7 @@ write.table(depress, filename, sep="\t", row.names=FALSE)
 
  
 # Session Info
-This document was compiled on `r Sys.time()` and with the following system
-information:
+This document was compiled on `r Sys.time()` and with the following system information:
 ```{r}
 sessionInfo()
 ```

@@ -1,7 +1,9 @@
 ---
 title: "Codebook for NCbirths"
-output: html_document
-css: github-light.css
+output: 
+  html_document: 
+    highlight: tango
+    theme: flatly
 ---
 
 # Usage

@@ -1,7 +1,9 @@
 ---
 title: 'Codebook for the data frame representing information about a collection of emails'
-output: html_document
-css: github-light.css
+output: 
+  html_document: 
+    highlight: tango
+    theme: flatly
 ---
 
 # Usage

@@ -1,36 +1,31 @@
 ---
 title: "Parental HIV data management"
-output: html_document
-css: github-light.css
+output: 
+  html_document: 
+    highlight: tango
+    theme: flatly
 ---
 
 # Purpose
-The purpose of this file is to clean and recode the parental data set. 
-Each time this file is run it will write a new data set to the hard drive
-with the current date. 
+The purpose of this file is to clean and recode the parental data set. Each time this file is run it will write a new data set to the hard drive with the current date. 
 
-Each time a new recode or edit is added a note should be written about when and 
-why this edit was made, and this file should be compiled. 
+Each time a new recode or edit is added a note should be written about when and why this edit was made, and this file should be compiled. 
 
 # Import the raw data
 ```{r, message=FALSE, warning=FALSE}
-library(readxl); library(car); library(dplyr)
+library(readxl); library(dplyr)
 hiv <- read_excel("Parhiv.xlsx") 
 ```
 
 
 ## Update the Parental HIV data set by creating all the subscales listed at the bottom of the codebook.
     
-I will use this space to show many different ways to approach this task. The methods
-are not numbered by any real characteristic. For each scale in the list I just thought 
-of a method that would work easily for the variable at hand, that I had not already 
-demonstrated. Some methods are more advanced than others. You will find the method(s)
-that work best for you. 
+I will use this space to show many different ways to approach this task. The methods are not numbered by any real characteristic. For each scale in the list I just thought of a method that would work easily for the variable at hand, that I had not already demonstrated. Some methods are more advanced than others. You will find the method(s) that work best for you. 
 
-#### Method 1: Reverse code all sub items that require it by making new variables. Then apply the mean function across that matrix (`cbind`) of variables. 
+#### Method 1: Reverse code all sub items that require it by making new variables. Then apply the mean function across that matrix (`cbind`) of variables. See the [documentation](http://dplyr.tidyverse.org/reference/recode.html) for help using the `dplyr` `recode()` function. 
 
 ```{r}
-rpb02 <- recode(hiv$PB02, '1=4; 2=3; 3=2; 4=1') # using recode()
+rpb02 <- recode(hiv$PB02, `1`=4,  `2`=3, `3`=2, `4`=1) 
 table(rpb02, hiv$PB02, useNA="always") 
 rpb04 <- 5-hiv$PB04 #easier way to flip a scale
 rpb14 <- 5-hiv$PB14
@@ -95,9 +90,7 @@ hiv <- hiv %>%
 summary(cbind(hiv$BSI_interp, hiv$BSI_depress, hiv$BSI_anxiety, hiv$BSI_hostil, hiv$BSI_phobic, 
         hiv$BSI_paranoid, hiv$BSI_psycho))
 ```
-The column names here are listed as V1-V7, which is fine. This was just for the
-`summary()` information. Nothing that we are going to keep. You can confirm that the
-variables were created with the names you intended to create using the `names()` function. 
+The column names here are listed as V1-V7, which is fine. This was just for the `summary()` information. Nothing that we are going to keep. You can confirm that the variables were created with the names you intended to create using the `names()` function. 
 
 ```{r}
 names(hiv)
@@ -121,9 +114,7 @@ hiv$AGESMOKE <- ifelse(hiv$AGESMOKE == 0, NA, hiv$AGESMOKE)
 
 
 # Save the cleaned data set with todays date. 
-The `sys.date()` function takes the current date from your computer. 
-The value is then formatted nicely for human consumption and added (pasted) to
-the file name before written to the working directory as a new text file. 
+The `sys.date()` function takes the current date from your computer. The value is then formatted nicely for human consumption and added (pasted) to the file name before written to the working directory as a new text file. 
 
 ```{r}
 date <- format(Sys.Date(), "%m%d%y")
@@ -131,4 +122,9 @@ filename <- paste("PARHIV_", date, ".txt", sep="")
 write.table(hiv, filename, sep="\t", row.names=FALSE)
 ```
 
+# Session Info
+This document was compiled on `r Sys.time()` and with the following system information:
+```{r}
+sessionInfo()
+```
 
