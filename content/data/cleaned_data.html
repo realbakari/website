@@ -1,6 +1,6 @@
 ---
 title: 'Cleaned Data'
-date: '2017-08-12 16:44:15'
+date: '2017-08-12 16:51:46'
 type: page
 weight: 1
 ---
@@ -9,7 +9,7 @@ weight: 1
 
 <p>These data sets are typically used in entry level classes such as MATH 130 and MATH 315. Some data sets still have missing values but have been tidyed up a little bit. The code to read the data set into R is provided, along with a glimpse of the data and it’s dimensions. Use this information to confirm that the data set you download and import into R matches this information.</p>
 <ul>
-<li><a href="dsmall.txt">dsmall</a> This is a randomly drawn sample from the <code>diamonds</code> data set found in the <code>ggplot2</code> package. For those not using <code>R</code> I have provided a tab delimited text file for download. For those using R, use the code below to create the <code>dsmall</code> data set. The <a href="http://ggplot2.tidyverse.org/reference/diamonds.html">codebook</a> can be foundon the ggplot2 documentation site.</li>
+<li><a href="../dsmall.txt">dsmall</a> This is a randomly drawn sample from the <code>diamonds</code> data set found in the <code>ggplot2</code> package. For those not using <code>R</code> I have provided a tab delimited text file for download. For those using R, use the code below to create the <code>dsmall</code> data set. The <a href="http://ggplot2.tidyverse.org/reference/diamonds.html">codebook</a> can be found on the ggplot2 documentation site.</li>
 </ul>
 <pre class="r"><code>set.seed(1410) # Make the sample reproducible
 diamonds &lt;- ggplot2::diamonds # load the data without loading the ggplot2 package
@@ -27,7 +27,7 @@ str(dsmall)</code></pre>
 ##  $ y      : num  7.13 4.27 5.92 4.11 4.44 7.39 4.47 8.32 4.02 6.41 ...
 ##  $ z      : num  4.37 2.72 3.49 2.51 2.72 4.58 2.72 5.21 2.52 4 ...</code></pre>
 <ul>
-<li><a href="../../static/data/depress_081217.txt">Depress</a> Tab delimited text file. [Add info] More details on the origin and study design can be found in Practial Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="DepressCodebook.txt">codebook</a> can be downloaded as a text file.</li>
+<li><a href="../depress_081217.txt">Depress</a> Tab delimited text file. [Add info] More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="DepressCodebook.txt">codebook</a> can be downloaded as a text file.</li>
 </ul>
 <pre class="r"><code>depress &lt;- read.delim(&quot;../../static/data/depress_081217.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
 str(depress)</code></pre>
@@ -70,7 +70,7 @@ str(depress)</code></pre>
 ##  $ acuteill: int  0 0 0 0 1 1 1 1 0 0 ...
 ##  $ chronill: int  1 1 0 1 0 1 1 0 1 0 ...</code></pre>
 <ul>
-<li><a href="PARHIV_081217.txt">ParentalHIV</a>: Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The <a href="ParhivCodebook.txt">Codebook</a> describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al.</li>
+<li><a href="../PARHIV_081217.txt">ParentalHIV</a>: Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The <a href="ParhivCodebook.txt">Codebook</a> describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al.</li>
 </ul>
 <pre class="r"><code>parHIV &lt;- read.delim(&quot;../../static/data/PARHIV_081217.txt&quot;, header=TRUE, stringsAsFactors = FALSE, sep=&quot;\t&quot;)
 str(parHIV)</code></pre>
@@ -176,7 +176,7 @@ str(parHIV)</code></pre>
 ##  $ BSI41                : int  2 0 0 1 0 2 0 0 0 0 ...
 ##   [list output truncated]</code></pre>
 <ul>
-<li><a href="Lung_081217.txt">Lung</a> Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of varoius types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practial Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="LungCodebook.txt">codebook</a> can be downloaded as a text file.</li>
+<li><a href="../Lung_081217.txt">Lung</a> Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="LungCodebook.txt">codebook</a> can be downloaded as a text file.</li>
 </ul>
 <pre class="r"><code>fev &lt;- read.delim(&quot;../../static/data/Lung_081217.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
 str(fev)</code></pre>
@@ -214,7 +214,7 @@ str(fev)</code></pre>
 ##  $ YCFVC   : int  NA NA NA NA 154 195 NA NA NA NA ...
 ##  $ YCFEV1  : num  NA NA NA NA 1.43 1.69 NA NA NA NA ...</code></pre>
 <ul>
-<li><a href="PABMI.txt">Physical Activity and BMI</a> Physical activity measured as the number of steps in thousands.</li>
+<li><a href="../PABMI.txt">Physical Activity and BMI</a> Physical activity measured as the number of steps in thousands.</li>
 </ul>
 <pre class="r"><code>pabmi &lt;- read.delim(&quot;../../static/data/PABMI.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
 str(pabmi)</code></pre>
@@ -223,7 +223,7 @@ str(pabmi)</code></pre>
 ##  $ PA     : num  10.99 6.75 12.42 6.25 11.6 ...
 ##  $ BMI    : num  15 21 28.1 27.3 21.1 20.6 27.9 18.3 24.3 21.1 ...</code></pre>
 <ul>
-<li><a href="IBI.txt">Index of Biotic integrity</a>. The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km<span class="math inline">\(^2\)</span>.</li>
+<li><a href="../IBI.txt">Index of Biotic integrity</a>. The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km<span class="math inline">\(^2\)</span>.</li>
 </ul>
 <pre class="r"><code>qual &lt;- read.delim(&quot;../../static/data/ibi.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
 str(qual)</code></pre>
@@ -232,7 +232,7 @@ str(qual)</code></pre>
 ##  $ Area  : int  21 29 31 32 34 34 49 52 2 70 ...
 ##  $ IBI   : int  47 61 39 59 72 76 85 89 74 89 ...</code></pre>
 <ul>
-<li><a href="ArmStrength.txt">Arm Strength</a></li>
+<li><a href="../ArmStrength.txt">Arm Strength</a></li>
 </ul>
 <pre class="r"><code>armstr &lt;- read.delim(&quot;../../static/data/ArmStrength.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
 str(armstr)</code></pre>
@@ -242,7 +242,7 @@ str(armstr)</code></pre>
 ##  $ NonDom: num  15.7 25.2 17.9 19.1 12 20 12.3 14.4 15.9 13.7 ...
 ##  $ Dom   : num  16.3 26.9 18.7 22 14.8 19.8 13.1 17.5 20.1 18.7 ...</code></pre>
 <ul>
-<li><a href="DownloadTimes.txt">Download Times</a> An experiment run by a student to detect if his internet speed varied across different times of the day. This tab-delimited data set contains two variables: <code>time</code> as a categorical time of day (Early, Evening, Late), and the time (in <code>sec</code>) it took to download a particular file. The file downloaded was the same each time to the same computer.</li>
+<li><a href="../DownloadTimes.txt">Download Times</a> An experiment run by a student to detect if his internet speed varied across different times of the day. This tab-delimited data set contains two variables: <code>time</code> as a categorical time of day (Early, Evening, Late), and the time (in <code>sec</code>) it took to download a particular file. The file downloaded was the same each time to the same computer.</li>
 </ul>
 <pre class="r"><code>dt &lt;- read.delim(&quot;../../static/data/DownloadTimes.txt&quot;, header=TRUE, sep=&quot;\t&quot;)
 str(dt)</code></pre>
@@ -250,7 +250,7 @@ str(dt)</code></pre>
 ##  $ time: Factor w/ 3 levels &quot;Early&quot;,&quot;Evening&quot;,..: 1 2 3 1 2 3 1 2 3 1 ...
 ##  $ sec : num  68 299 216 138 367 175 75 331 274 186 ...</code></pre>
 <ul>
-<li><a href="plants2.txt">Plants 2</a> Amount of fresh and dry biomass four different species of plants under seven different levels of water. Similar to the PLANTS1 data sets. There are 4 plants per species-by-water combination.</li>
+<li><a href="../plants2.txt">Plants 2</a> Amount of fresh and dry biomass four different species of plants under seven different levels of water. Similar to the PLANTS1 data sets. There are 4 plants per species-by-water combination.</li>
 </ul>
 <pre class="r"><code>plants2 &lt;- read.delim(&quot;../../static/data/plants2.txt&quot;, sep=&quot;\t&quot;, header=TRUE)
 str(plants2)</code></pre>
@@ -261,7 +261,7 @@ str(plants2)</code></pre>
 ##  $ fbiomass: num  105 139 110 102 168 ...
 ##  $ dbiomass: num  17.6 28.9 18.9 16.9 44.4 ...</code></pre>
 <ul>
-<li><a href="plants1.txt">Plants 1</a> Percent of nitrogen in four different species of plants grown in a laboratory. Researchers who collected these data in parts of the country where there is very little rainfall. The amount of water administered per day ranged from 50mm to 650mm in 100mm increments. There are 9 plants per species-by-water combination.</li>
+<li><a href="../plants1.txt">Plants 1</a> Percent of nitrogen in four different species of plants grown in a laboratory. Researchers who collected these data in parts of the country where there is very little rainfall. The amount of water administered per day ranged from 50mm to 650mm in 100mm increments. There are 9 plants per species-by-water combination.</li>
 </ul>
 <pre class="r"><code>plants1 &lt;- read.delim(&quot;../../static/data/plants1.txt&quot;, sep=&quot;\t&quot;, header=TRUE)
 str(plants1)</code></pre>
@@ -270,7 +270,7 @@ str(plants1)</code></pre>
 ##  $ water  : int  50 50 50 50 50 50 50 50 50 150 ...
 ##  $ pctnit : num  3.64 3.5 3.51 3.14 3.1 ...</code></pre>
 <ul>
-<li><a href="dementia_moon.txt">Full moon on Dementia</a> A study observed 15 nursing home patients with dementia and recorded the number of aggressive incidents each day for 12 weeks. Then they totaled the counts of aggressive incidents per patient on “moon” days (full moon +/-1 day) and “other” days.</li>
+<li><a href="../dementia_moon.txt">Full moon on Dementia</a> A study observed 15 nursing home patients with dementia and recorded the number of aggressive incidents each day for 12 weeks. Then they totaled the counts of aggressive incidents per patient on “moon” days (full moon +/-1 day) and “other” days.</li>
 </ul>
 <pre class="r"><code>moon &lt;- read.delim(&quot;../../static/data/dementia_moon.txt&quot;, sep=&quot;\t&quot;, header=TRUE)
 str(moon)</code></pre>
@@ -279,7 +279,7 @@ str(moon)</code></pre>
 ##  $ aggmoon : num  3.33 3.67 2.67 3.33 3.33 3.67 4.67 2.67 6 4.33 ...
 ##  $ aggother: num  0.27 0.59 0.32 0.19 1.26 0.11 0.3 0.4 1.59 0.6 ...</code></pre>
 <ul>
-<li><a href="directed_reading.csv">Directed Reading Activities</a> Degree of Reading Power test scores for third-graders involved in an intervention study aiming improve reading ability of students.</li>
+<li><a href="../directed_reading.csv">Directed Reading Activities</a> Degree of Reading Power test scores for third-graders involved in an intervention study aiming improve reading ability of students.</li>
 </ul>
 <pre class="r"><code>DRP &lt;- read.csv(&quot;../../static/data/directed_reading.csv&quot;)
 str(DRP)</code></pre>
@@ -287,7 +287,7 @@ str(DRP)</code></pre>
 ##  $ score: int  19 17 10 28 26 20 37 37 33 48 ...
 ##  $ group: Factor w/ 2 levels &quot;Control&quot;,&quot;Intervention&quot;: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
 <ul>
-<li><a href="hsb2.txt">High School and Beyond</a>. The High School and Beyond (HS&amp;B) Longitudinal Study was the second study conducted as part of NCES’ National Longitudinal Studies Program. This program was established to study the educational, vocational, and personal development of young people, beginning with their elementary or high school years and following them over time as they take on adult roles and responsibilities. <a href="http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf" class="uri">http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf</a></li>
+<li><a href="../hsb2.txt">High School and Beyond</a>. The High School and Beyond (HS&amp;B) Longitudinal Study was the second study conducted as part of NCES’ National Longitudinal Studies Program. This program was established to study the educational, vocational, and personal development of young people, beginning with their elementary or high school years and following them over time as they take on adult roles and responsibilities. <a href="http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf" class="uri">http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf</a></li>
 </ul>
 <pre class="r"><code>hsb2 &lt;- read.delim(&quot;../../static/data/hsb2.txt&quot;, sep=&quot;\t&quot;)
 str(hsb2)</code></pre>
@@ -304,7 +304,7 @@ str(hsb2)</code></pre>
 ##  $ science: int  47 63 58 53 53 63 53 39 58 50 ...
 ##  $ socst  : int  57 61 31 56 61 61 61 36 51 51 ...</code></pre>
 <ul>
-<li><a href="ageAtMar.txt">Age at Marriage</a>. Age at first marriage of 5,534 US women who responded to the National Survey of Family Growth (NSFG) conducted by the CDC in the 2006 and 2010 cycle. <a href="http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm" class="uri">http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm</a></li>
+<li><a href="../ageAtMar.txt">Age at Marriage</a>. Age at first marriage of 5,534 US women who responded to the National Survey of Family Growth (NSFG) conducted by the CDC in the 2006 and 2010 cycle. <a href="http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm" class="uri">http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm</a></li>
 </ul>
 <pre class="r"><code>age &lt;- read.csv(&quot;../../static/data/ageAtMar.txt&quot;, sep=&quot;&quot;)
 head(age)</code></pre>
@@ -316,7 +316,7 @@ head(age)</code></pre>
 ## 5  32
 ## 6  29</code></pre>
 <ul>
-<li><a href="ames.csv">Ames</a>: All residential home sales in Ames, Iowa between 2006 and 2010. The data set contains many explanatory variables on the quality and quantity of physical attributes of residential homes in Iowa sold between 2006 and 2010. Most of the variables describe information a typical home buyer would like to know about a property (square footage, number of bedrooms and bathrooms, size of lot, etc.). A detailed discussion of variables can be found in the original paper: <em>De Cock D. 2011. Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education; 19(3)</em>.</li>
+<li><a href="../ames.csv">Ames</a>: All residential home sales in Ames, Iowa between 2006 and 2010. The data set contains many explanatory variables on the quality and quantity of physical attributes of residential homes in Iowa sold between 2006 and 2010. Most of the variables describe information a typical home buyer would like to know about a property (square footage, number of bedrooms and bathrooms, size of lot, etc.). A detailed discussion of variables can be found in the original paper: <em>De Cock D. 2011. Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education; 19(3)</em>.</li>
 </ul>
 <pre class="r"><code>ames &lt;- read.csv(&quot;../../static/data/ames.csv&quot;, header=TRUE)
 str(ames)</code></pre>
@@ -404,7 +404,7 @@ str(ames)</code></pre>
 ##  $ Sale.Condition : Factor w/ 6 levels &quot;Abnorml&quot;,&quot;AdjLand&quot;,..: 5 5 5 5 5 5 5 5 5 5 ...
 ##  $ SalePrice      : int  215000 105000 172000 244000 189900 195500 213500 191500 236500 189000 ...</code></pre>
 <ul>
-<li><a href="WashPost%20Police%20Shootings%202015.xlsx">Police Shootings</a>: Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from <a href="https://github.com/washingtonpost/data-police-shootings" class="uri">https://github.com/washingtonpost/data-police-shootings</a> on 9/11/16.</li>
+<li><a href="../WashPost%20Police%20Shootings%202015.xlsx">Police Shootings</a>: Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from <a href="https://github.com/washingtonpost/data-police-shootings" class="uri">https://github.com/washingtonpost/data-police-shootings</a> on 9/11/16.</li>
 </ul>
 <pre class="r"><code>washpost &lt;- read_excel(&quot;../../static/data/WashPost Police Shootings 2015.xlsx&quot;)
 str(washpost)</code></pre>
@@ -424,7 +424,7 @@ str(washpost)</code></pre>
 ##  $ flee                   : chr  &quot;Not fleeing&quot; &quot;Not fleeing&quot; &quot;Not fleeing&quot; &quot;Not fleeing&quot; ...
 ##  $ body_camera            : num  0 0 0 0 0 0 0 0 1 0 ...</code></pre>
 <ul>
-<li><a href="countyComplete.csv">countyComplete</a>: Characteristics of different counties in the United States. Information on this data set can be found in the full <a href="Open%20Intro%20Data%20Codebook.pdf">Open Intro Data Codebook</a>. Just search for the data set name.</li>
+<li><a href="../countyComplete.csv">countyComplete</a>: Characteristics of different counties in the United States. Information on this data set can be found in the full <a href="Open%20Intro%20Data%20Codebook.pdf">Open Intro Data Codebook</a>. Just search for the data set name.</li>
 </ul>
 <pre class="r"><code>county &lt;- read.csv(&quot;../../static/data/countyComplete.csv&quot;, header=TRUE, stringsAsFactors = FALSE)
 str(county)</code></pre>
@@ -486,7 +486,7 @@ str(county)</code></pre>
 ##  $ density                                  : num  91.8 114.6 31 36.8 88.9 ...
 ##  $ smoking_ban                              : chr  &quot;none&quot; &quot;none&quot; &quot;partial&quot; &quot;none&quot; ...</code></pre>
 <ul>
-<li><a href="email.txt">email</a>: <strong>Right Click and select <code>save link as</code> to save this file to your class folder.</strong> These data represent incoming emails for the first three months of 2012 for David Diez’s (<em>An Open Intro Statistics Textbook author</em>) Gmail Account, early months of 2012. All personally identifiable information has been removed. <a href="EmailCodebook.pdf">Email Codebook</a></li>
+<li><a href="../email.txt">email</a>: <strong>Right Click and select <code>save link as</code> to save this file to your class folder.</strong> These data represent incoming emails for the first three months of 2012 for David Diez’s (<em>An Open Intro Statistics Textbook author</em>) Gmail Account, early months of 2012. All personally identifiable information has been removed. <a href="EmailCodebook.pdf">Email Codebook</a></li>
 </ul>
 <pre class="r"><code>email &lt;- read.delim(&quot;../../static/data/email.txt&quot;, header=TRUE, stringsAsFactors = FALSE, sep=&quot;\t&quot;)
 str(email)</code></pre>
@@ -513,7 +513,7 @@ str(email)</code></pre>
 ##  $ exclaim_mess: int  0 1 6 48 1 1 1 18 1 0 ...
 ##  $ number      : chr  &quot;big&quot; &quot;small&quot; &quot;small&quot; &quot;small&quot; ...</code></pre>
 <ul>
-<li><a href="NCbirths.csv">NCbirths</a>: Publicly released data on a random sample of births recorded in North Carolina in 2004. <a href="NCBirthsCodebook,pdf">Codebook</a></li>
+<li><a href="../NCbirths.csv">NCbirths</a>: Publicly released data on a random sample of births recorded in North Carolina in 2004. <a href="NCBirthsCodebook,pdf">Codebook</a></li>
 </ul>
 <pre class="r"><code>ncbirths &lt;- read.csv(&quot;../../static/data/NCbirths.csv&quot;, header=TRUE, stringsAsFactors = FALSE)
 str(ncbirths)</code></pre>
@@ -532,7 +532,7 @@ str(ncbirths)</code></pre>
 ##  $ habit         : chr  &quot;nonsmoker&quot; &quot;nonsmoker&quot; &quot;nonsmoker&quot; &quot;nonsmoker&quot; ...
 ##  $ whitemom      : chr  &quot;not white&quot; &quot;not white&quot; &quot;white&quot; &quot;white&quot; ...</code></pre>
 <ul>
-<li><a href="debt.txt">debt</a>: The Organisation for Economic Co-operation and Development collects data on the central government debt for many countries. This file set contains data from from 2005 to 2010.</li>
+<li><a href="../debt.txt">debt</a>: The Organisation for Economic Co-operation and Development collects data on the central government debt for many countries. This file set contains data from from 2005 to 2010.</li>
 </ul>
 <pre class="r"><code>debt &lt;- read.delim(&quot;../../static/data/debt.txt&quot;, header=TRUE, stringsAsFactors = FALSE, sep=&quot;\t&quot;)
 str(debt)</code></pre>

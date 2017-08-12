@@ -23,7 +23,7 @@ This is a record of how I turned an Excel sheet into a nicely formatted web-read
 using `RMarkdown`. 
 
 Here is the structure of my excel file. Week number, date, day of the week, the topics
-we're covering, what the studnets can do to prep for class, what i'm going to evaluate them
+we're covering, what the students can do to prep for class, what i'm going to evaluate them
 on (HW, exams), and notes about the assignment. Things in green are for my eyes only. 
 Note the asterisk between items in the cells. The line breaks are for easy visual separation of 
 items in a list, the asterisk will be used in code to create a formal html list. 
@@ -40,7 +40,7 @@ options(knitr.table.format = "html", knitr.kable.NA = '')
 
 Read the data into `rawdat`, reformat the date, make copies of the columns that need list
 processing: `topic, prep, eval`. The filter is leftover from the Spring semester, after each
-exam I hide the weeks prior to that exam so that the most current and upoming weeks are 
+exam I hide the weeks prior to that exam so that the most current and upcoming weeks are 
 presented at the top of the table. 
 ```{r eval=FALSE}
 rawdat <- read_excel("schedule_615.xlsx")

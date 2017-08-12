@@ -19,7 +19,7 @@ weight = 1
     "Bayesian Methods for Analysis", 
     "Statistical Programming", 
     "Gardening for food", 
-    "Resonsible pitbull owners", 
+    "Responsible pitbull owners", 
     "Being outdoors"
   ]
 
@@ -52,7 +52,7 @@ When Robin is not working in the garden to grow food for her family, playing in 
 * [Teaching](#teaching) courses in Statistics and Data Science.
 * Helping modernize the current Undergraduate Statistics Curriculum to meet the 2016 GAISE Guidelines
 * Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
-* Participating in the CSUC Graduation Initative Team - helping to use data to facilitate student success. 
+* Participating in the CSUC Graduation Initiative Team - helping to use data to facilitate student success. 
 * Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
 * Training to become a [Carpentry](https://software-carpentry.org/) instructor. 
 * Providing statistical consulting and data analysis assistance for researchers on, and off campus. 

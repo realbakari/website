@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 These data sets are typically used in entry level classes such as MATH 130 and MATH 315. Some data sets still have missing values but have been tidyed up a little bit. The code to read the data set into R is provided, along with a glimpse of the data and it's dimensions. Use this information to confirm that the data set you download and import into R matches this information. 
 
-* [dsmall](dsmall.txt) This is a randomly drawn sample from the `diamonds` data set found in the `ggplot2` package. For those not using `R` I have provided a tab delimited text file for download. For those using R, use the code below to create the `dsmall` data set. The [codebook](http://ggplot2.tidyverse.org/reference/diamonds.html) can be foundon the ggplot2 documentation site. 
+* [dsmall](../dsmall.txt) This is a randomly drawn sample from the `diamonds` data set found in the `ggplot2` package. For those not using `R` I have provided a tab delimited text file for download. For those using R, use the code below to create the `dsmall` data set. The [codebook](http://ggplot2.tidyverse.org/reference/diamonds.html) can be found on the ggplot2 documentation site. 
 
 ```{r}
 set.seed(1410) # Make the sample reproducible
@@ -28,8 +28,8 @@ str(dsmall)
 #write.table(dsmall, "C:/GitHub/website/public/data/dsmall.txt", sep="\t", row.names=FALSE)
 ```
 
-* [Depress](../../static/data/depress_081217.txt) Tab delimited text file.  [Add info]
-  More details on the origin and study design can be found in Practial Multivariate Analysis, 5th edition by Afifi, May and Clark.
+* [Depress](../depress_081217.txt) Tab delimited text file.  [Add info]
+  More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark.
   The [codebook](DepressCodebook.txt) can be downloaded as a text file. 
 ```{r}
 depress <- read.delim("../../static/data/depress_081217.txt", header=TRUE,sep="\t")
@@ -37,7 +37,7 @@ str(depress)
 ```
 
 
-* [ParentalHIV](PARHIV_081217.txt): Data collected as part of a clinical trial to evaluate 
+* [ParentalHIV](../PARHIV_081217.txt): Data collected as part of a clinical trial to evaluate 
 behavioral interventions for families with a parent with HIV. The data include information 
 on a subset of 252 adolescent children of parents with HIV. The [Codebook](ParhivCodebook.txt)
 describes the variables and gives a brief description of their meaning. The data is owned by
@@ -50,33 +50,33 @@ parHIV <- read.delim("../../static/data/PARHIV_081217.txt", header=TRUE, strings
 str(parHIV)
 ```
 
-* [Lung](Lung_081217.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of varoius types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practial Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](LungCodebook.txt) can be downloaded as a text file. 
+* [Lung](../Lung_081217.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](LungCodebook.txt) can be downloaded as a text file. 
 ```{r}
 fev <- read.delim("../../static/data/Lung_081217.txt", header=TRUE,sep="\t")
 str(fev)
 ```
 
 
-* [Physical Activity and BMI](PABMI.txt) Physical activity measured as the number of steps in thousands. 
+* [Physical Activity and BMI](../PABMI.txt) Physical activity measured as the number of steps in thousands. 
 ```{r}
 pabmi <- read.delim("../../static/data/PABMI.txt", header=TRUE,sep="\t")
 str(pabmi)
 ```
 
-* [Index of Biotic integrity](IBI.txt). The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km$^2$.
+* [Index of Biotic integrity](../IBI.txt). The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km$^2$.
 ```{r}
 qual <- read.delim("../../static/data/ibi.txt", header=TRUE,sep="\t")
 str(qual)
 ```
 
-* [Arm Strength](ArmStrength.txt) 
+* [Arm Strength](../ArmStrength.txt) 
 ```{r}
 armstr <- read.delim("../../static/data/ArmStrength.txt", header=TRUE,sep="\t")
 str(armstr)
 ```
 
 
-* [Download Times](DownloadTimes.txt) An experiment run by a student to detect if his internet speed varied
+* [Download Times](../DownloadTimes.txt) An experiment run by a student to detect if his internet speed varied
   across different times of the day. This tab-delimited data set contains two variables: `time` as a categorical
   time of day (Early, Evening, Late), and the time (in `sec`) it took to download a particular file. The file
   downloaded was the same each time to the same computer. 
@@ -85,7 +85,7 @@ dt <- read.delim("../../static/data/DownloadTimes.txt", header=TRUE, sep="\t")
 str(dt)
 ```
 
-* [Plants 2](plants2.txt) Amount of fresh and dry biomass four different species of plants under
+* [Plants 2](../plants2.txt) Amount of fresh and dry biomass four different species of plants under
   seven different levels of water. Similar to the PLANTS1 data sets. There are 4 plants per 
   species-by-water combination.
 ```{r}
@@ -94,7 +94,7 @@ str(plants2)
 ```
 
 
-* [Plants 1](plants1.txt) Percent of nitrogen in four different species of plants grown in a laboratory. 
+* [Plants 1](../plants1.txt) Percent of nitrogen in four different species of plants grown in a laboratory. 
   Researchers who collected these data in parts of the country where there is very little rainfall. 
   The amount of water administered per day ranged from 50mm to 650mm in 100mm increments. There are 9 
   plants per species-by-water combination.
@@ -104,7 +104,7 @@ str(plants1)
 ```
 
 
-* [Full moon on Dementia](dementia_moon.txt) A study observed 15 nursing home patients with dementia 
+* [Full moon on Dementia](../dementia_moon.txt) A study observed 15 nursing home patients with dementia 
   and recorded the number of aggressive incidents each day for 12 weeks. Then they totaled the counts 
   of aggressive incidents per patient on "moon" days (full moon +/-1 day) and "other" days. 
 ```{r}
@@ -113,7 +113,7 @@ str(moon)
 ```
 
 
-* [Directed Reading Activities](directed_reading.csv) Degree of Reading Power test scores for third-graders
+* [Directed Reading Activities](../directed_reading.csv) Degree of Reading Power test scores for third-graders
   involved in an intervention study aiming improve reading ability of students. 
   
 ```{r}
@@ -121,7 +121,7 @@ DRP <- read.csv("../../static/data/directed_reading.csv")
 str(DRP)
 ```
   
-* [High School and Beyond](hsb2.txt). The High School and Beyond (HS&B) Longitudinal Study was the second
+* [High School and Beyond](../hsb2.txt). The High School and Beyond (HS&B) Longitudinal Study was the second
   study conducted as part of NCES' National Longitudinal Studies Program. This program was established to 
   study the educational, vocational, and personal development of young people, beginning with their 
   elementary or high school years and following them over time as they take on adult roles and responsibilities. 
@@ -133,7 +133,7 @@ str(hsb2)
 ```
 
 
-* [Age at Marriage](ageAtMar.txt). Age at first marriage of 5,534 US women who responded to the National
+* [Age at Marriage](../ageAtMar.txt). Age at first marriage of 5,534 US women who responded to the National
    Survey of Family Growth (NSFG) conducted by the CDC in the 2006 and 2010 cycle. 
    http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm
 
@@ -142,7 +142,7 @@ age <- read.csv("../../static/data/ageAtMar.txt", sep="")
 head(age)
 ```
 
-* [Ames](ames.csv): All residential home sales in Ames, Iowa between 2006 and 2010. The data set 
+* [Ames](../ames.csv): All residential home sales in Ames, Iowa between 2006 and 2010. The data set 
   contains many explanatory variables on the quality and quantity of physical attributes of 
   residential homes in Iowa sold between 2006 and 2010. Most of the variables describe information a 
   typical home buyer would like to know about a property (square footage, number of bedrooms and 
@@ -153,14 +153,14 @@ head(age)
 ames <- read.csv("../../static/data/ames.csv", header=TRUE)
 str(ames)
 ```
-* [Police Shootings](WashPost Police Shootings 2015.xlsx): Excel file on police shootings in 2015 as compiled
+* [Police Shootings](../WashPost Police Shootings 2015.xlsx): Excel file on police shootings in 2015 as compiled
   by the Washington Post. Data downloaded from https://github.com/washingtonpost/data-police-shootings on 9/11/16. 
 ```{r}
 washpost <- read_excel("../../static/data/WashPost Police Shootings 2015.xlsx")
 str(washpost)
 ```
 
-* [countyComplete](countyComplete.csv): Characteristics of different counties in the United States. 
+* [countyComplete](../countyComplete.csv): Characteristics of different counties in the United States. 
   Information on this data set can be found in the full [Open Intro Data Codebook](Open Intro Data Codebook.pdf). 
   Just search for the data set name. 
 ```{r}
@@ -168,7 +168,7 @@ county <- read.csv("../../static/data/countyComplete.csv", header=TRUE, stringsA
 str(county)
 ```
 
-* [email](email.txt): **Right Click and select `save link as` to save this file to your class folder.**
+* [email](../email.txt): **Right Click and select `save link as` to save this file to your class folder.**
   These data represent incoming emails for the first three months of 2012 for David Diez's 
   (_An Open Intro Statistics Textbook author_) Gmail Account, early months of 2012. 
   All personally identifiable information has been removed. [Email Codebook](EmailCodebook.pdf)
@@ -177,7 +177,7 @@ email <- read.delim("../../static/data/email.txt", header=TRUE, stringsAsFactors
 str(email)
 ```
 
-* [NCbirths](NCbirths.csv): Publicly released data on a random sample of births recorded in North Carolina in 2004.
+* [NCbirths](../NCbirths.csv): Publicly released data on a random sample of births recorded in North Carolina in 2004.
   [Codebook](NCBirthsCodebook,pdf)
 ```{r}
 ncbirths <- read.csv("../../static/data/NCbirths.csv", header=TRUE, stringsAsFactors = FALSE)
@@ -185,7 +185,7 @@ str(ncbirths)
 ```
 
 
-* [debt](debt.txt): The Organisation for Economic Co-operation and Development collects data on 
+* [debt](../debt.txt): The Organisation for Economic Co-operation and Development collects data on 
   the central government debt for many countries. This file set contains data from from 2005 to 2010. 
   
 ```{r}

@@ -14,7 +14,7 @@ tags:
 <p>I’m a big fan of automating all the things. Especially when it comes to teaching materials. I build my own course websites for each class I teach, where I post lecture materials, due dates and links to external resources. Posting it online instead of my campus’s LMS makes the materials accessible to not only my current students, but past and future students as well.</p>
 <p>I need a schedule, so do my students. I’m not good at winging things. I want to know what’s coming up this week, and next so I can plan my time accordingly. Again, so do my students. The easiest way for me to manage a schedule of topics, assignments, exams, projects for an entire 16 week class (or more) is in Excel, but that’s far from web-ready.</p>
 <p>This is a record of how I turned an Excel sheet into a nicely formatted web-ready schedule using <code>RMarkdown</code>.</p>
-<p>Here is the structure of my excel file. Week number, date, day of the week, the topics we’re covering, what the studnets can do to prep for class, what i’m going to evaluate them on (HW, exams), and notes about the assignment. Things in green are for my eyes only. Note the asterisk between items in the cells. The line breaks are for easy visual separation of items in a list, the asterisk will be used in code to create a formal html list.</p>
+<p>Here is the structure of my excel file. Week number, date, day of the week, the topics we’re covering, what the students can do to prep for class, what i’m going to evaluate them on (HW, exams), and notes about the assignment. Things in green are for my eyes only. Note the asterisk between items in the cells. The line breaks are for easy visual separation of items in a list, the asterisk will be used in code to create a formal html list.</p>
 <div class="figure">
 <img src="../../img/excel_schedule.PNG" />
 
@@ -22,7 +22,7 @@ tags:
 <p>So first let’s load the necessary libraries and set options for <code>kable</code></p>
 <pre class="r"><code>library(dplyr);library(readxl); library(kableExtra); library(stringr)
 options(knitr.table.format = &quot;html&quot;, knitr.kable.NA = &#39;&#39;) </code></pre>
-<p>Read the data into <code>rawdat</code>, reformat the date, make copies of the columns that need list processing: <code>topic, prep, eval</code>. The filter is leftover from the Spring semester, after each exam I hide the weeks prior to that exam so that the most current and upoming weeks are presented at the top of the table.</p>
+<p>Read the data into <code>rawdat</code>, reformat the date, make copies of the columns that need list processing: <code>topic, prep, eval</code>. The filter is leftover from the Spring semester, after each exam I hide the weeks prior to that exam so that the most current and upcoming weeks are presented at the top of the table.</p>
 <pre class="r"><code>rawdat &lt;- read_excel(&quot;schedule_615.xlsx&quot;)
 cdat   &lt;- rawdat %&gt;% mutate(Date = format(date, &quot;%m/%d&quot;), 
                             Topics = topic, Preparation = prep, Evaluation = eval) %&gt;% 
