@@ -37,3 +37,4 @@ that I think is helpful to share.
 * [Programming tools can speed up and strengthen analyses, but mastering the skills takes time and can be daunting. (Baker, 2017, Nature)](http://www.nature.com/naturejobs/science/articles/10.1038/nj7638-563a?WT.mc_id=TWT_NatureNews)
 * [Importance of sharing code (Nature 2014)](Importance of sharing code (Nature 2014).pdf)
 * [Adventures in R (Tippmann 2015)]("Adventures in R (Tippmann 2015).pdf")
+* [Our path to better science in less time using open data science tools](https://www.nature.com/articles/s41559-017-0160)
