@@ -1,27 +1,24 @@
 ---
-title: "Preparing Data for Analysis"
-output:
-  pdf_document:
-    toc: yes
-  html_document:
-    highlight: tango
-    theme: flatly
-    toc: yes
-    toc_float: yes
-date: "Last Updated `r Sys.time()`"
+title: Preparing Data for Analysis
+author: ''
+date: '2017-08-28'
+slug: doing-dm
 ---
 
-```{r load2,echo=FALSE, warning=FALSE, message=FALSE}
+
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
 #library(rmarkdown)
 opts_chunk$set(warning=FALSE, message=FALSE) 
 ```
 
-# PMA5 Ch 3 notes
+# Process
 
-![](img/Afifi_Fig3_1.png)
+![](/img/Afifi_Fig3_1.png)
 
-#### Reproducible Research
+_Figure Credits: Practical Multivariate Analysis ed 5, Afifi, May, Clark._
+
+### Reproducible Research
 * You are your own collaborator 6 months from now. Make sure you will be able to understand what you were doing.
 * Investing the time to do things clearly and in a reproducible manner will make your future self happy.
 * Comment your code with explanations and instructions.
@@ -33,7 +30,8 @@ opts_chunk$set(warning=FALSE, message=FALSE)
     - For R, this can be in a `.R` or `.RMD` file. I always prefer the latter. 
     - SPSS users can open a text file or something similar. At each step be sure to copy the code from the program into this document. 
 
-![](img/pipeline.png)
+![](/img/pipeline.png)
+
 
 Figure Credits: [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/)
 
@@ -277,4 +275,3 @@ date <- format(Sys.Date(), "%m%d%y")
 filename <- paste("depress_", date, ".txt", sep="")
 write.table(depress, filename, sep="\t", row.names=FALSE)
 ```
-

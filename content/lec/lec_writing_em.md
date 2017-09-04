@@ -1,17 +1,10 @@
 ---
 title: "Writing about empirical research"
+date: '2017-09-04'
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '2'
-  html_document:
-    highlight: tango
-    theme: flatly
-    toc: yes
-    toc_depth: 2
-    toc_float: yes
+  pdf_document: default
+  html_document: default
 ---
-
 _Taken from Passion Driven Statistics 2014 ibook_
 
 # Purpose
@@ -122,6 +115,7 @@ The following is successful section of a sample description:
 > The sample of 1,203 pregnant women was drawn from two public prenatal clinics in Texas and Maryland. The ethnic composition was African American (n = 414, 34.4%), Hispanic, primarily Mexican American (n = 412, 34.2%), and White (n = 377, 31.3%). Most women were between the ages of 20 and 29 years; 30% were teenagers. All were urban residents, and most (94%) had incomes below the poverty level as defined using each state’s criteria for Women, Infants, and Children (WIC) eligibility.
 
 This sample description is successful because it
+
 * identifies both the observations (1,203 pregnant women) and the location (two prenatal clinics in Texas and Maryland). 
 * describes the composition of the group ethnically and by income using language consistent with writing standards for the empirical research.
     
@@ -137,11 +131,12 @@ The following is a successful section of a procedures discussion:
 > Random sampling was used to recruit participants for this study. Surveyors went to considerable lengths to secure a high completion rate, including up to four call-backs, letters, and in some cases monetary incentives. Trained research assistants conducted face-to-face interviews with all study participants.
 
 This procedures description is successful because it 
-  * describes how the sample was collected (a random survey), 
-  * which observations were discarded (surveys incomplete after callbacks, letters, and incentives), 
-  * and how data were collected (during interviews). 
+
+* describes how the sample was collected (a random survey), 
+* which observations were discarded (surveys incomplete after callbacks, letters, and incentives), 
+* and how data were collected (during interviews). 
   
-  Conclude your methodology section with a summary of your procedure and its overall purpose.
+Conclude your methodology section with a summary of your procedure and its overall purpose.
 
 
 ### Measures
@@ -221,5 +216,6 @@ One adult was selected for interview in each household, and face-toface computer
 # Campus Resources
 * The Writing center has programs for in person and online help!
     - http://www.csuchico.edu/slc/writing-center.shtml
-* Non-native English speakers can also get help from the ESL Resource Center https://www.csuchico.edu/engl/student-resources/eslcenter.shtml
+* Non-native English speakers can also get help from the ESL Resource Center
+    - https://www.csuchico.edu/engl/student-resources/eslcenter.shtml
 
