@@ -1,8 +1,8 @@
 ---
 title: "Literature Review"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 # What is a literature review?
