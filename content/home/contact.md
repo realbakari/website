@@ -16,3 +16,4 @@ autolink = true
 
 +++
 
+<a href = "https://outlook.office365.com/owa/calendar/f4b8fd8874804a588bd75132cfaf0f88@csuchico.edu/f0afaf66738e45b98534a82ecd3623c45253679155289566215/calendar.html"> <i class="fa fa-calendar fa-2x fa-fw"></i></a> Want to make an appointment? Check my calendar for available times. 

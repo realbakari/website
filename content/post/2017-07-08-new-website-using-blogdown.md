@@ -1,8 +1,8 @@
 ---
-title: New website using Bookdown
+title: New website using Blogdown
 author: Robin
 date: '2017-07-08'
-slug: new-website-using-bookdown
+slug: new-website-using-blogdown
 categories:
   - professional
 tags: [website, blogdown]
