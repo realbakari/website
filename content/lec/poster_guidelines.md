@@ -122,10 +122,10 @@ A selection of sample posters, class projects have comments regarding what made 
 <button data-toggle="collapse" data-target="#plot">Show/Hide Professional Conference Presentations</button>
 <div id="plot" class="collapse">
 
-* [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](ExamplePosters/prof/2013 Jeffries APHA Sex patterns.pdf) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
-* [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](ExamplePosters/prof/2014 Viola SRA Sexual Identity.pdf) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
-* [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](ExamplePosters/prof/2017 Moulton APHA Presex proxy.pdf) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
-* [Implementing a Flipped Classroom and Active Learning Techniques in General Chemistry to Augment Student Success at a Mid-Sized Rural University](ExamplePosters/prof/2017 Smith CHEM ED.pdf) _Smith, M., Aguilar, R., Cherrette, V., Rose, A., Crane, J., Park, C., Bladorn, E., Mills, H., Sherry, S., Chatha, C., Park, H., Dailey, H., Donatello, RA., Wasinger, E._
+* [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](prof/2013 Jeffries APHA Sex patterns.pdf) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
+* [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](prof/2014 Viola SRA Sexual Identity.pdf) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
+* [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](prof/2017 Moulton APHA Presex proxy.pdf) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
+* [Implementing a Flipped Classroom and Active Learning Techniques in General Chemistry to Augment Student Success at a Mid-Sized Rural University](prof/2017 Smith CHEM ED.pdf) _Smith, M., Aguilar, R., Cherrette, V., Rose, A., Crane, J., Park, C., Bladorn, E., Mills, H., Sherry, S., Chatha, C., Park, H., Dailey, H., Donatello, RA., Wasinger, E._
 
 </div>
 
@@ -134,13 +134,13 @@ A selection of sample posters, class projects have comments regarding what made 
 <button data-toggle="collapse" data-target="#grad">Show/Hide Graduate class projects</button>
 <div id="grad" class="collapse">
 
-* [Moving Away From BMI: Lifestyle and Biological Factors Impacting Health](ExamplePosters/grad/2016 Moving away from BMI.pdf) _Brooke,C., Corona,J.,Kessner S.,Lona,I._
+* [Moving Away From BMI: Lifestyle and Biological Factors Impacting Health](grad/2016 Moving away from BMI.pdf) _Brooke,C., Corona,J.,Kessner S.,Lona,I._
     - Great additions to the univariate plots of BMI and Cholesterol. Tables are clean, could use bigger font. Sample characteristics only a list of variables. Not enough info on analysis methods, or explanation of Figures 2 and 4.
-* [Do Field Dimensions Affect Baseball outcomes?](ExamplePosters/grad/2016 Baseball field dimensions.pdf) _Stolenberg R., Williams K., Harris A._
+* [Do Field Dimensions Affect Baseball outcomes?](grad/2016 Baseball field dimensions.pdf) _Stolenberg R., Williams K., Harris A._
     - Excellent use of whitespace, colored tables that match the theme. Plots are difficult to read, font size is great, but paragraphs are harder to read than bullet points. 
-* [Effects of Childhood Social Support on Trauma](ExamplePosters/grad/2016 Social support and childhood trauma.pdf) _Hostler, M., Thornton A., Wong R._
+* [Effects of Childhood Social Support on Trauma](grad/2016 Social support and childhood trauma.pdf) _Hostler, M., Thornton A., Wong R._
     - Clearly laid out variables of interest and RQ's. Good use of pie charts. The 3D scatterplot is not helpful. Model results presented in a nice table, but not explained. 
-* [Using 2010 U.S. Census Demographics to Determine a Predictor for Beer and Wine Consumption](ExamplePosters/grad/2016 Census Alcohol.pdf) _Ellis, C., Esposito, C., LaGrange, A._
+* [Using 2010 U.S. Census Demographics to Determine a Predictor for Beer and Wine Consumption](grad/2016 Census Alcohol.pdf) _Ellis, C., Esposito, C., LaGrange, A._
     - Great use of maps, model comparison table in the bottom middle. Bullet points clear and easy to read. Univariate summary statistics very clearly laid out. 
 
 </div>
@@ -149,11 +149,11 @@ A selection of sample posters, class projects have comments regarding what made 
 <button data-toggle="collapse" data-target="#ug">Show/Hide Undergraduate Projects</button>
 <div id="ug" class="collapse">
 
-* [The Associations Between Familial Relationships, Daily Activities and Delinquency in Adolescents](ExamplePosters/ug/PDS Guetta.tif) _Guetta, R._
+* [The Associations Between Familial Relationships, Daily Activities and Delinquency in Adolescents](ug/PDS Guetta.tif) _Guetta, R._
     - Very clearly laid out RQ's and introduction. Discussion connects to current literature. 
-* [Trends in Avian Influenza at Howard Slough](ExamplePosters/ug/2016 Avian Influenza.pdf) _Aguilar, R., Antonio, A., Balkow, N., Dehoney, T., Ling, D., Saenz, J., Urlie, L., Cline, T._
+* [Trends in Avian Influenza at Howard Slough](ug/2016 Avian Influenza.pdf) _Aguilar, R., Antonio, A., Balkow, N., Dehoney, T., Ling, D., Saenz, J., Urlie, L., Cline, T._
     - Good balance between tables and graphics, cute duck. Results clearly explained using N(%) in text.
-* [The Effects of Voter Demographics on the 2016 Primary Elections](ExamplePosters/ug/2016 Primary Election.pdf) _Jordan, A., Arriaza, L., Ejaz, N., Loeblich, A., Wain, C._ 
+* [The Effects of Voter Demographics on the 2016 Primary Elections](ug/2016 Primary Election.pdf) _Jordan, A., Arriaza, L., Ejaz, N., Loeblich, A., Wain, C._ 
     - Watermarks on bottom corners make words difficult to read. Table under results not made in Excel. Not easy to follow direction of story 
 
 </div>
