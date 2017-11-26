@@ -28,4 +28,6 @@ I teach the following courses at Chico State.
 Wherever possible I try to use real world, non pre-processed data in the classroom. The [Data](data/) page provides links to download data, codebooks where available, and code to import these data sets into R. 
 
 
+### [Notes](lec/)
+A selection of lecture notes that are appropriate for multiple classes. 
 
