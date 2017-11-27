@@ -1,37 +1,63 @@
 ---
-title: "Poster Guidelines"
+title: "Guidelines for creating a good Scientific poster"
 date: '2017-11-26'
-output:
-  blogdown::html_page:
-    toc:true
+output: html_document
 ---
 
 # Quick links to content on this page
-* [Structure](#structure): Templates and sections
-* [Aestetics](#aestetics): Font, tables, graphics, colors, logos, 
+* [Templates](#templates): Templates so you don't reinvent the wheel. 
+* [Content](#content): Sections within the poster
+* [Aestetics](#aesthetics): Font, tables, graphics, colors, logos, 
 * [Printing](#printing): Guidance, location and prices
 * [Evaluation](#evaluation-criteria): grading rubric
 * [Examples](#examples): Selected examples
 
-# Structure
-
-### Template
+# Templates
 * Build your poster using a [powerpoint template](http://www.posterpresentations.com/html/free_poster_templates.html), not Google Slides. 
-    - Do not do a trifold tabletop template. 
+    - Trifold tabletop templates are seldom used. 
 * Choose either a three, or four column layout. 
 * Choose the correct scaling. 
 * Biology Student Research Symposium [[website]](https://www.csuchico.edu/biol/research/student_research_symp.shtml) - Additional templates and guidelines included.
 
 
+# Content
+The following sections of information must be included in each poster. The choice of design, boxes, columns is up to you. The direction of the story should go top to bottom, then left to right. Read in columns, not rows. 
 
-### Sections
+0. Title
+    - Author list should have the form _Last, MI., Last, MI._
+    - Affiliations can be listed many ways. Your best bet is to look at other posters presented at the same event form a prior year. For a class project, simply state your year, class and section number. 
 1. Abstract/introduction
-2. Sample characteristics
-3. Analysis methods
-4. Results
-5. Conclusions/discussion
-6. Implications
-7. References
+    - Probably the only part that will be in paragraph form. 
+    - This is your lead-in, the part that sets the stage for your analysis. 
+    - Limited background and lit review go here also. 
+    - Your research hypothesis should be clearly stated here. 
+2. Methods (Data collection and analysis)
+    - Where did your data come from?
+    - Clearly state the variables that you are using, and any major recoding done (truncation, subsetting). 
+    - Describe the statistical analysis methods you used. 
+    - Include a sentence about what variables were tested as moderators and/or confounders. 
+3. Sample characteristics
+    - This is where _Table 1_ goes, a concise univariate description of your sample. 
+    - Analysis sample size, N(%) for each categorical variable, mean(sd) (or mean/median) for each continuous measurement. 
+5. Results
+    - No more than 2 graphs or tables for bivariate comparisons
+    - One multivariate table or plot. The `coefplot()` function in the `arm` package is an excellent way of displaying the results of a MV model. Save the results of a model as an object `my.model <- lm(your model here)` then call `coefplot(my.model)` on that object. 
+    - At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
+    - You are just stating results here, not justifying, explaining or connecting any meanings. 
+6. Conclusions/discussion
+    - Summarize results in English sentences
+    - Draw and describe the big picture conclusions. Connect the breadcrumbs discussed in the results section. 
+    - Make sure every statement here is backed up with evidence shown in the results. 
+7. Implications
+    - Why should someone care about this research? 
+    - Connect to current research. Possibly more citations here. 
+8. References
+    - Font size can be reduced to 8 or 6 minimum. 
+9. Acknowledgements & Contact info
+    - Any help you received from a person not listed as an author should be acknowledged.
+    - For class projects that are not presented elsewhere, I do not need to be acknowledged. 
+    - The first author should include their contact email. 
+    - If you have no acknowledgements, you can stick your email address in the bottom right corner as a footer. 
 
 
 # Aestetics
@@ -39,17 +65,26 @@ output:
 ### Font size
 * Readable from 10 feet
 * This tends to be at least 18-20 pt font. If using a template provided
+* Bullets vs. Paragraphs: Pretty field specific. 
+    - Often the introduction or abstract is the same paragraph used when submitting the abstract for consideration. 
+    - Walls of text tend to not be read. 
+* White space: Also somewhat field specific. You want the poster to be readable and eye catching. 
+
 
 ### Tables
 * Build them in Excel, or PowerPoint tables directly
-
+* Use borders for the top, and bottom of the table
+    - Use vertical borders sparingly. Probably only for the far left corner. 
+    - Excel has some good auto-formats you can use. 
 
 ### Graphics
-* Not copy/paste from R, it won't scale up well. 
+* Do not copy/paste from anything, it won't scale up well. 
     - Finalize the plot, then save it to disk
     - Save the file larger rather than smaller, then manually shrink down in PPT
     - Specify height and width in inches
-    
+   
+For R I recommended you export your file as a postscript file. 
+
 ```
 postscript("filename.eps", width=5, height=3) # open the graphics device.
 plot(iris$Species) # your plot goes here
@@ -70,8 +105,9 @@ Your poster is a professional publication. It should reflect your campus properl
 
 ### Colors
 * Colors are good - but stick to a theme/pallet. 
-    - Make the colors meaningful
-* Use matching theme colors in graphics
+    - Make the colors meaningful. There's nothing informative about a rainbow. 
+    - https://www.w3schools.com/colors/colors_groups.asp
+    - http://paletton.com
 * R Cookbook guide for colors in ggplot2: http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/ 
 
 
