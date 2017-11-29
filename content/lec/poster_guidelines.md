@@ -84,7 +84,7 @@ The following sections of information must be included in each poster. The choic
     - Start with 400-600 and see what it looks like. 
 
 ```
-pdf("C:/YOUR PATH HERE/filename.png", width=400, height=350) # open the graphics device.
+png("C:/YOUR PATH HERE/filename.png", width=400, height=350) # open the graphics device.
 plot(iris$Species) # your plot goes here
 dev.off() # this closes the graphics device
 ```
