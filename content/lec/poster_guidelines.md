@@ -41,7 +41,7 @@ The following sections of information must be included in each poster. The choic
     - Analysis sample size, N(%) for each categorical variable, mean(sd) (or mean/median) for each continuous measurement. 
 5. Results
     - No more than 2 graphs or tables for bivariate comparisons
-    - One multivariate table or plot. The `coefplot()` function in the `arm` package is an excellent way of displaying the results of a MV model. Save the results of a model as an object `my.model <- lm(your model here)` then call `coefplot(my.model)` on that object. 
+    - One multivariate table or plot. The `coefplot()` function in the `arm` package is an excellent way of displaying the results of a MV model. Save the results of a model as an object `my.model <- lm(your model here)` then call `coefplot(my.model)` on that object. (Want to roll your own? Check out [this SO post](https://stackoverflow.com/questions/32440899/coefplot-in-r-change-ci-line-colours))
     - At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
     - You are just stating results here, not justifying, explaining or connecting any meanings. 
 6. Conclusions/discussion
@@ -79,17 +79,18 @@ The following sections of information must be included in each poster. The choic
 
 ### Graphics
 * Do not copy/paste from anything, it won't scale up well. 
-    - Finalize the plot, then save it to disk
-    - Save the file larger rather than smaller, then manually shrink down in PPT
-    - Specify height and width in inches
-   
-For R I recommended you export your file as a postscript file. 
+* Finalize the plot, then save it to your computer using the code below
+    - Specify height and width in pixels. You know your monitor's aspect ratio? 800x600? 1280x800? Those are in pixels. 
+    - Start with 400-600 and see what it looks like. 
 
 ```
-postscript("filename.eps", width=5, height=3) # open the graphics device.
+pdf("C:/YOUR PATH HERE/filename.png", width=400, height=350) # open the graphics device.
 plot(iris$Species) # your plot goes here
 dev.off() # this closes the graphics device
 ```
+* Always best to save the file larger rather than smaller, then manually shrink down in PPT
+* You can increase the base size of text in your graphic (so it looks reasonable once you export) by adding a `base_size=` argument to your `theme()`. I would suggest starting at 18. I.e.: `theme_bw(base_size=18)`
+* Want to see what it'll look like when scaled up? Follow the instructions on [[How will my poster look when it's printed?]](https://www.makesigns.com/tutorials/poster-sizing.aspx). 
 
 ### Campus Logos
 Your poster is a professional publication. It should reflect your campus properly and following guidelines (where they are listed). Every campus has official logos, colors and instructions on how to correctly use these. Below I have linked the ones I could find for Chico State. 
