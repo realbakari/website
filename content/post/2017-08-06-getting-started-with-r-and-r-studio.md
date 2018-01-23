@@ -32,12 +32,12 @@ Double clicking on these will start the standard installation process.
 
 ## Macintosh 
 
-* Download R from 
+* Download R from https://cran.r-project.org/bin/macosx/
 * Download **R Studio Desktop (Free License)** from http://www.rstudio.com/products/rstudio/download2/
 
 [Video walkthrough](http://www.youtube.com/watch?v=uxuuWXU-7UQ)
 
-Install via [Homebrew](http://datascience.csuchico.edu/materials/install_r_with_homebrew.md). Guide courtesy of Justin Bankes (2017).
+Optional: Install via [Homebrew](http://datascience.csuchico.edu/materials/install_r_with_homebrew.md). Guide courtesy of Justin Bankes (2017).
 
 
 # R Studio - A tour
