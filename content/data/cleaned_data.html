@@ -1,6 +1,6 @@
 ---
 title: 'Cleaned Data'
-date: '2017-08-12 16:51:46'
+date: '2018-01-25 18:44:14'
 type: page
 weight: 1
 ---
@@ -419,10 +419,10 @@ str(washpost)</code></pre>
 ##  $ race                   : chr  &quot;A&quot; &quot;W&quot; &quot;H&quot; &quot;W&quot; ...
 ##  $ city                   : chr  &quot;Shelton&quot; &quot;Aloha&quot; &quot;Wichita&quot; &quot;San Francisco&quot; ...
 ##  $ state                  : chr  &quot;WA&quot; &quot;OR&quot; &quot;KS&quot; &quot;CA&quot; ...
-##  $ signs_of_mental_illness: num  1 0 0 1 0 0 0 0 0 0 ...
+##  $ signs_of_mental_illness: logi  TRUE FALSE FALSE TRUE FALSE FALSE ...
 ##  $ threat_level           : chr  &quot;attack&quot; &quot;attack&quot; &quot;other&quot; &quot;attack&quot; ...
 ##  $ flee                   : chr  &quot;Not fleeing&quot; &quot;Not fleeing&quot; &quot;Not fleeing&quot; &quot;Not fleeing&quot; ...
-##  $ body_camera            : num  0 0 0 0 0 0 0 0 1 0 ...</code></pre>
+##  $ body_camera            : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...</code></pre>
 <ul>
 <li><a href="../countyComplete.csv">countyComplete</a>: Characteristics of different counties in the United States. Information on this data set can be found in the full <a href="Open%20Intro%20Data%20Codebook.pdf">Open Intro Data Codebook</a>. Just search for the data set name.</li>
 </ul>
@@ -544,3 +544,10 @@ str(debt)</code></pre>
 ##  $ Debt2008: num  4.92 59.32 90.09 28.64 5.17 ...
 ##  $ Debt2009: num  8.2 64.92 94.89 35.72 6.23 ...
 ##  $ Debt2010: num  10.97 65.75 96.79 36.07 9.19 ...</code></pre>
+<ul>
+<li><a href="../addhealth_clean.Rdata">AddHealth</a>: The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life. More info at: <a href="http://www.cpc.unc.edu/projects/addhealth" class="uri">http://www.cpc.unc.edu/projects/addhealth</a></li>
+</ul>
+<p>The cleaned Add health data set is provided as a R data file, not single external data set. The code below <code>load</code>s the data file, instead of reading in a single data set and saving it as a new object.</p>
+<pre class="r"><code>load(&quot;../../static/data/addhealth_clean.Rdata&quot;)
+dim(addhealth)</code></pre>
+<pre><code>## [1] 6504  992</code></pre>

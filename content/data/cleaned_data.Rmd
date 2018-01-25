@@ -194,10 +194,12 @@ str(debt)
 ```
 
 
-* [AddHealth](../addhealth.Rdata): The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life. More info at: http://www.cpc.unc.edu/projects/addhealth 
+* [AddHealth](../addhealth_clean.Rdata): The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life. More info at: http://www.cpc.unc.edu/projects/addhealth 
+
+The cleaned Add health data set is provided as a R data file, not single external data set. The code below `load`s the data file, instead of reading in a single data set and saving it as a new object.
 
 ```{r}
-addhealth <- load("../../static/data/addhealth.Rdata")
+load("../../static/data/addhealth_clean.Rdata")
 dim(addhealth)
 ```
 
