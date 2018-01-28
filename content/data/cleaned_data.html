@@ -1,6 +1,6 @@
 ---
 title: 'Cleaned Data'
-date: '2018-01-25 18:44:14'
+date: '2018-01-28 11:21:40'
 type: page
 weight: 1
 ---
@@ -27,7 +27,7 @@ str(dsmall)</code></pre>
 ##  $ y      : num  7.13 4.27 5.92 4.11 4.44 7.39 4.47 8.32 4.02 6.41 ...
 ##  $ z      : num  4.37 2.72 3.49 2.51 2.72 4.58 2.72 5.21 2.52 4 ...</code></pre>
 <ul>
-<li><a href="../depress_081217.txt">Depress</a> Tab delimited text file. [Add info] More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="DepressCodebook.txt">codebook</a> can be downloaded as a text file.</li>
+<li><a href="../depress_081217.txt">Depress</a> Tab delimited text file. [Add info] More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="../DepressCodebook.txt">codebook</a> can be downloaded as a text file.</li>
 </ul>
 <pre class="r"><code>depress &lt;- read.delim(&quot;../../static/data/depress_081217.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
 str(depress)</code></pre>
@@ -70,7 +70,7 @@ str(depress)</code></pre>
 ##  $ acuteill: int  0 0 0 0 1 1 1 1 0 0 ...
 ##  $ chronill: int  1 1 0 1 0 1 1 0 1 0 ...</code></pre>
 <ul>
-<li><a href="../PARHIV_081217.txt">ParentalHIV</a>: Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The <a href="ParhivCodebook.txt">Codebook</a> describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al.</li>
+<li><a href="../PARHIV_081217.txt">ParentalHIV</a>: Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The <a href="../ParhivCodebook.txt">Codebook</a> describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al.</li>
 </ul>
 <pre class="r"><code>parHIV &lt;- read.delim(&quot;../../static/data/PARHIV_081217.txt&quot;, header=TRUE, stringsAsFactors = FALSE, sep=&quot;\t&quot;)
 str(parHIV)</code></pre>
@@ -176,7 +176,7 @@ str(parHIV)</code></pre>
 ##  $ BSI41                : int  2 0 0 1 0 2 0 0 0 0 ...
 ##   [list output truncated]</code></pre>
 <ul>
-<li><a href="../Lung_081217.txt">Lung</a> Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="LungCodebook.txt">codebook</a> can be downloaded as a text file.</li>
+<li><a href="../Lung_081217.txt">Lung</a> Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="../LungCodebook.txt">codebook</a> can be downloaded as a text file.</li>
 </ul>
 <pre class="r"><code>fev &lt;- read.delim(&quot;../../static/data/Lung_081217.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
 str(fev)</code></pre>
@@ -424,7 +424,7 @@ str(washpost)</code></pre>
 ##  $ flee                   : chr  &quot;Not fleeing&quot; &quot;Not fleeing&quot; &quot;Not fleeing&quot; &quot;Not fleeing&quot; ...
 ##  $ body_camera            : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...</code></pre>
 <ul>
-<li><a href="../countyComplete.csv">countyComplete</a>: Characteristics of different counties in the United States. Information on this data set can be found in the full <a href="Open%20Intro%20Data%20Codebook.pdf">Open Intro Data Codebook</a>. Just search for the data set name.</li>
+<li><a href="../countyComplete.csv">countyComplete</a>: Characteristics of different counties in the United States. Information on this data set can be found in the full <a href="../Open%20Intro%20Data%20Codebook.pdf">Open Intro Data Codebook</a>. Just search for the data set name.</li>
 </ul>
 <pre class="r"><code>county &lt;- read.csv(&quot;../../static/data/countyComplete.csv&quot;, header=TRUE, stringsAsFactors = FALSE)
 str(county)</code></pre>
@@ -486,7 +486,7 @@ str(county)</code></pre>
 ##  $ density                                  : num  91.8 114.6 31 36.8 88.9 ...
 ##  $ smoking_ban                              : chr  &quot;none&quot; &quot;none&quot; &quot;partial&quot; &quot;none&quot; ...</code></pre>
 <ul>
-<li><a href="../email.txt">email</a>: <strong>Right Click and select <code>save link as</code> to save this file to your class folder.</strong> These data represent incoming emails for the first three months of 2012 for David Diez’s (<em>An Open Intro Statistics Textbook author</em>) Gmail Account, early months of 2012. All personally identifiable information has been removed. <a href="EmailCodebook.pdf">Email Codebook</a></li>
+<li><a href="../email.txt">email</a>: <strong>Right Click and select <code>save link as</code> to save this file to your class folder.</strong> These data represent incoming emails for the first three months of 2012 for David Diez’s (<em>An Open Intro Statistics Textbook author</em>) Gmail Account, early months of 2012. All personally identifiable information has been removed. <a href="../EmailCodebook.html">Email Codebook</a></li>
 </ul>
 <pre class="r"><code>email &lt;- read.delim(&quot;../../static/data/email.txt&quot;, header=TRUE, stringsAsFactors = FALSE, sep=&quot;\t&quot;)
 str(email)</code></pre>
@@ -513,7 +513,7 @@ str(email)</code></pre>
 ##  $ exclaim_mess: int  0 1 6 48 1 1 1 18 1 0 ...
 ##  $ number      : chr  &quot;big&quot; &quot;small&quot; &quot;small&quot; &quot;small&quot; ...</code></pre>
 <ul>
-<li><a href="../NCbirths.csv">NCbirths</a>: Publicly released data on a random sample of births recorded in North Carolina in 2004. <a href="NCBirthsCodebook,pdf">Codebook</a></li>
+<li><a href="../NCbirths.csv">NCbirths</a>: Publicly released data on a random sample of births recorded in North Carolina in 2004.<a href="../NCBirthsCodebook.html">Codebook</a></li>
 </ul>
 <pre class="r"><code>ncbirths &lt;- read.csv(&quot;../../static/data/NCbirths.csv&quot;, header=TRUE, stringsAsFactors = FALSE)
 str(ncbirths)</code></pre>

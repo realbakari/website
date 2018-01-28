@@ -47,14 +47,14 @@ weight = 1
 
 # Biography
 
-When Robin is not working in the garden to grow food for her family, playing in Upper Park with her dogs, or getting in some video game time, she is  
+When I'm not working in the garden to grow food for my family, I'd rather be in Upper Park with my dogs, or getting in some video game time. Otherwise i'm
 
 * [Teaching](#teaching) courses in Statistics and Data Science.
 * Helping modernize the current Undergraduate Statistics Curriculum to meet the 2016 GAISE Guidelines
 * Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
 * Participating in the CSUC Graduation Initiative Team - helping to use data to facilitate student success. 
 * Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
-* Training to become a [Carpentry](https://software-carpentry.org/) instructor. 
+* Training to become a [Software Carpentry](https://software-carpentry.org/) instructor. 
 * Providing statistical consulting and data analysis assistance for researchers on, and off campus. 
 
 
