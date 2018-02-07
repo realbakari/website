@@ -1,14 +1,8 @@
 ---
-title: 'Categorical Data Analysis'
-date: "Last Updated `r Sys.time()`"
-output:
-  pdf_document:
-    toc: yes
-  html_document:
-    highlight: tango
-    theme: flatly
-    toc: yes
-    toc_float: yes
+title: Categorical Data Analysis
+author: ''
+date: '2018-02-07'
+slug: cda
 ---
 
 ```{r,echo=FALSE, warning=FALSE, message=FALSE}
@@ -17,8 +11,6 @@ library(xtable)
 opts_chunk$set(warning=FALSE, message=FALSE) 
 ```
 
-
-#### Spam Data
 This set of lecture notes uses data on incoming emails for the first three months of 2012 for David Diez’s (An Open Intro Statistics Textbook author) Gmail Account, early months of 2012. All personally identifiable information has been removed.
 
 ```{r}
