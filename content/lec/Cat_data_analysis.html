@@ -120,15 +120,106 @@ tab</code></pre>
                  &quot;$n_{21}$&quot;, &quot;$n_{22}$&quot;, &quot;$n_{2.}$&quot;, 
                  &quot;$n_{.1}$&quot;, &quot;$n_{.2}$&quot;, &quot;$n_{..}$&quot;), nrow=3, byrow=TRUE,  
           dimnames = list(c(&quot;Exposed&quot;, &quot;Not-Exposed&quot;, &quot;Total&quot;), c(&quot;Diseased&quot;, &quot;Not-Diseased&quot;, &quot;Total&quot;)))
-print(xtable(nnnn, align=&#39;cccc&#39;))</code></pre>
-% latex table generated in R 3.4.1 by xtable 1.8-2 package % Wed Feb 07 09:21:37 2018
-
+print(xtable(nnnn, align=&#39;cccc&#39;), type=&#39;html&#39;)</code></pre>
+<!-- html table generated in R 3.4.1 by xtable 1.8-2 package -->
+<!-- Wed Feb 07 09:40:10 2018 -->
+<table border="1">
+<tr>
+<th>
+</th>
+<th>
+Diseased
+</th>
+<th>
+Not-Diseased
+</th>
+<th>
+Total
+</th>
+</tr>
+<tr>
+<td align="center">
+Exposed
+</td>
+<td align="center">
+<span class="math inline">\(n_{11}\)</span>
+</td>
+<td align="center">
+<span class="math inline">\(n_{12}\)</span>
+</td>
+<td align="center">
+<span class="math inline">\(n_{1.}\)</span>
+</td>
+</tr>
+<tr>
+<td align="center">
+Not-Exposed
+</td>
+<td align="center">
+<span class="math inline">\(n_{21}\)</span>
+</td>
+<td align="center">
+<span class="math inline">\(n_{22}\)</span>
+</td>
+<td align="center">
+<span class="math inline">\(n_{2.}\)</span>
+</td>
+</tr>
+<tr>
+<td align="center">
+Total
+</td>
+<td align="center">
+<span class="math inline">\(n_{.1}\)</span>
+</td>
+<td align="center">
+<span class="math inline">\(n_{.2}\)</span>
+</td>
+<td align="center">
+<span class="math inline">\(n_{..}\)</span>
+</td>
+</tr>
+</table>
 <p>Sometimes the cell contents are abbreviated as:</p>
 <pre class="r"><code>abcd &lt;- matrix(c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;), nrow=2,  
           dimnames = list(c(&quot;Exposed&quot;, &quot;Not-Exposed&quot;), c(&quot;Diseased&quot;, &quot;Not-Diseased&quot;)))
-print(xtable(abcd, align=&#39;ccc&#39;))</code></pre>
-% latex table generated in R 3.4.1 by xtable 1.8-2 package % Wed Feb 07 09:21:37 2018
-
+print(xtable(abcd, align=&#39;ccc&#39;), type=&#39;html&#39;)</code></pre>
+<!-- html table generated in R 3.4.1 by xtable 1.8-2 package -->
+<!-- Wed Feb 07 09:40:10 2018 -->
+<table border="1">
+<tr>
+<th>
+</th>
+<th>
+Diseased
+</th>
+<th>
+Not-Diseased
+</th>
+</tr>
+<tr>
+<td align="center">
+Exposed
+</td>
+<td align="center">
+a
+</td>
+<td align="center">
+c
+</td>
+</tr>
+<tr>
+<td align="center">
+Not-Exposed
+</td>
+<td align="center">
+b
+</td>
+<td align="center">
+d
+</td>
+</tr>
+</table>
 <p><br></br></p>
 <p>6 minute Marin Stats Lecture: <a href="https://www.youtube.com/watch?v=V_YNPQoAyCc" class="uri">https://www.youtube.com/watch?v=V_YNPQoAyCc</a></p>
 <div id="relative-risk" class="section level2">
