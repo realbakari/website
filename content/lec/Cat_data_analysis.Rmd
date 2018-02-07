@@ -136,7 +136,7 @@ nnnn <- matrix(c("$n_{11}$", "$n_{12}$", "$n_{1.}$",
                  "$n_{21}$", "$n_{22}$", "$n_{2.}$", 
                  "$n_{.1}$", "$n_{.2}$", "$n_{..}$"), nrow=3, byrow=TRUE,  
           dimnames = list(c("Exposed", "Not-Exposed", "Total"), c("Diseased", "Not-Diseased", "Total")))
-print(xtable(nnnn, align='cccc'))
+print(xtable(nnnn, align='cccc'), type='html')
 ```
 
 
@@ -144,7 +144,7 @@ Sometimes the cell contents are abbreviated as:
 ```{r, results='asis'}
 abcd <- matrix(c("a", "b", "c", "d"), nrow=2,  
           dimnames = list(c("Exposed", "Not-Exposed"), c("Diseased", "Not-Diseased")))
-print(xtable(abcd, align='ccc'))
+print(xtable(abcd, align='ccc'), type='html')
 ```
 
 <br></br>
