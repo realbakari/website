@@ -15,100 +15,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 These data sets are typically used in entry level classes such as MATH 130 and MATH 315. Some data sets still have missing values but have been tidyed up a little bit. The code to read the data set into R is provided, along with a glimpse of the data and it's dimensions. Use this information to confirm that the data set you download and import into R matches this information. 
 
-* [dsmall](../dsmall.txt) This is a randomly drawn sample from the `diamonds` data set found in the `ggplot2` package. For those not using `R` I have provided a tab delimited text file for download. For those using R, use the code below to create the `dsmall` data set. The [codebook](http://ggplot2.tidyverse.org/reference/diamonds.html) can be found on the ggplot2 documentation site. 
+> The data sets are in alphabetical order. Use `ctrl+f` to search for the data you need. 
+
+* [AddHealth](../addhealth_clean.Rdata): The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life. More info at: http://www.cpc.unc.edu/projects/addhealth 
+
+The cleaned Add health data set is provided as a R data file, not single external data set. The code below `load`s the data file, instead of reading in a single data set and saving it as a new object.
 
 ```{r}
-set.seed(1410) # Make the sample reproducible
-diamonds <- ggplot2::diamonds # load the data without loading the ggplot2 package
-dsmall <- diamonds[sample(nrow(diamonds), 1000), ] # create the subset
-str(dsmall)
+load("../../static/data/addhealth_clean.Rdata")
+dim(addhealth)
 ```
-
-```{r, echo=FALSE, eval=FALSE}
-#write.table(dsmall, "C:/GitHub/website/public/data/dsmall.txt", sep="\t", row.names=FALSE)
-```
-
-* [Depress](../depress_081217.txt) Tab delimited text file.  [Add info]
-  More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../DepressCodebook.txt) can be downloaded as a text file. 
-```{r}
-depress <- read.delim("../../static/data/depress_081217.txt", header=TRUE,sep="\t")
-str(depress)
-```
-
-
-* [ParentalHIV](../PARHIV_081217.txt): Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The [Codebook](../ParhivCodebook.txt) describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al. 
-
-```{r}
-parHIV <- read.delim("../../static/data/PARHIV_081217.txt", header=TRUE, stringsAsFactors = FALSE, sep="\t")
-str(parHIV)
-```
-
-* [Lung](../Lung_081217.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../LungCodebook.txt) can be downloaded as a text file. 
-```{r}
-fev <- read.delim("../../static/data/Lung_081217.txt", header=TRUE,sep="\t")
-str(fev)
-```
-
-
-* [Physical Activity and BMI](../PABMI.txt) Physical activity measured as the number of steps in thousands. 
-```{r}
-pabmi <- read.delim("../../static/data/PABMI.txt", header=TRUE,sep="\t")
-str(pabmi)
-```
-
-* [Index of Biotic integrity](../IBI.txt). The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km$^2$.
-```{r}
-qual <- read.delim("../../static/data/ibi.txt", header=TRUE,sep="\t")
-str(qual)
-```
-
-* [Arm Strength](../ArmStrength.txt) 
-```{r}
-armstr <- read.delim("../../static/data/ArmStrength.txt", header=TRUE,sep="\t")
-str(armstr)
-```
-
-
-* [Download Times](../DownloadTimes.txt) An experiment run by a student to detect if his internet speed varied across different times of the day. This tab-delimited data set contains two variables: `time` as a categorical time of day (Early, Evening, Late), and the time (in `sec`) it took to download a particular file. The file downloaded was the same each time to the same computer. 
-```{r}
-dt <- read.delim("../../static/data/DownloadTimes.txt", header=TRUE, sep="\t")
-str(dt)
-```
-
-* [Plants 2](../plants2.txt) Amount of fresh and dry biomass four different species of plants under seven different levels of water. Similar to the PLANTS1 data sets. There are 4 plants per species-by-water combination.
-```{r}
-plants2 <- read.delim("../../static/data/plants2.txt", sep="\t", header=TRUE)
-str(plants2)
-```
-
-* [Plants 1](../plants1.txt) Percent of nitrogen in four different species of plants grown in a laboratory. Researchers who collected these data in parts of the country where there is very little rainfall. The amount of water administered per day ranged from 50mm to 650mm in 100mm increments. There are 9 plants per species-by-water combination.
-```{r}
-plants1 <- read.delim("../../static/data/plants1.txt", sep="\t", header=TRUE)
-str(plants1)
-```
-
-
-* [Full moon on Dementia](../dementia_moon.txt) A study observed 15 nursing home patients with dementia and recorded the number of aggressive incidents each day for 12 weeks. Then they totaled the counts of aggressive incidents per patient on "moon" days (full moon +/-1 day) and "other" days. 
-```{r}
-moon <- read.delim("../../static/data/dementia_moon.txt", sep="\t", header=TRUE)
-str(moon)
-```
-
-
-* [Directed Reading Activities](../directed_reading.csv) Degree of Reading Power test scores for third-graders involved in an intervention study aiming improve reading ability of students. 
-  
-```{r}
-DRP <- read.csv("../../static/data/directed_reading.csv")
-str(DRP)
-```
-  
-* [High School and Beyond](../hsb2.txt). The High School and Beyond (HS&B) Longitudinal Study was the second study conducted as part of NCES' National Longitudinal Studies Program. This program was established to study the educational, vocational, and personal development of young people, beginning with their elementary or high school years and following them over time as they take on adult roles and responsibilities. http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf 
-  
-```{r}
-hsb2 <- read.delim("../../static/data/hsb2.txt", sep="\t")
-str(hsb2)
-```
-
 
 * [Age at Marriage](../ageAtMar.txt). Age at first marriage of 5,534 US women who responded to the National Survey of Family Growth (NSFG) conducted by the CDC in the 2006 and 2010 cycle. http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm
 
@@ -123,28 +39,18 @@ ames <- read.csv("../../static/data/ames.csv", header=TRUE)
 str(ames)
 ```
 
-* [Police Shootings](../WashPost Police Shootings 2015.xlsx): Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from https://github.com/washingtonpost/data-police-shootings on 9/11/16. 
+
+* [Arm Strength](../ArmStrength.txt) 
 ```{r}
-washpost <- read_excel("../../static/data/WashPost Police Shootings 2015.xlsx")
-str(washpost)
+armstr <- read.delim("../../static/data/ArmStrength.txt", header=TRUE,sep="\t")
+str(armstr)
 ```
+
 
 * [countyComplete](../countyComplete.csv): Characteristics of different counties in the United States. Information on this data set can be found in the full [Open Intro Data Codebook](../Open Intro Data Codebook.pdf). Just search for the data set name. 
 ```{r}
 county <- read.csv("../../static/data/countyComplete.csv", header=TRUE, stringsAsFactors = FALSE)
 str(county)
-```
-
-* [email](../email.txt): **Right Click and select `save link as` to save this file to your class folder.** These data represent incoming emails for the first three months of 2012 for David Diez's (_An Open Intro Statistics Textbook author_) Gmail Account, early months of 2012. All personally identifiable information has been removed. [Email Codebook](../EmailCodebook.html)
-```{r}
-email <- read.delim("../../static/data/email.txt", header=TRUE, stringsAsFactors = FALSE, sep="\t")
-str(email)
-```
-
-* [NCbirths](../NCbirths.csv): Publicly released data on a random sample of births recorded in North Carolina in 2004.[Codebook](../NCBirthsCodebook.html)
-```{r}
-ncbirths <- read.csv("../../static/data/NCbirths.csv", header=TRUE, stringsAsFactors = FALSE)
-str(ncbirths)
 ```
 
 
@@ -155,12 +61,128 @@ str(debt)
 ```
 
 
-* [AddHealth](../addhealth_clean.Rdata): The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life. More info at: http://www.cpc.unc.edu/projects/addhealth 
+* [Depress](../depress_081217.txt) Tab delimited text file. The depression data set is from the first set of interviews of a prospective study of depression in the adult residents of Los Angeles County and includes 294 observations. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../DepressCodebook.txt) can be downloaded as a text file. 
+```{r}
+depress <- read.delim("../../static/data/depress_081217.txt", header=TRUE,sep="\t")
+str(depress)
+```
 
-The cleaned Add health data set is provided as a R data file, not single external data set. The code below `load`s the data file, instead of reading in a single data set and saving it as a new object.
+* [Directed Reading Activities](../directed_reading.csv) Degree of Reading Power test scores for third-graders involved in an intervention study aiming improve reading ability of students. 
+  
+```{r}
+DRP <- read.csv("../../static/data/directed_reading.csv")
+str(DRP)
+```
+  
+
+* [Download Times](../DownloadTimes.txt) An experiment run by a student to detect if his internet speed varied across different times of the day. This tab-delimited data set contains two variables: `time` as a categorical time of day (Early, Evening, Late), and the time (in `sec`) it took to download a particular file. The file downloaded was the same each time to the same computer. 
+```{r}
+dt <- read.delim("../../static/data/DownloadTimes.txt", header=TRUE, sep="\t")
+str(dt)
+```
+
+
+* [dsmall](../dsmall.txt) This is a randomly drawn sample from the `diamonds` data set found in the `ggplot2` package. For those not using `R` I have provided a tab delimited text file for download. For those using R, use the code below to create the `dsmall` data set. The [codebook](http://ggplot2.tidyverse.org/reference/diamonds.html) can be found on the ggplot2 documentation site. 
 
 ```{r}
-load("../../static/data/addhealth_clean.Rdata")
-dim(addhealth)
+set.seed(1410) # Make the sample reproducible
+diamonds <- ggplot2::diamonds # load the data without loading the ggplot2 package
+dsmall <- diamonds[sample(nrow(diamonds), 1000), ] # create the subset
+str(dsmall)
 ```
+
+```{r, echo=FALSE, eval=FALSE}
+#write.table(dsmall, "C:/GitHub/website/public/data/dsmall.txt", sep="\t", row.names=FALSE)
+```
+
+<!---
+* [Northridge Earthquake](../Earthq.txt) **Right Click and select `save link as` to save this file to your class folder.** The Northridge earthquake data set comes from a set of telephone surveys on the experiences of Los Angeles, CA county residents following the 1994 Northridge earthquake. Subjects were asked for their demographic information and about damage to their home, sustaining injury, and psychological responses to the earthquake. The data used here include 506 randomly selected subjects with relevant variables for the problems. The data is owned by Professor Linda Borque of the UCLA School of Public Health, Department of Community Health Sciences and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al. The [codebook](../EarthqCodebook.txt) can be downloaded as a text file. 
+
+```{r, eval=FALSE}
+quake <- read.table("C:/GitHub/website/static/data/Earthq.txt", header=TRUE, na.strings=".")
+str(quake)
+```
+--->
+
+
+
+* [email](../email.txt): **Right Click and select `save link as` to save this file to your class folder.** These data represent incoming emails for the first three months of 2012 for David Diez's (_An Open Intro Statistics Textbook author_) Gmail Account, early months of 2012. All personally identifiable information has been removed. [Email Codebook](../EmailCodebook.html)
+```{r}
+email <- read.delim("../../static/data/email.txt", header=TRUE, stringsAsFactors = FALSE, sep="\t")
+str(email)
+```
+
+* [Full moon on Dementia](../dementia_moon.txt) A study observed 15 nursing home patients with dementia and recorded the number of aggressive incidents each day for 12 weeks. Then they totaled the counts of aggressive incidents per patient on "moon" days (full moon +/-1 day) and "other" days. 
+```{r}
+moon <- read.delim("../../static/data/dementia_moon.txt", sep="\t", header=TRUE)
+str(moon)
+```
+
+
+
+* [High School and Beyond](../hsb2.txt). The High School and Beyond (HS&B) Longitudinal Study was the second study conducted as part of NCES' National Longitudinal Studies Program. This program was established to study the educational, vocational, and personal development of young people, beginning with their elementary or high school years and following them over time as they take on adult roles and responsibilities. http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf 
+  
+```{r}
+hsb2 <- read.delim("../../static/data/hsb2.txt", sep="\t")
+str(hsb2)
+```
+
+* [Index of Biotic integrity](../IBI.txt). The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km$^2$.
+```{r}
+qual <- read.delim("../../static/data/ibi.txt", header=TRUE,sep="\t")
+str(qual)
+```
+
+
+* [Lung](../Lung_081217.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../LungCodebook.txt) can be downloaded as a text file. 
+```{r}
+fev <- read.delim("../../static/data/Lung_081217.txt", header=TRUE,sep="\t")
+str(fev)
+```
+
+
+* [NCbirths](../NCbirths.csv): Publicly released data on a random sample of births recorded in North Carolina in 2004.[Codebook](../NCBirthsCodebook.html)
+```{r}
+ncbirths <- read.csv("../../static/data/NCbirths.csv", header=TRUE, stringsAsFactors = FALSE)
+str(ncbirths)
+```
+
+
+* [ParentalHIV](../PARHIV_081217.txt): Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The [Codebook](../ParhivCodebook.txt) describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al. 
+
+```{r}
+parHIV <- read.delim("../../static/data/PARHIV_081217.txt", header=TRUE, stringsAsFactors = FALSE, sep="\t")
+str(parHIV)
+```
+
+
+* [Physical Activity and BMI](../PABMI.txt) Physical activity measured as the number of steps in thousands. 
+```{r}
+pabmi <- read.delim("../../static/data/PABMI.txt", header=TRUE,sep="\t")
+str(pabmi)
+```
+
+
+* [Plants 1](../plants1.txt) Percent of nitrogen in four different species of plants grown in a laboratory. Researchers who collected these data in parts of the country where there is very little rainfall. The amount of water administered per day ranged from 50mm to 650mm in 100mm increments. There are 9 plants per species-by-water combination.
+```{r}
+plants1 <- read.delim("../../static/data/plants1.txt", sep="\t", header=TRUE)
+str(plants1)
+```
+
+
+* [Plants 2](../plants2.txt) Amount of fresh and dry biomass four different species of plants under seven different levels of water. Similar to the PLANTS1 data sets. There are 4 plants per species-by-water combination.
+```{r}
+plants2 <- read.delim("../../static/data/plants2.txt", sep="\t", header=TRUE)
+str(plants2)
+```
+
+* [Police Shootings](../WashPost Police Shootings 2015.xlsx): Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from https://github.com/washingtonpost/data-police-shootings on 9/11/16. 
+```{r}
+washpost <- read_excel("../../static/data/WashPost Police Shootings 2015.xlsx")
+str(washpost)
+```
+
+
+
+
 
