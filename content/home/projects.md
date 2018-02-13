@@ -30,8 +30,8 @@ view = 0
   tag = ".student-success"
 
 [[filter]]
-  name = "Other"
-  tag = ".demo"
+  name = "Missing Data Imputation"
+  tag = ".mi"
 
 +++
 
