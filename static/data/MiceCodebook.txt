@@ -1,5 +1,6 @@
 Codebook for Mice Data (Mice.txt)
 
+
 Variable Name          Variable Coding            Variable Description
 ----------------------------------------------------------------------
 ID                                                Mouse Identifier

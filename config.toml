@@ -22,7 +22,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Robin Donatello"
-  role = "Assisstant Professor of Statistics"
+  role = "Assistant Professor of Statistics"
   organization = "California State University, Chico (CSUC)"
   organization_url = "http://www.csuchico.edu/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)

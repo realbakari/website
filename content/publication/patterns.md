@@ -15,9 +15,9 @@ title = "Patterns of Sexual Experience Among Urban Latino and African American N
 url_pdf = "http://dx.doi.org/10.1080/00224499.2016.1164800"
 
 # Optional featured image (relative to `static/img/` folder).
-[header]
-image = "headers/bubbles-wide.jpg"
-caption = "My caption :smile:"
+#[header]
+#image = "headers/bubbles-wide.jpg"
+#caption = "My caption :smile:"
 
 +++
 

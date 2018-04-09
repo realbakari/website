@@ -47,7 +47,7 @@ weight = 1
 
 # Biography
 
-When I'm not working in the garden to grow food for my family, I'd rather be in Upper Park with my dogs, or getting in some video game time. Otherwise i'm
+When I'm not working in the garden to grow food for my family, I'd rather be in Upper Park with my dogs, or getting in some video game time. Otherwise I'm
 
 * [Teaching](#teaching) courses in Statistics and Data Science.
 * Helping modernize the current Undergraduate Statistics Curriculum to meet the 2016 GAISE Guidelines
