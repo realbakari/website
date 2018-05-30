@@ -27,11 +27,11 @@ view = 0
   
 [[filter]]
   name = "Student Success"
-  tag = ".student-success"
+  tag = ".ss"
 
 [[filter]]
-  name = "Missing Data Imputation"
-  tag = ".mi"
+  name = "Data Science"
+  tag = ".ds"
 
 +++
 

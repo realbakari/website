@@ -12,7 +12,7 @@ summary = "This project enhances a current current Sustaining Success project de
 #image_preview = "boards.jpg"
 
 # Tags: can be used for filtering projects.
-tags = ["chemistry", "student_success", "statistical_learning"]
+tags = ["chemistry", "ss"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "http://norcalbiostat.github.com/chem_ss"
