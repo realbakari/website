@@ -54,7 +54,7 @@ When I'm not working in the garden to grow food for my family, I'd rather be in 
 * Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
 * Participating in the CSUC Graduation Initiative Team - helping to use data to facilitate student success. 
 * Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
-* Training to become a [Software Carpentry](https://software-carpentry.org/) instructor. 
+* Running [Software and Data Carpentry](https://carpentries.org/) workshops. 
 * Providing statistical consulting and data analysis assistance for researchers on, and off campus. 
 
 
