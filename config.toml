@@ -1,7 +1,7 @@
 # End your URL with a `/` trailing slash.
 baseurl = "https://norcalbiostat.netlify.com/"  
 title = "Robin Donatello"
-copyright = "&copy; 2017 Robin Donatello"
+copyright = "&copy; 2018 Robin Donatello"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -33,6 +33,7 @@ defaultContentLanguageInSubdir = false
   phone = ""
   skype = ""
   telegram = ""
+  color_theme = "forest"
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
