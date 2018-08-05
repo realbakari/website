@@ -17,12 +17,12 @@ weight = 2
 I teach the following courses at Chico State. 
 
 - MATH 105: Introduction to Statistics 
-- MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/) (Spring 18)
-- MATH 315: [Applied Statistical Methods I](https://norcalbiostat.github.io/MATH315/) (Fall 17)
-- MATH 385: Introduction to Data Science 
-- MATH 456: [Applied Statistical Methods II](https://norcalbiostat.github.io/MATH456/) (Spring 18)
-- MATH 485: [Advanced Data Science](https://norcalbiostat.github.io/ADS/) (Spring 18)
-- MATH 615: [Statistical Methods for Graduate Research](https://norcalbiostat.github.io/MATH615/) (Fall 17)
+- MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/) (Fa18)
+- MATH 315: [Applied Statistical Methods I](https://norcalbiostat.github.io/MATH315/) (Fa17)
+- MATH 385: Introduction to Data Science (Roualdes, Fa18)
+- MATH 456: [Applied Statistical Methods II](https://norcalbiostat.github.io/MATH456/) (Sp18)
+- MATH 485: [Advanced Data Science](https://norcalbiostat.github.io/ADS/) (Sp18)
+- MATH 615: [Statistical Methods for Graduate Research](https://norcalbiostat.github.io/MATH615/) (Fa18)
 
 _Most Statistics and Data Science classes at Chico State rotate through instructors or different sections are taught by different instructors. The materials presented on the individual class websites linked above are accurate for my sections only. Terms in parenthesis indicate when the content was last updated._
 
