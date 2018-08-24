@@ -2,8 +2,7 @@
 title: "Article List"
 output: 
   html_document: 
-    highlight: pygments
-    theme: cerulean
+    theme: readable
 ---
 
 ```{r include = FALSE}
@@ -28,13 +27,19 @@ that I think is helpful to share.
  
 # Reproducibility
 
-* [Journals unite for reproducibility (Nature 2014)](Journals unite for reproducibility (Nature 2014).pdf)
+* [No more excuses for non-reproducible methods (Teytelman, 2018, Nature)](https://www.nature.com/articles/d41586-018-06008-w)
 * [Thou Shalt Be Reproducible in Psychology (Mair 2016)](Thou Shalt Be Reproducible in Psychology (Mair 2016).pdf)
+* [Journals unite for reproducibility (Nature 2014)](Journals unite for reproducibility (Nature 2014).pdf)
 * [Why you should care about reproducible research (Blog post Revolution R 2011)](Why you should care about reproducible research (Blog post Revolution R 2011).pdf)
  
  
+
+
+
 # Scientific Programming
+* [A toolkit for data transparency takes shape (Perkel, 2018, Nature)](https://www.nature.com/articles/d41586-018-05990-5)
 * [Programming tools can speed up and strengthen analyses, but mastering the skills takes time and can be daunting. (Baker, 2017, Nature)](http://www.nature.com/naturejobs/science/articles/10.1038/nj7638-563a?WT.mc_id=TWT_NatureNews)
-* [Importance of sharing code (Nature 2014)](Importance of sharing code (Nature 2014).pdf)
 * [Adventures in R (Tippmann 2015)]("Adventures in R (Tippmann 2015).pdf")
 * [Our path to better science in less time using open data science tools](https://www.nature.com/articles/s41559-017-0160)
+* [Importance of sharing code (Nature 2014)](Importance of sharing code (Nature 2014).pdf)
+
