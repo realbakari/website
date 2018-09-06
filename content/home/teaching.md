@@ -26,6 +26,10 @@ I teach the following courses at Chico State.
 
 _Most Statistics and Data Science classes at Chico State rotate through instructors or different sections are taught by different instructors. The materials presented on the individual class websites linked above are accurate for my sections only. Terms in parenthesis indicate when the content was last updated._
 
+I use DataCamp quite often to teach or reinforce coding concepts outside of the classroom. They provide very generous educational discounts to help learners with R, Python, SQL, Shell and more topics in Statistics and Data Science. 
+
+<img src="img/datacamp.png" alt="Data Camp" style="width:225px;height:50px;">
+
 ### [Data](data/)
 Wherever possible I try to use real world, non pre-processed data in the classroom. The [Data](data/) page provides links to download data, codebooks where available, and code to import these data sets into R. 
 
