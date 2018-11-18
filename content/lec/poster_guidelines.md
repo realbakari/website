@@ -127,7 +127,7 @@ _Prices are student reported as of Fall 2016._
 
 
 # Evaluation Criteria
-I use the following criteria to score posters. You can also [[download]](poster_rubric.docx) the rubric as a Word doc for printing. 
+I use the following criteria to score posters. 
 
 * **Appearance**
     - Display attracts viewer's attention.
@@ -136,7 +136,6 @@ I use the following criteria to score posters. You can also [[download]](poster_
     - Graphics and other visuals enhance presentation.
     - The poster is neat and appealing to look at.
 * **Content**
-    - Content is clear and easy to understand.
     - Purpose of model (question being addressed) is stated clearly.
     - I understand why someone might be interested in the model results.
     - There is enough detail about methods (e.g., creating new variables) for me to understand the model and results.
