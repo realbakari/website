@@ -1,6 +1,6 @@
 ---
 title: "Guidelines for creating a good Scientific poster"
-date: '2017-11-26'
+date: '2018-11-18'
 output: html_document
 ---
 
