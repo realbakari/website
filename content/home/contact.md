@@ -16,13 +16,10 @@ autolink = true
 
 +++
 
-# Office Hours for Fall 2018
+# Office Hours for Spring 2019 - TBD
 
-Monday 3pm, Holt 202  
-Wednesday 1pm, Holt 202   
-Thursday 10am, Holt 202  
-
-Community Coding hours starting 1st week of October. (_Location TBD currently_)
+Community Coding hours: Tue/Thu 2-4pm, MLIB 442  
+_Need 1 unit? Sign up for MATH 290-Section 02 & Get credit for attending community coding sessions_
 
 <!---
 <a href = "https://outlook.office365.com/owa/calendar/f4b8fd8874804a588bd75132cfaf0f88@csuchico.edu/f0afaf66738e45b98534a82ecd3623c45253679155289566215/calendar.html"> <i class="fa fa-calendar fa-2x fa-fw"></i></a> --->

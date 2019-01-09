@@ -1,6 +1,6 @@
 ---
 title: 'Cleaned Data'
-date: '2018-08-04 22:15:51'
+date: '2019-01-09 08:42:06'
 type: page
 weight: 1
 ---
@@ -18,18 +18,6 @@ weight: 1
 <pre class="r"><code>load(&quot;../../static/data/addhealth_clean.Rdata&quot;)
 dim(addhealth)</code></pre>
 <pre><code>## [1] 6504  992</code></pre>
-<ul>
-<li><a href="../ageAtMar.txt">Age at Marriage</a>. Age at first marriage of 5,534 US women who responded to the National Survey of Family Growth (NSFG) conducted by the CDC in the 2006 and 2010 cycle. <a href="http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm" class="uri">http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm</a></li>
-</ul>
-<pre class="r"><code>age &lt;- read.csv(&quot;../../static/data/ageAtMar.txt&quot;, sep=&quot;&quot;)
-head(age)</code></pre>
-<pre><code>##   age
-## 1  32
-## 2  25
-## 3  24
-## 4  26
-## 5  32
-## 6  29</code></pre>
 <ul>
 <li><a href="../ames.csv">Ames</a>: All residential home sales in Ames, Iowa between 2006 and 2010. The data set contains many explanatory variables on the quality and quantity of physical attributes of residential homes in Iowa sold between 2006 and 2010. Most of the variables describe information a typical home buyer would like to know about a property (square footage, number of bedrooms and bathrooms, size of lot, etc.). A detailed discussion of variables can be found in the original paper: <em>De Cock D. 2011. Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education; 19(3)</em>.</li>
 </ul>
@@ -119,16 +107,6 @@ str(ames)</code></pre>
 ##  $ Sale.Condition : Factor w/ 6 levels &quot;Abnorml&quot;,&quot;AdjLand&quot;,..: 5 5 5 5 5 5 5 5 5 5 ...
 ##  $ SalePrice      : int  215000 105000 172000 244000 189900 195500 213500 191500 236500 189000 ...</code></pre>
 <ul>
-<li><a href="../ArmStrength.txt">Arm Strength</a></li>
-</ul>
-<pre class="r"><code>armstr &lt;- read.delim(&quot;../../static/data/ArmStrength.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
-str(armstr)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    30 obs. of  4 variables:
-##  $ ID    : int  1 2 3 4 5 6 7 8 9 10 ...
-##  $ Group : Factor w/ 2 levels &quot;Baseball&quot;,&quot;Control&quot;: 2 2 2 2 2 2 2 2 2 2 ...
-##  $ NonDom: num  15.7 25.2 17.9 19.1 12 20 12.3 14.4 15.9 13.7 ...
-##  $ Dom   : num  16.3 26.9 18.7 22 14.8 19.8 13.1 17.5 20.1 18.7 ...</code></pre>
-<ul>
 <li><a href="../countyComplete.csv">countyComplete</a>: Characteristics of different counties in the United States. Information on this data set can be found in the full <a href="../Open%20Intro%20Data%20Codebook.pdf">Open Intro Data Codebook</a>. Just search for the data set name.</li>
 </ul>
 <pre class="r"><code>county &lt;- read.csv(&quot;../../static/data/countyComplete.csv&quot;, header=TRUE, stringsAsFactors = FALSE)
@@ -191,19 +169,6 @@ str(county)</code></pre>
 ##  $ density                                  : num  91.8 114.6 31 36.8 88.9 ...
 ##  $ smoking_ban                              : chr  &quot;none&quot; &quot;none&quot; &quot;partial&quot; &quot;none&quot; ...</code></pre>
 <ul>
-<li><a href="../debt.txt">debt</a>: The Organisation for Economic Co-operation and Development collects data on the central government debt for many countries. This file set contains data from from 2005 to 2010.</li>
-</ul>
-<pre class="r"><code>debt &lt;- read.delim(&quot;../../static/data/debt.txt&quot;, header=TRUE, stringsAsFactors = FALSE, sep=&quot;\t&quot;)
-str(debt)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    33 obs. of  7 variables:
-##  $ Country : chr  &quot;Australia&quot; &quot;Austria&quot; &quot;Belgium&quot; &quot;Canada&quot; ...
-##  $ Debt2005: num  6.31 62.12 91.77 30.23 7.28 ...
-##  $ Debt2006: num  5.76 60.43 87.57 27.93 5.26 ...
-##  $ Debt2007: num  5.18 57.83 85.3 25.18 4.1 ...
-##  $ Debt2008: num  4.92 59.32 90.09 28.64 5.17 ...
-##  $ Debt2009: num  8.2 64.92 94.89 35.72 6.23 ...
-##  $ Debt2010: num  10.97 65.75 96.79 36.07 9.19 ...</code></pre>
-<ul>
 <li><a href="../depress_081217.txt">Depress</a> Tab delimited text file. The depression data set is from the first set of interviews of a prospective study of depression in the adult residents of Los Angeles County and includes 294 observations. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="../DepressCodebook.txt">codebook</a> can be downloaded as a text file.</li>
 </ul>
 <pre class="r"><code>depress &lt;- read.delim(&quot;../../static/data/depress_081217.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
@@ -246,14 +211,6 @@ str(depress)</code></pre>
 ##  $ beddays : int  0 0 0 0 1 0 0 0 1 0 ...
 ##  $ acuteill: int  0 0 0 0 1 1 1 1 0 0 ...
 ##  $ chronill: int  1 1 0 1 0 1 1 0 1 0 ...</code></pre>
-<ul>
-<li><a href="../directed_reading.csv">Directed Reading Activities</a> Degree of Reading Power test scores for third-graders involved in an intervention study aiming improve reading ability of students.</li>
-</ul>
-<pre class="r"><code>DRP &lt;- read.csv(&quot;../../static/data/directed_reading.csv&quot;)
-str(DRP)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    43 obs. of  2 variables:
-##  $ score: int  19 17 10 28 26 20 37 37 33 48 ...
-##  $ group: Factor w/ 2 levels &quot;Control&quot;,&quot;Intervention&quot;: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
 <ul>
 <li><a href="../DownloadTimes.txt">Download Times</a> An experiment run by a student to detect if his internet speed varied across different times of the day. This tab-delimited data set contains two variables: <code>time</code> as a categorical time of day (Early, Evening, Late), and the time (in <code>sec</code>) it took to download a particular file. The file downloaded was the same each time to the same computer.</li>
 </ul>
@@ -342,15 +299,6 @@ str(hsb2)</code></pre>
 ##  $ math   : int  41 53 54 47 57 51 42 45 54 52 ...
 ##  $ science: int  47 63 58 53 53 63 53 39 58 50 ...
 ##  $ socst  : int  57 61 31 56 61 61 61 36 51 51 ...</code></pre>
-<ul>
-<li><a href="../IBI.txt">Index of Biotic integrity</a>. The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km<span class="math inline">\(^2\)</span>.</li>
-</ul>
-<pre class="r"><code>qual &lt;- read.delim(&quot;../../static/data/ibi.txt&quot;, header=TRUE,sep=&quot;\t&quot;)
-str(qual)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    49 obs. of  3 variables:
-##  $ Forest: int  0 0 0 0 0 0 3 3 7 8 ...
-##  $ Area  : int  21 29 31 32 34 34 49 52 2 70 ...
-##  $ IBI   : int  47 61 39 59 72 76 85 89 74 89 ...</code></pre>
 <ul>
 <li><a href="../Lung_081217.txt">Lung</a> Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The <a href="../LungCodebook.txt">codebook</a> can be downloaded as a text file.</li>
 </ul>
@@ -524,31 +472,11 @@ str(pabmi)</code></pre>
 ##  $ PA     : num  10.99 6.75 12.42 6.25 11.6 ...
 ##  $ BMI    : num  15 21 28.1 27.3 21.1 20.6 27.9 18.3 24.3 21.1 ...</code></pre>
 <ul>
-<li><a href="../plants1.txt">Plants 1</a> Percent of nitrogen in four different species of plants grown in a laboratory. Researchers who collected these data in parts of the country where there is very little rainfall. The amount of water administered per day ranged from 50mm to 650mm in 100mm increments. There are 9 plants per species-by-water combination.</li>
+<li><a href="../fatal-police-shootings-data.xlsx">Police Shootings</a>: Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from <a href="https://github.com/washingtonpost/data-police-shootings" class="uri">https://github.com/washingtonpost/data-police-shootings</a> on 9/11/16.</li>
 </ul>
-<pre class="r"><code>plants1 &lt;- read.delim(&quot;../../static/data/plants1.txt&quot;, sep=&quot;\t&quot;, header=TRUE)
-str(plants1)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    252 obs. of  3 variables:
-##  $ species: int  1 1 1 1 1 1 1 1 1 1 ...
-##  $ water  : int  50 50 50 50 50 50 50 50 50 150 ...
-##  $ pctnit : num  3.64 3.5 3.51 3.14 3.1 ...</code></pre>
-<ul>
-<li><a href="../plants2.txt">Plants 2</a> Amount of fresh and dry biomass four different species of plants under seven different levels of water. Similar to the PLANTS1 data sets. There are 4 plants per species-by-water combination.</li>
-</ul>
-<pre class="r"><code>plants2 &lt;- read.delim(&quot;../../static/data/plants2.txt&quot;, sep=&quot;\t&quot;, header=TRUE)
-str(plants2)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    112 obs. of  5 variables:
-##  $ obs     : int  1 2 3 4 5 6 7 8 9 10 ...
-##  $ species : int  1 1 1 1 1 1 1 1 1 1 ...
-##  $ water   : int  1 1 1 1 2 2 2 2 3 3 ...
-##  $ fbiomass: num  105 139 110 102 168 ...
-##  $ dbiomass: num  17.6 28.9 18.9 16.9 44.4 ...</code></pre>
-<ul>
-<li><a href="../WashPost%20Police%20Shootings%202015.xlsx">Police Shootings</a>: Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from <a href="https://github.com/washingtonpost/data-police-shootings" class="uri">https://github.com/washingtonpost/data-police-shootings</a> on 9/11/16.</li>
-</ul>
-<pre class="r"><code>washpost &lt;- read_excel(&quot;../../static/data/WashPost Police Shootings 2015.xlsx&quot;)
+<pre class="r"><code>washpost &lt;- read_excel(&quot;../../static/data/fatal-police-shootings-data.xlsx&quot;)
 str(washpost)</code></pre>
-<pre><code>## Classes &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;:    990 obs. of  14 variables:
+<pre><code>## Classes &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;:    3960 obs. of  14 variables:
 ##  $ id                     : num  3 4 5 8 9 11 13 15 16 17 ...
 ##  $ name                   : chr  &quot;Tim Elliot&quot; &quot;Lewis Lee Lembke&quot; &quot;John Paul Quintero&quot; &quot;Matthew Hoffman&quot; ...
 ##  $ date                   : POSIXct, format: &quot;2015-01-02&quot; &quot;2015-01-02&quot; ...

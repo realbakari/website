@@ -26,24 +26,11 @@ load("../../static/data/addhealth_clean.Rdata")
 dim(addhealth)
 ```
 
-* [Age at Marriage](../ageAtMar.txt). Age at first marriage of 5,534 US women who responded to the National Survey of Family Growth (NSFG) conducted by the CDC in the 2006 and 2010 cycle. http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm
-
-```{r}
-age <- read.csv("../../static/data/ageAtMar.txt", sep="")
-head(age)
-```
 
 * [Ames](../ames.csv): All residential home sales in Ames, Iowa between 2006 and 2010. The data set contains many explanatory variables on the quality and quantity of physical attributes of residential homes in Iowa sold between 2006 and 2010. Most of the variables describe information a typical home buyer would like to know about a property (square footage, number of bedrooms and bathrooms, size of lot, etc.). A detailed discussion of variables can be found in the original paper: _De Cock D. 2011. Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education; 19(3)_.
 ```{r}
 ames <- read.csv("../../static/data/ames.csv", header=TRUE)
 str(ames)
-```
-
-
-* [Arm Strength](../ArmStrength.txt) 
-```{r}
-armstr <- read.delim("../../static/data/ArmStrength.txt", header=TRUE,sep="\t")
-str(armstr)
 ```
 
 
@@ -54,26 +41,12 @@ str(county)
 ```
 
 
-* [debt](../debt.txt): The Organisation for Economic Co-operation and Development collects data on the central government debt for many countries. This file set contains data from from 2005 to 2010. 
-```{r}
-debt <- read.delim("../../static/data/debt.txt", header=TRUE, stringsAsFactors = FALSE, sep="\t")
-str(debt)
-```
-
-
 * [Depress](../depress_081217.txt) Tab delimited text file. The depression data set is from the first set of interviews of a prospective study of depression in the adult residents of Los Angeles County and includes 294 observations. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../DepressCodebook.txt) can be downloaded as a text file. 
 ```{r}
 depress <- read.delim("../../static/data/depress_081217.txt", header=TRUE,sep="\t")
 str(depress)
 ```
 
-* [Directed Reading Activities](../directed_reading.csv) Degree of Reading Power test scores for third-graders involved in an intervention study aiming improve reading ability of students. 
-  
-```{r}
-DRP <- read.csv("../../static/data/directed_reading.csv")
-str(DRP)
-```
-  
 
 * [Download Times](../DownloadTimes.txt) An experiment run by a student to detect if his internet speed varied across different times of the day. This tab-delimited data set contains two variables: `time` as a categorical time of day (Early, Evening, Late), and the time (in `sec`) it took to download a particular file. The file downloaded was the same each time to the same computer. 
 ```{r}
@@ -127,13 +100,6 @@ hsb2 <- read.delim("../../static/data/hsb2.txt", sep="\t")
 str(hsb2)
 ```
 
-* [Index of Biotic integrity](../IBI.txt). The index of biotic integrity (IBI) is a measure of the water quality in streams. IBI and land use measures for a collection of streams in the Ozark Highland ecoregion of Arkansas were collected as part of a study. This data contains the percent of the watershed that was forest, and the area of the watershed in square kilometers for streams in the original sample with watershed area less than or equal to 70km$^2$.
-```{r}
-qual <- read.delim("../../static/data/ibi.txt", header=TRUE,sep="\t")
-str(qual)
-```
-
-
 * [Lung](../Lung_081217.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../LungCodebook.txt) can be downloaded as a text file. 
 ```{r}
 fev <- read.delim("../../static/data/Lung_081217.txt", header=TRUE,sep="\t")
@@ -163,22 +129,9 @@ str(pabmi)
 ```
 
 
-* [Plants 1](../plants1.txt) Percent of nitrogen in four different species of plants grown in a laboratory. Researchers who collected these data in parts of the country where there is very little rainfall. The amount of water administered per day ranged from 50mm to 650mm in 100mm increments. There are 9 plants per species-by-water combination.
+* [Police Shootings](../fatal-police-shootings-data.xlsx): Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from https://github.com/washingtonpost/data-police-shootings on 9/11/16. 
 ```{r}
-plants1 <- read.delim("../../static/data/plants1.txt", sep="\t", header=TRUE)
-str(plants1)
-```
-
-
-* [Plants 2](../plants2.txt) Amount of fresh and dry biomass four different species of plants under seven different levels of water. Similar to the PLANTS1 data sets. There are 4 plants per species-by-water combination.
-```{r}
-plants2 <- read.delim("../../static/data/plants2.txt", sep="\t", header=TRUE)
-str(plants2)
-```
-
-* [Police Shootings](../WashPost Police Shootings 2015.xlsx): Excel file on police shootings in 2015 as compiled by the Washington Post. Data downloaded from https://github.com/washingtonpost/data-police-shootings on 9/11/16. 
-```{r}
-washpost <- read_excel("../../static/data/WashPost Police Shootings 2015.xlsx")
+washpost <- read_excel("../../static/data/fatal-police-shootings-data.xlsx")
 str(washpost)
 ```
 
