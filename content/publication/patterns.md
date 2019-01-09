@@ -6,7 +6,7 @@ date = "2016-05-02"
 image_preview = ""
 math = false
 
-publication_types = ["1"]
+publication_types = ["2"]
 publication = "In *Journal of Sex Research*"
 publication_short = "In *Journal of Sex Research*"
 selected = true
