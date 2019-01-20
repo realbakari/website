@@ -18,7 +18,7 @@ autolink = true
 
 # Office Hours for Spring 2019 - TBD
 
-Community Coding hours: Tue/Thu 2-4pm, MLIB 442  
+Community Coding hours: Tue/Thu 2-4pm, THMA 116
 _Need 1 unit? Sign up for MATH 290-Section 02 & Get credit for attending community coding sessions_
 
 <!---
