@@ -16,9 +16,10 @@ autolink = true
 
 +++
 
-# Office Hours for Spring 2019 - TBD
+# Office Hours for Spring 2019
 
-Community Coding hours: Tue/Thu 2-4pm, THMA 116
+* Holt 202: Mon 10-11am, Tue 11-12pm, Fri 12-1pm
+* Community Coding: Tue & Thu 2-4pm, THMA 116
 _Need 1 unit? Sign up for MATH 290-Section 02 & Get credit for attending community coding sessions_
 
 <!---
