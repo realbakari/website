@@ -199,6 +199,7 @@ A selection of sample posters, class projects have comments regarding what made 
     - Very clearly laid out RQ's and introduction. Discussion connects to current literature. 
 * [The Effects of Voter Demographics on the 2016 Primary Elections](ug/2016 Primary Election.pdf) _Jordan, A., Arriaza, L., Ejaz, N., Loeblich, A., Wain, C._ 
     - Watermarks on bottom corners make words difficult to read. Table under results not made in Excel. Not easy to follow direction of story 
+* [Influence of drivers race on the outcome of a traffic stop](ug/2019 race traffic.pdf)
 * [Investigating the association between parental dynamics and adolescent deviant behavior](ug/2017 addhealth parent dynamics and deviant behavior.pdf)
 * [The relationship between one's self-image and feeling that they are liked by their peers](ug/2017 Addhealth self image.pdf)
 * [The relationship between sleep disturbance and mental health](ug/2017 Addhealth sleep mental health.pdf)
