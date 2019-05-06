@@ -1,8 +1,16 @@
 ---
 title: "Guidelines for creating a good Scientific poster"
-date: '2018-11-18'
-output: html_document
+date: '2019-05-01'
+output: 
+  html_document: 
+    theme: sandstone
+    toc: yes
 ---
+
+This page contains general guidelines on how to make a scientific poster. You should always check the standards and requirements for the specific conference, site or session where you will be presenting. For something entirely different, watch this video on a novel approach to scientific posters. I'm not entirely sold on it, it just came out in March 19. 
+https://www.youtube.com/watch?v=1RwJbhkCA58&feature=youtu.be . Want to try it out entirely in R? Here's the github repo with the `posterdown` package. https://github.com/GerkeLab/betterposter 
+
+Otherwise to create a tried and true standard research poster see below. 
 
 # Quick links to content on this page
 * [Templates](#templates): Templates so you don't reinvent the wheel. 
@@ -15,9 +23,13 @@ output: html_document
 # Templates
 * Build your poster using a [powerpoint template](http://www.posterpresentations.com/html/free_poster_templates.html), not Google Slides. 
     - Trifold tabletop templates are seldom used. 
+    - Common sizes are 3'x5' or 4'x6'
 * Choose either a three, or four column layout. 
 * Choose the correct scaling. 
-* Biology Student Research Symposium [[website]](https://www.csuchico.edu/biol/research/student_research_symp.shtml) - Additional templates and guidelines included.
+* Biology Student Research Symposium [[website]](https://www.csuchico.edu/biol/research/student_research_symp.shtml) - Additional templates and guidelines included. These tend to be 4'x3', so a bit longer than wide.  
+
+
+
 
 
 # Content
@@ -104,7 +116,7 @@ Your poster is a professional publication. It should reflect your campus properl
 
 
 
-### Colors
+### Colors in plots
 * Colors are good - but stick to a theme/pallet. 
     - Make the colors meaningful. There's nothing informative about a rainbow. 
     - https://www.w3schools.com/colors/colors_groups.asp
@@ -122,8 +134,8 @@ _Prices are student reported as of Fall 2016._
 
 * Staples ($65)
 * Metagraphcs $50 36x48 --still pricey
-* Ellis Art (downtown and on Esplanade) $30
-* Kinko's downtown, B&W $10
+* Ellis Art (downtown and on Esplanade) $30-50
+* Kinko's B&W $10
 
 
 # Evaluation Criteria
@@ -155,44 +167,46 @@ I use the following criteria to score posters.
 # Examples
 A selection of sample posters, class projects have comments regarding what made them stand out, and what could be improved. 
 
-<button data-toggle="collapse" data-target="#plot">Show/Hide Professional Conference Presentations</button>
-<div id="plot" class="collapse">
 
+## Professional Conference Presentations
+<
 * [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](prof/2013 Jeffries APHA Sex patterns.pdf) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
 * [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](prof/2014 Viola SRA Sexual Identity.pdf) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
 * [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](prof/2017 Moulton APHA Presex proxy.pdf) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
 * [Implementing a Flipped Classroom and Active Learning Techniques in General Chemistry to Augment Student Success at a Mid-Sized Rural University](prof/2017 Smith CHEM ED.pdf) _Smith, M., Aguilar, R., Cherrette, V., Rose, A., Crane, J., Park, C., Bladorn, E., Mills, H., Sherry, S., Chatha, C., Park, H., Dailey, H., Donatello, RA., Wasinger, E._
-
-</div>
-
+* [The Impact of Supplemental Instruction on Student Success](prof/2019 SI analysis.pdf) _Aguilar, R., Donatello, RA._
 
 
-<button data-toggle="collapse" data-target="#grad">Show/Hide Graduate class projects</button>
-<div id="grad" class="collapse">
 
-* [Moving Away From BMI: Lifestyle and Biological Factors Impacting Health](grad/2016 Moving away from BMI.pdf) _Brooke,C., Corona,J.,Kessner S.,Lona,I._
-    - Great additions to the univariate plots of BMI and Cholesterol. Tables are clean, could use bigger font. Sample characteristics only a list of variables. Not enough info on analysis methods, or explanation of Figures 2 and 4.
-* [Do Field Dimensions Affect Baseball outcomes?](grad/2016 Baseball field dimensions.pdf) _Stolenberg R., Williams K., Harris A._
-    - Excellent use of whitespace, colored tables that match the theme. Plots are difficult to read, font size is great, but paragraphs are harder to read than bullet points. 
+## Graduate class projects 
+
+* [Relationship Between Alcohol Consumption and Among Gender and Age Groups](grad/2018 nesarc alcohol gender age.pdf)
+    - Good tables, could use larger font. 
+    - Clearly stated research questions
+    - Good balance of white space. Not entirely walls of text. 
+* [Species-specific tree leaf comparisons in the absence of bird predation on caterpillars](grad/2018 Caterpillars.pdf) _Parker S._
+    - Excellent use of whitespace, balanced colors. Great table 1, bullet point results make it easy to read. 
 * [Effects of Childhood Social Support on Trauma](grad/2016 Social support and childhood trauma.pdf) _Hostler, M., Thornton A., Wong R._
     - Clearly laid out variables of interest and RQ's. Good use of pie charts. The 3D scatterplot is not helpful. Model results presented in a nice table, but not explained. 
 * [Using 2010 U.S. Census Demographics to Determine a Predictor for Beer and Wine Consumption](grad/2016 Census Alcohol.pdf) _Ellis, C., Esposito, C., LaGrange, A._
     - Great use of maps, model comparison table in the bottom middle. Bullet points clear and easy to read. Univariate summary statistics very clearly laid out. 
 
-</div>
 
 
-<button data-toggle="collapse" data-target="#ug">Show/Hide Undergraduate Projects</button>
-<div id="ug" class="collapse">
+## Undergraduate class Projects
 
 * [The Associations Between Familial Relationships, Daily Activities and Delinquency in Adolescents](ug/PDS Guetta.tif) _Guetta, R._
     - Very clearly laid out RQ's and introduction. Discussion connects to current literature. 
-* [Trends in Avian Influenza at Howard Slough](ug/2016 Avian Influenza.pdf) _Aguilar, R., Antonio, A., Balkow, N., Dehoney, T., Ling, D., Saenz, J., Urlie, L., Cline, T._
-    - Good balance between tables and graphics, cute duck. Results clearly explained using N(%) in text.
 * [The Effects of Voter Demographics on the 2016 Primary Elections](ug/2016 Primary Election.pdf) _Jordan, A., Arriaza, L., Ejaz, N., Loeblich, A., Wain, C._ 
     - Watermarks on bottom corners make words difficult to read. Table under results not made in Excel. Not easy to follow direction of story 
+* [Investigating the association between parental dynamics and adolescent deviant behavior](ug/2017 addhealth parent dynamics and deviant behavior.pdf)
+* [The relationship between one's self-image and feeling that they are liked by their peers](ug/2017 Addhealth self image.pdf)
+* [The relationship between sleep disturbance and mental health](ug/2017 Addhealth sleep mental health.pdf)
+* [The association between quality of sleep and general health](ug/2018 Addhealth Sleep general health.pdf)
+* [Does tree type affect the type of caterpillars that are found in the presence of birds?](ug/2018 caterpillars.pdf)
+* [Crater Depth & Diameter and their Association with Hemisphere & Ejecta Type](ug/2018 Mars.pdf)
 
-</div>
+
 
 
 
