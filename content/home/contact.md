@@ -16,12 +16,16 @@ autolink = true
 
 +++
 
-# Office Hours for Spring 2019
+# Office Hours 
 
-* Holt 202: Mon 10-11am, Tue 11-12pm, Fri 12-1pm
-* Community Coding: Tue & Thu 2-4pm, THMA 116
+> Scheduled Office Hours and Community Coding are not held over summer. Email me directly to make an appointment. 
+
+<!---
+* Holt 202: 
+* Community Coding: 
+
 _Need 1 unit? Sign up for MATH 290-Section 02 & Get credit for attending community coding sessions_
 
 
-
 Want to make an appointment outside of these hours? <a href="https://radonatello.youcanbook.me/" data-ycbm-modal="true"><img src="https://youcanbook.me/resources/pics/ycbm-button.png" style="border-style:none;"/></a> 
+--->

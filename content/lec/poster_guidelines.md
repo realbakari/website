@@ -7,8 +7,7 @@ output:
     toc: yes
 ---
 
-This page contains general guidelines on how to make a scientific poster. You should always check the standards and requirements for the specific conference, site or session where you will be presenting. For something entirely different, watch this video on a novel approach to scientific posters. I'm not entirely sold on it, it just came out in March 19. 
-https://www.youtube.com/watch?v=1RwJbhkCA58&feature=youtu.be . Want to try it out entirely in R? Here's the github repo with the `posterdown` package. https://github.com/GerkeLab/betterposter 
+This page contains general guidelines on how to make a scientific poster. You should always check the standards and requirements for the specific conference, site or session where you will be presenting. 
 
 Otherwise to create a tried and true standard research poster see below. 
 
@@ -21,14 +20,16 @@ Otherwise to create a tried and true standard research poster see below.
 * [Examples](#examples): Selected examples
 
 # Templates
-* Build your poster using a [powerpoint template](http://www.posterpresentations.com/html/free_poster_templates.html), not Google Slides. 
+
+* Choose a [powerpoint template](http://www.posterpresentations.com/html/free_poster_templates.html). Powerpoint templates are the current standard method for creating scientific posters in any field. 
     - Trifold tabletop templates are seldom used. 
-    - Common sizes are 3'x5' or 4'x6'
-* Choose either a three, or four column layout. 
-* Choose the correct scaling. 
+    - Common sizes are 36" x 48"
+    - Choose either a three, or four column layout by following the instructions along the right sidebar. 
 * Biology Student Research Symposium [[website]](https://www.csuchico.edu/biol/research/student_research_symp.shtml) - Additional templates and guidelines included. These tend to be 4'x3', so a bit longer than wide.  
 
+## Collaboration
 
+* If you are working with a partner on this project, you can upload your powerpoint template to Google Drive. It will keep the correct scaling and allow you to simultaneously edit the file.
 
 
 
@@ -36,9 +37,9 @@ Otherwise to create a tried and true standard research poster see below.
 The following sections of information must be included in each poster. The choice of design, boxes, columns is up to you. The direction of the story should go top to bottom, then left to right. Read in columns, not rows. 
 
 0. Title
-    - Author list should have the form _Last, MI., Last, MI._
+    - Author list should have the form _Last, MI., First, Last, MI. First_ (last name, middle initial (optional), first initial or name)
     - Affiliations can be listed many ways. Your best bet is to look at other posters presented at the same event form a prior year. For a class project, simply state your year, class and section number. 
-1. Abstract/introduction
+1. Introduction
     - Probably the only part that will be in paragraph form. 
     - This is your lead-in, the part that sets the stage for your analysis. 
     - Limited background and lit review go here also. 
@@ -53,7 +54,14 @@ The following sections of information must be included in each poster. The choic
     - Analysis sample size, N(%) for each categorical variable, mean(sd) (or mean/median) for each continuous measurement. 
 5. Results
     - No more than 2 graphs or tables for bivariate comparisons
-    - One multivariate table or plot. The `coefplot()` function in the `arm` package is an excellent way of displaying the results of a MV model. Save the results of a model as an object `my.model <- lm(your model here)` then call `coefplot(my.model)` on that object. (Want to roll your own? Check out [this SO post](https://stackoverflow.com/questions/32440899/coefplot-in-r-change-ci-line-colours))
+    - One multivariate table or plot. Here are some options
+        - The `coefplot()` function in the `arm` package is an excellent way of displaying the results of a MV model. 
+          Save the results of a model as an object `my.model <- lm(your model here)` then call `coefplot(my.model)` 
+          on that object. 
+        - forestplot https://cran.r-project.org/web/packages/forestplot/vignettes/forestplot.html 
+        - Want to roll your own? Check out 
+          [this SO post](https://stackoverflow.com/questions/32440899/coefplot-in-r-change-ci-line-colours))
+        - Stargazer can make a nice table - but you should rebuild this directly in Powerpoint. 
     - At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
     - You are just stating results here, not justifying, explaining or connecting any meanings. 
 6. Conclusions/discussion
@@ -76,7 +84,8 @@ The following sections of information must be included in each poster. The choic
 
 ### Font size
 * Readable from 10 feet
-* This tends to be at least 18-20 pt font. If using a template provided
+* This tends to be at least 20-24 pt font. If using a template, stick with their defaults. 
+* If presenting an e-poster err on the side of larger font, upwards of 30
 * Bullets vs. Paragraphs: Pretty field specific. 
     - Often the introduction or abstract is the same paragraph used when submitting the abstract for consideration. 
     - Walls of text tend to not be read. 
@@ -84,10 +93,10 @@ The following sections of information must be included in each poster. The choic
 
 
 ### Tables
-* Build them in Excel, or PowerPoint tables directly
+* Build them in PowerPoint tables directly
 * Use borders for the top, and bottom of the table
     - Use vertical borders sparingly. Probably only for the far left corner. 
-    - Excel has some good auto-formats you can use. 
+    - Powerpoint has some good auto-formats you can use. 
 
 ### Graphics
 * Do not copy/paste from anything, it won't scale up well. 
@@ -125,7 +134,7 @@ Your poster is a professional publication. It should reflect your campus properl
 
 
 
-# Printing
+# Printing (as appropriate)
 * Don't wait until the morning of to print - this is ESPECIALLY true in Spring when there are multiple poster symposiums being conducted. 
 * You can print in B&W, and any color graphics can be printed on 8x11 and taped onto the poster. 
 * Don't spend a fortune!
@@ -134,7 +143,7 @@ _Prices are student reported as of Fall 2016._
 
 * Staples ($65)
 * Metagraphcs $50 36x48 --still pricey
-* Ellis Art (downtown and on Esplanade) $30-50
+* Ellis Art (downtown and on Esplanade) $40-50
 * Kinko's B&W $10
 
 
@@ -169,7 +178,7 @@ A selection of sample posters, class projects have comments regarding what made 
 
 
 ## Professional Conference Presentations
-<
+
 * [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](prof/2013 Jeffries APHA Sex patterns.pdf) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
 * [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](prof/2014 Viola SRA Sexual Identity.pdf) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
 * [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](prof/2017 Moulton APHA Presex proxy.pdf) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
