@@ -162,7 +162,11 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "https://stackexchange.com/users/4537509/robin-donatello"
 
-
+  [[params.social]]
+    icon = "publons"
+    icon_pack = "ai"
+    link = "https://publons.com/researcher/2874948/robin-a-donatello/"
+    
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.
