@@ -9,6 +9,9 @@
  *  Core
  **************************************************/
 
+input:focus {
+  background-color: yellow;
+}
 
 /* Headings */
 
@@ -20,7 +23,8 @@ h3.article-title a:hover {
 
 a:hover,
 a:focus {
-  color: rgb(0,230,118);
+  /*color: rgb(0,230,118);*/
+  color: rgb(203,68,227);
 }
 
 /*************************************************
