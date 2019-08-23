@@ -23,5 +23,7 @@ autolink = true
 
 _Need 1 unit? Sign up for MATH 290-Section 02 & Get credit for attending community coding sessions_
 
+<!---
 
 Want to make an appointment outside of these hours? <a href="https://radonatello.youcanbook.me/" data-ycbm-modal="true"><img src="https://youcanbook.me/resources/pics/ycbm-button.png" style="border-style:none;"/></a> 
+--->
