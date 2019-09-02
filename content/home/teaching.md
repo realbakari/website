@@ -31,6 +31,16 @@ _Terms in parenthesis indicate when online content was last updated._
 Wherever possible I try to use real world, non pre-processed data in the classroom. The [Data](data/) page provides links to download data, codebooks where available, and code to import these data sets into R. 
 
 
-### [Notes](lec/)
-A selection of lecture notes that are appropriate for multiple classes. 
+### [Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/)
+A compilation of Applied Statistics lecture notes using [[Bookdown]](https://bookdown.org/) that I use in multiple classes. Most of the examples are in R, some SPSS instructions or links to SPSS help pages sprinkled throughout. 
+
+* Data preparation, reproducible research & literate program
+* Data visualization
+* Regression modeling, model building, variable selection
+* Moderation, confounding, multicollinearity
+* PCA & FA
+* Multi-level modeling (Random intercept model chapter contributed by [[Edward Roualdes]](https://roualdes.us/)). 
+* Multiple imputation for Missing data 
+
+Potential upcoming topics include: cluster analysis, 
 

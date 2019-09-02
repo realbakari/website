@@ -38,7 +38,8 @@ list_files</code></pre>
 <pre><code>## [1] &quot;../../static/data/Jack/Ec1.txt&quot; &quot;../../static/data/Jack/Ec2.txt&quot;
 ## [3] &quot;../../static/data/Jack/Ec3.txt&quot;</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>Use the <code>%do%</code> function in the <code>foreach</code> package to efficiently loop over all items in the list. This read in the data using <code>read.delim</code>, turns it into a data frame, so that we can add the file name to the data set before combining each data set using <code>rbind</code> (stacking or concatonating).</li>
+<li>Use the <code>%do%</code> function in the <code>foreach</code> package to efficiently loop over all items in the list.
+This read in the data using <code>read.delim</code>, turns it into a data frame, so that we can add the file name to the data set before combining each data set using <code>rbind</code> (stacking or concatonating).</li>
 </ol>
 <pre class="r"><code>eColi &lt;- foreach(i=1:length(list_files), .combine=rbind) %do% {
             read.delim(list_files[[i]], skip=66, sep=&quot;;&quot;) %&gt;%
