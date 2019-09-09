@@ -18,7 +18,7 @@ autolink = true
 
 # Office Hours for Fall 2019
 
-* Monday 2-3pm Holt 202
+* Monday 3-4pm Holt 202
 * Tuesday 10-11am Holt 202
 * Wednesday 2-4pm PHSC 213 (Community Coding)
 * Thursday 2-4pm MLIB 442 (Community Coding)
