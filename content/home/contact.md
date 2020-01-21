@@ -16,20 +16,30 @@ autolink = true
 
 +++
 
-# Office Hours for Fall 2019
+# Office Hours for Spring 2020
 
-* Monday 3-4pm Holt 202
-* Tuesday 10-11am Holt 202
-* Wednesday 2-4pm PHSC 213 (Community Coding)
-* Thursday 2-4pm MLIB 442 (Community Coding)
+TBD
 
-[[Community Coding Flyer]](bit.ly/cc_hours)
-_Need 1 unit? Sign up for MATH 290-Section 02 & Get credit for attending community coding sessions. Help is available TWR 2-4pm!_
-
-
-Want to make an appointment outside of these hours? 
+Want to make an appointment with me outside of these hours? 
 
 :date: [[Click here]](http://bit.ly/DrD_calendar) to view my calendar then PM me in Slack or Email me with 1-2 times that work for both of us. 
+
+
+## Community Coding
+Need a place to work on your coding, around other coders? Want a place to work where _just in case_ you have a question there's a person you can ask? Similar to the drop in Math tutoring lab, Community coding is a network of students working on a common topic, in a common place. 
+
+[[Flyer]](bit.ly/cc_hours)
+_Need 1 unit? Sign up for MATH 290-Section 02 & get credit for attending community coding sessions._
+
+Expanded hours this semester!
+
+* Mon 10-12, Tehama 116 (:star: i'm at this one, 11-12)
+* Tue 2-4pm, Butte 518 (BSS Student Success Center)
+* Wed 10-12noon, Tehama 116 (:star: i'm at this one)
+* Wed 5:30-7 pm, Butte 518
+* Thu 4-6pm, Butte 518
+* Fri hours are pending.
+
 
 <!---
 <a href="https://radonatello.youcanbook.me/" data-ycbm-modal="true"><img src="https://youcanbook.me/resources/pics/ycbm-button.png" style="border-style:none;"/></a> 

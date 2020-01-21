@@ -50,12 +50,11 @@ weight = 1
 When I'm not working in the garden to grow food for my family, I'd rather be in Upper Park with my dogs, or getting in some video game time. Otherwise I'm
 
 * [Teaching](#teaching) courses in Statistics and Data Science.
-* Helping modernize the current Undergraduate Statistics Curriculum to meet the 2016 GAISE Guidelines
 * Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
-* Participating in the CSUC Graduation Initiative Team - helping to use data to facilitate student success. 
-* Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/)
+* Supporting campus wide Student Success efforts including analysis of housing insecurity, supplemental insturuction, and course redesigns.    
+* Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/) (Help here?)
 * Running [Software and Data Carpentry](https://carpentries.org/) workshops. 
-* Providing statistical consulting and data analysis assistance for researchers on, and off campus. 
+* Helping the [Center for Healthy Communities](https://www.csuchico.edu/chc/) develop data science and analytical tools to ensure their programs are effective and meeting the needs of students. 
 
 
 <span style="color:red">Current student looking for your [class page](#teaching)? </span>
