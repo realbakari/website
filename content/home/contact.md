@@ -18,7 +18,8 @@ autolink = true
 
 # Office Hours for Spring 2020
 
-TBD
+Thursday, 1-2pm.
+3 hours at Community Coding (listed below)
 
 Want to make an appointment with me outside of these hours? 
 
