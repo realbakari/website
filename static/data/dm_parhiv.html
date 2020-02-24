@@ -455,14 +455,16 @@ summary {
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">names</span>(hiv) &lt;-<span class="st"> </span><span class="kw">tolower</span>(<span class="kw">names</span>(hiv))</a></code></pre></div>
 <div id="change-factor-variables-from-numeric-to-categorical." class="section level2">
 <h2>Change factor variables from numeric to categorical.</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">hiv<span class="op">$</span>gender &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>gender, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>))</a>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">hiv<span class="op">$</span>gender  &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>gender, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>))</a>
 <a class="sourceLine" id="cb3-2" title="2">hiv<span class="op">$</span>livwith &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>livwith, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Both parents&quot;</span>, <span class="st">&quot;One parent&quot;</span>, <span class="st">&quot;Other&quot;</span>))</a>
 <a class="sourceLine" id="cb3-3" title="3">hiv<span class="op">$</span>jobmo   &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>jobmo, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Employed&quot;</span>, <span class="st">&quot;Unemployed&quot;</span>, <span class="st">&quot;Retired/Disabled&quot;</span>))</a>
 <a class="sourceLine" id="cb3-4" title="4">hiv<span class="op">$</span>edumo   &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>edumo, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;&lt;HS&quot;</span>, <span class="st">&quot;HS/GED&quot;</span>, <span class="st">&quot;HS+&quot;</span>))</a>
 <a class="sourceLine" id="cb3-5" title="5">hiv<span class="op">$</span>howrel  &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>howrel, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Very&quot;</span>, <span class="st">&quot;Somewhat&quot;</span>, <span class="st">&quot;Not at all&quot;</span>))</a>
 <a class="sourceLine" id="cb3-6" title="6">hiv<span class="op">$</span>finsit  &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>finsit, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Very poor&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Necessities&quot;</span> ,<span class="st">&quot;Comfortable&quot;</span>))</a>
 <a class="sourceLine" id="cb3-7" title="7">hiv<span class="op">$</span>ethn    &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>ethn, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Latinx&quot;</span>, <span class="st">&quot;Black&quot;</span>, <span class="st">&quot;Other&quot;</span>))</a>
-<a class="sourceLine" id="cb3-8" title="8">hiv<span class="op">$</span>attserv &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>attserv, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Never&quot;</span>, <span class="st">&quot;Sometimes&quot;</span>, <span class="st">&quot;Frequently&quot;</span>))</a></code></pre></div>
+<a class="sourceLine" id="cb3-8" title="8">hiv<span class="op">$</span>attserv &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>attserv, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Never&quot;</span>, <span class="st">&quot;Sometimes&quot;</span>, <span class="st">&quot;Frequently&quot;</span>))</a>
+<a class="sourceLine" id="cb3-9" title="9">hiv<span class="op">$</span>frnds   &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>frnds, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;good friends&quot;</span>, <span class="st">&quot;Lots acquaint.&quot;</span>, <span class="st">&quot;Few acquaint.&quot;</span>, <span class="st">&quot;not close to anyone&quot;</span>))</a>
+<a class="sourceLine" id="cb3-10" title="10">hiv<span class="op">$</span>likesch &lt;-<span class="st"> </span><span class="kw">factor</span>(hiv<span class="op">$</span>likesch, <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Very much&quot;</span>, <span class="st">&quot;somewhat&quot;</span>, <span class="st">&quot;meh&quot;</span>, <span class="st">&quot;dislike somewhat&quot;</span>, <span class="st">&quot;dislike very much&quot;</span>))</a></code></pre></div>
 <div id="set-missing-values" class="section level3">
 <h3>Set missing values</h3>
 <p>If haven’t started smoking/drinking, then set age started to missing.</p>
@@ -473,9 +475,9 @@ summary {
 <div id="change-dichotomous-measures-to-binary-indicators-where-0-non-event-and-1event." class="section level3">
 <h3>Change dichotomous measures to binary indicators where 0= non event and 1=event.</h3>
 <p>Change 1/2 to 0/1</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">hiv<span class="op">$</span>siblings[hiv<span class="op">$</span>siblings<span class="op">==</span><span class="dv">2</span>] &lt;-<span class="st"> </span><span class="dv">0</span></a>
-<a class="sourceLine" id="cb5-2" title="2">hiv<span class="op">$</span>school[hiv<span class="op">$</span>school<span class="op">==</span><span class="dv">2</span>] &lt;-<span class="st"> </span><span class="dv">0</span></a>
-<a class="sourceLine" id="cb5-3" title="3">hiv<span class="op">$</span>hookey[hiv<span class="op">$</span>hookey<span class="op">==</span><span class="dv">2</span>] &lt;-<span class="st"> </span><span class="dv">0</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">hiv<span class="op">$</span>siblings &lt;-<span class="st"> </span>hiv<span class="op">$</span>siblings <span class="dv">-1</span> </a>
+<a class="sourceLine" id="cb5-2" title="2">hiv<span class="op">$</span>school &lt;-<span class="st"> </span>hiv<span class="op">$</span>school <span class="dv">-1</span> </a>
+<a class="sourceLine" id="cb5-3" title="3">hiv<span class="op">$</span>hookey &lt;-<span class="st"> </span>hiv<span class="op">$</span>hookey <span class="dv">-1</span> </a></code></pre></div>
 </div>
 <div id="update-the-parental-hiv-data-set-by-creating-all-the-subscales-listed-at-the-bottom-of-the-codebook." class="section level3">
 <h3>Update the Parental HIV data set by creating all the subscales listed at the bottom of the codebook.</h3>
@@ -651,7 +653,7 @@ summary {
 </div>
 <div id="session-info" class="section level1">
 <h1>Session Info</h1>
-<p>This document was compiled on 2020-02-23 19:24:13 and with the following system information:</p>
+<p>This document was compiled on 2020-02-23 19:29:56 and with the following system information:</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">sessionInfo</span>()</a></code></pre></div>
 <pre><code>## R version 3.6.1 (2019-07-05)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)

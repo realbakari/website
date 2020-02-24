@@ -29,7 +29,7 @@ names(hiv) <- tolower(names(hiv))
 ## Change factor variables from numeric to categorical.
 
 ```{r}
-hiv$gender <- factor(hiv$gender, labels=c("Male", "Female"))
+hiv$gender  <- factor(hiv$gender, labels=c("Male", "Female"))
 hiv$livwith <- factor(hiv$livwith, labels=c("Both parents", "One parent", "Other"))
 hiv$jobmo   <- factor(hiv$jobmo, labels=c("Employed", "Unemployed", "Retired/Disabled"))
 hiv$edumo   <- factor(hiv$edumo, labels=c("<HS", "HS/GED", "HS+"))
@@ -37,6 +37,8 @@ hiv$howrel  <- factor(hiv$howrel, labels=c("Very", "Somewhat", "Not at all"))
 hiv$finsit  <- factor(hiv$finsit, labels=c("Very poor", "Poor", "Necessities" ,"Comfortable"))
 hiv$ethn    <- factor(hiv$ethn, labels=c("Latinx", "Black", "Other"))
 hiv$attserv <- factor(hiv$attserv, labels=c("Never", "Sometimes", "Frequently"))
+hiv$frnds   <- factor(hiv$frnds, labels=c("good friends", "Lots acquaint.", "Few acquaint.", "not close to anyone"))
+hiv$likesch <- factor(hiv$likesch, labels=c("Very much", "somewhat", "meh", "dislike somewhat", "dislike very much"))
 ```
 
 
@@ -52,9 +54,9 @@ hiv$agemar[hiv$agemar==0] <- NA
 ### Change dichotomous measures to binary indicators where 0= non event and 1=event. 
 Change 1/2 to 0/1
 ```{r}
-hiv$siblings[hiv$siblings==2] <- 0
-hiv$school[hiv$school==2] <- 0
-hiv$hookey[hiv$hookey==2] <- 0
+hiv$siblings <- hiv$siblings -1 
+hiv$school <- hiv$school -1 
+hiv$hookey <- hiv$hookey -1 
 ```
 
 
