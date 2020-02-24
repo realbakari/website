@@ -36,6 +36,7 @@ hiv$edumo   <- factor(hiv$edumo, labels=c("<HS", "HS/GED", "HS+"))
 hiv$howrel  <- factor(hiv$howrel, labels=c("Very", "Somewhat", "Not at all"))
 hiv$finsit  <- factor(hiv$finsit, labels=c("Very poor", "Poor", "Necessities" ,"Comfortable"))
 hiv$ethn    <- factor(hiv$ethn, labels=c("Latinx", "Black", "Other"))
+hiv$attserv <- factor(hiv$attserv, labels=c("Never", "Sometimes", "Frequently"))
 ```
 
 
