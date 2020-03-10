@@ -1,37 +1,31 @@
 +++
-# An example of using the custom widget to create your own homepage section.
-# To create more sections, duplicate this file and edit the values below as desired.
-
-date = "2016-04-20T00:00:00"
-draft = false
-
-title = "Teaching"
+date = 2016-04-20T00:00:00Z
 subtitle = ""
+title = "work experience"
+weight = 2
 widget = "custom"
 
-# Order that this section will appear in.
-weight = 2
-
 +++
+> A mind that is stretched by a new experience can never go back to its old dimensions. - Oliver Wendell Holmes, Jr.
 
-I teach the following courses at Chico State. 
+#### Department of Housing & Public Work QLD 
 
-- MATH 105: Introduction to Statistics (Su 18)
-- MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/) (Fall 19)
-- MATH 315: [Applied Statistical Methods I](https://norcalbiostat.github.io/MATH315/) (Fall 19)
-- MATH 385: Introduction to Data Science (Sp 17)
-- MATH 456: [Applied Statistical Methods II](https://norcalbiostat.github.io/MATH456/) (Spr 20)
-- MATH 485: [Advanced Data Science](https://norcalbiostat.github.io/ADS/) (Spr 20)
-- MATH 615: [Statistical Methods for Graduate Research](https://norcalbiostat.github.io/MATH615/) (Fall 19)
-- MATH 685: Data Science for Graduate Research (Pilot Fall 19)
+Digital Mentor / volunteering Queensland / Apr 2018 - Present · Brisbane, QLD Helping Queenslanders learn Basic digital Skills, identifying and working toward their goals and use of technology to improve their lives and lifestyles 
 
-_Terms in parenthesis indicate when online content was last updated._
+#### Australian Red Cross 
 
-### [Data](data/)
-Wherever possible I try to use real world, non pre-processed data in the classroom. The [Data](data/) page provides links to download data, codebooks where available, and code to import these data sets into R. 
+Emergency service volunteer / Feb 2019 — Present · Brisbane, QLD 
 
+The Red Cross Emergency service program aims to support individuals and communities to cope with and manage the psychosocial impacts of emergencies. 
 
-### [Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/)
-A compilation of Applied Statistics lecture notes using [[Bookdown]](https://bookdown.org/) that I use in multiple classes. Most of the examples are in R, some SPSS instructions or links to SPSS help pages sprinkled throughout. 
+#### Translational Research Institute Australia 
 
+Research / Oct 2016 – Jun 2016 · Brisbane, QLD 
 
+A world-class medical facility in Brisbane, Australia. Focus on translating research for better health outcomes through collaboration. 
+
+#### Asylum Seeker Resource Centre 
+
+Community Service Worker Apr 2017 – Present · Brisbane, QLD 
+
+Working to empower the community through facilitating Change and providing means for self-help within community settings through active participation.
