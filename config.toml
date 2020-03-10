@@ -1,7 +1,7 @@
 # End your URL with a `/` trailing slash.
 baseurl = "https://norcalbiostat.netlify.com/"  
-title = "Bakari Mustafa - ePorfolio"
-copyright = "&copy; 2018 Robin Donatello"
+title = "Bakari Mustafa"
+copyright = "&copy; 2020 Bakari Mustafa"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
