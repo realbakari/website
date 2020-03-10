@@ -25,10 +25,11 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/reading
+  path: content/publication
   label: Reading
   create: all
   match: "**/*"
+  new_doc_ext: ".md"
 - type: directory
   path: content/talk
   label: Talk
