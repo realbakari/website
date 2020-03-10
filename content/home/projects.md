@@ -6,11 +6,11 @@ view = 0
 weight = 4
 widget = "projects"
 [[filter]]
-name = "Visualization"
-tag = ""
-[[filter]]
 name = "All"
 tag = "*"
+[[filter]]
+name = "Visualization"
+tag = ""
 [[filter]]
 name = "Podcast"
 tag = ""
