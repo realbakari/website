@@ -27,7 +27,7 @@ defaultContentLanguageInSubdir = false
   organization_url = "http://www.griffith.edu.au/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   #avatar = "Zombatar.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  avatar = "donatello - head.jpg"  
+  avatar = "https://images.gr-assets.com/authors/1573239712p8/19718649.jpg"  
   email = "bakari.mustafa@griffithuni.edu.au"
   address = "170 Kessels Rd, Nathan QLD 4111"
   office_hours = ""
@@ -168,36 +168,41 @@ defaultContentLanguageInSubdir = false
   name = "Home"
   url = "#about"
   weight = 1
-
+  
 [[menu.main]]
-  name = "Teaching"
-  url = "#teaching"
+  name = "Work / Experience"
+  url = "#work-experience"
   weight = 2
   
 [[menu.main]]
-  name = "Blog"
-  url = "#posts"
-  weight = 3
-
+  name = "Curriculum Vitae"
+  url = "#cv"
+  weight = 3  
+ 
 [[menu.main]]
   name = "Projects"
   url = "#projects"
   weight = 4
   
 #[[menu.main]]
-#  name = "Talks & Publications"
-#  url = "#talks"
-#  weight = 5
+#  name = "Teaching"
+ # url = "#teaching"
+ # weight = 2
+  
+#[[menu.main]]
+#  name = "Blog"
+#  url = "#posts"
+#  weight = 3
 
-[[menu.main]]
-  name = "Talks & Pubs"
-  url = "#publications"
-  weight = 5
+#[[menu.main]]
+#  name = "Talks & Pubs"
+#  url = "#publications"
+#  weight = 5
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 5
 
 # Taxonomies.
 [taxonomies]
