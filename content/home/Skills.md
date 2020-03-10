@@ -15,10 +15,3 @@ widget = "custom"
 * Creativity
 * Problem solving
 * Data Structure
-
-|   Skills  |
-|---|---|
-|  Object-Oriented Design |  Information management |  
-|  Research |  Teamwork |  
-|  Easily Adaptable |  Creativity |   
-|  Problem solving |  Data Structure |
