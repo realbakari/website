@@ -22,6 +22,20 @@ weight = 1
     "Responsible pitbull owners", 
     "Being outdoors"
   ]
+  
+# Skills
+[Skills]
+  Skills = [
+    "Object Oriented Design",
+    "Web & Mobile Development",
+    "Information management",
+    "Research", 
+    "Teamwork", 
+    "Easily Adaptable", 
+    "Creativity", 
+    "Problem solving", 
+    "Data Structure"
+  ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
