@@ -9,12 +9,6 @@ widget = "projects"
 name = "All"
 tag = "*"
 [[filter]]
-name = "Student Success"
-tag = ".ss"
-[[filter]]
-name = "Data Science"
-tag = ".ds"
-[[filter]]
 name = "Podcast"
 tag = ""
 [[filter]]
