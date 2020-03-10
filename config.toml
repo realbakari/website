@@ -180,8 +180,8 @@ defaultContentLanguageInSubdir = false
   weight = 3  
   
 [[menu.main]]
-  name = "Curriculum Vitae"
-  url = "#cv"
+  name = "Resume"
+  url = "#curriculum-vitae"
   weight = 4  
  
 [[menu.main]]
