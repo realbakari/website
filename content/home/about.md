@@ -3,21 +3,17 @@ date = 2016-04-20T00:00:00Z
 weight = 1
 widget = "about"
 [[education.courses]]
-course = "DrPH in Biostatistics"
-institution = "Fielding School of Public Health, University of California, Los Angeles"
-year = 2013
+course = "Information Technology, Software Development"
+institution = "Griffith University"
+year = "2018"
 [[education.courses]]
-course = "MS in Biostatistics"
-institution = "Fielding School of Public Health, University of California, Los Angeles"
-year = 2007
+course = "Queensland Certificate of Education (QCE)"
+institution = "Glenala State High School"
+year = "2017"
 [[education.courses]]
-course = "BS in Mathematics, Option in Statistics"
-institution = "California State University, Chico"
-year = 2005
-[[education.courses]]
-course = "BS in General Biology, Minor in Chemistry"
-institution = "California State University, Chico"
-year = 2005
+course = "Malawi Certificate of Education (MCE)"
+institution = "Dzaleka Community Day Secondary School"
+year = "2015"
 [interests]
 interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputation", "Data Visualization", "Bayesian Methods for Analysis", "Statistical Programming", "Gardening for food", "Responsible pitbull owners", "Being outdoors"]
 
