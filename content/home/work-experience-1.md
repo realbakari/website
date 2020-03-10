@@ -2,7 +2,7 @@
 date = 2020-03-09T14:00:00Z
 draft = true
 subtitle = ""
-title = "Work Experience"
+title = "Skills"
 weight = 2
 widget = "custom"
 
