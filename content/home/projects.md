@@ -10,12 +10,12 @@ name = "All"
 tag = "*"
 [[filter]]
 name = "Visualization"
-tag = ""
+tag = "Visualization"
 [[filter]]
 name = "Podcast"
-tag = ""
+tag = "podcast"
 [[filter]]
 name = "Community Building"
-tag = ""
+tag = "community"
 
 +++
