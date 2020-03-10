@@ -1,16 +1,16 @@
 ---
 title: Getting Started with R and R Studio
 author: ''
-date: '2017-08-06'
+date: 2020-03-09T14:00:00+00:00
 slug: software-overview
 categories:
-  - programming
+- programming
 tags:
-  - Rstudio
-  - Rmarkdown
-  - LaTeX
----
+- Rstudio
+- Rmarkdown
+- LaTeX
 
+---
 # Overview
 Instructions and links for downloading and installing the R Studio suite of awesomeness. Includes a brief walkthrough of R Studio
 
@@ -212,4 +212,3 @@ You can edit *tex files directly in R Studio, a separate tex editor is not neces
 # More help
 For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you. 
 https://www.rstudio.com/online-learning/
-
