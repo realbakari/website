@@ -5,6 +5,6 @@ detailed_list = false
 subtitle = ""
 title = "Reading"
 weight = 6
-widget = "reading"
+widget = "publication"
 
 +++
