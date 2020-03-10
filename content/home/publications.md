@@ -1,10 +1,22 @@
 +++
-count = 5
-date = 2020-03-09T14:00:00Z
-detailed_list = false
+# Recent Publications widget.
+# This widget displays recent publications from `content/publication/`.
+
+date = "2016-04-20T00:00:00"
+draft = false
+
+title = "Publications"
 subtitle = ""
-title = "Reading"
+widget = "publications"
+
+# Order that this section will appear in.
 weight = 6
-widget = "publication"
+
+# Number of publications to list.
+count = 5
+
+# Show publication details (such as abstract)? (true/false)
+detailed_list = false
 
 +++
+
