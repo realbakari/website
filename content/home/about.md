@@ -22,7 +22,7 @@ year = 2005
 interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputation", "Data Visualization", "Bayesian Methods for Analysis", "Statistical Programming", "Gardening for food", "Responsible pitbull owners", "Being outdoors"]
 
 +++
-# Biography
+# A bit about myself
 
 When I'm not working in the garden to grow food for my family, I'd rather be in Upper Park with my dogs or getting in some video game time. Otherwise, I'm
 
