@@ -16,6 +16,19 @@ institution = "Dzaleka Community Day Secondary School"
 year = "2015"
 [interests]
 interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputation", "Data Visualization", "Statistical Programming", "Gardening for food", "Responsible pitbull owners"]
+# Skills
+[Skills]
+  Skills = [
+    "Object Oriented Design",
+    "Web & Mobile Development",
+    "Information management",
+    "Research", 
+    "Teamwork", 
+    "Easily Adaptable", 
+    "Creativity", 
+    "Problem solving", 
+    "Data Structure"
+  ]
 
 +++
 # Welcome!
