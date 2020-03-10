@@ -1,6 +1,5 @@
 +++
 date = 2019-03-12T14:00:00Z
-draft = true
 math = false
 summary = "An ongoing attempt to learn P5.js through simple, playful, and interactive sketches."
 tags = []
