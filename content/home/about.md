@@ -22,15 +22,10 @@ year = 2005
 interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputation", "Data Visualization", "Bayesian Methods for Analysis", "Statistical Programming", "Gardening for food", "Responsible pitbull owners", "Being outdoors"]
 
 +++
-# A bit about myself
+# Welcome!
 
-When I'm not working in the garden to grow food for my family, I'd rather be in Upper Park with my dogs or getting in some video game time. Otherwise, I'm
+I write, create, collaborate and solve problems. I love learning new things, and I particularly interested in emerging technology, community building, and entrepreneurship
 
-* [Teaching](#teaching) courses in Statistics and Data Science.
-* Leading the [Data Science Initiative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
-* Supporting campus-wide Student Success efforts including analysis of housing insecurity, supplemental instruction, and course redesigns.
-* Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/) (Help here?)
-* Running [Software and Data Carpentry](https://carpentries.org/) workshops.
-* Helping the [Center for Healthy Communities](https://www.csuchico.edu/chc/) develop data science and analytical tools to ensure their programs are effective and meeting the needs of students.
+Welcome to my portfolio where you can learn more about my skills, experience and current position and project that I am currently working or have completed.
 
-<span style="color:red">Current student looking for your [class page](#teaching)? </span>
+Interested in working together? Reach me at [bakari@mentorsoutreach.org](mailto:mentorsoutreach)
