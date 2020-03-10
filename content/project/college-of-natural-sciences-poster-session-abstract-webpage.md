@@ -1,36 +1,12 @@
 +++
-date = 2018-05-29T00:00:00Z
+date = 2019-03-12T14:00:00Z
 draft = true
 math = false
-summary = "The annual College of Natural Sciences Poster Session is an established event where students, faculty and clubs have the opportunity to present their original research or student activities to the College, University and Chico Community. This project streamlined the submitted abstract processing, and provided the authors with a website to view their submission. Another result from this project was the creation of a judging app that reduced the burden of vote tallying for multiple categories, provided real-time score graphs, and an instant display of winner titles and authors. "
-tags = ["ss"]
-title = "College of Natural Sciences Poster Session Abstract Webpage"
+summary = "An ongoing attempt to learn P5.js through simple, playful, and interactive sketches."
+tags = []
+title = "Experiments with P5.JS"
 
 +++
-The annual College of Natural Sciences Poster Session is an established event where students, faculty and clubs have the opportunity to present their original research or student activities to the College, University and Chico Community. See more about the College Poser Session Event at the [College of Natural Sciences Poster Session event page](https://www.csuchico.edu/nsci/event/poster.shtml). 
+### About P5.js
 
-This project streamlined the submitted abstract processing, and provided the authors with a website to view their submission. Another result from this project was the creation of a judging app that reduced the burden of vote tallying for multiple categories, provided real-time score graphs, and an instant display of winner titles and authors.
-
-
-### Abstract Submission processing
-
-
-Abstracts are submitted using Google Forms. They are then processed using R (`googlesheets`, `stringr`, `dplyr`), turned into a webpage using `rmarkdown` with a few fancy visual aids using `ggplot2` and `kable`. 
-
-The webpage is re-built nightly during the open abstract submission period and can be seen here: https://norcalbiostat.github.io/CNS-Poster-Session/
-
-After the abstract submission period closes, the poster ID's are finalied and abstracts reviewed by members of the poster session committee. The `rmarkdown` file gets compiled to PDF format and turned into a [program booklet](https://www.csuchico.edu/nsci/_assets/documents/NSC-poster-session-2018-abstract-booklet.pdf) with only minimal manual processing of latex symbols. 
-
-### Judging Shiny App
-https://norcalbiostat.shinyapps.io/CNSPosterJudgingApp/ 
-
-The app was originally created for the 2017 session by Aaron Shaffer [@ClassicSours](https://github.com/ClassicSours), and updated by me for 2018. Feel free to play around, the data is not stored on app shutdown. The poster ID's are listed on the abstract website. 
-
-This judging app 
-
-* reduced the burden of vote tallying for multiple categories (judge votes, peoples choice)
-* showed real-time vote scoring results as bar charts that could be viewed by anyone with the link (committee members only) during the session (an unexpected but amusing side-result)
-* provided an instant display of winning poster titles with authors to be read off by the Dean during the awards ceremony (a mere 30 minutes after the voting period closes)
-* allowed for the download of merged voting data so
-    - certificates could be made via mail merge by the next day
-    - The [Gateway Scinece Museum](http://www.csuchico.edu/gateway/) has the contact information for authors for whom their posters have been chosen to be displayed in the Museum over summer.
+**p5.js** is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! ... Using the metaphor of a sketch, **p5.js** has a full set of drawing functionality.
