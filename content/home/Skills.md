@@ -6,12 +6,20 @@ weight = 2
 widget = "custom"
 
 +++
-* Object-Oriented Design
-* Web & Mobile Development
-* Information management
-* Research
-* Teamwork
-* Easily Adaptable
-* Creativity
-* Problem solving
-* Data Structure
+Object-Oriented Design
+
+Web & Mobile Development
+
+Information management
+
+Research
+
+Teamwork
+
+Easily Adaptable
+
+Creativity
+
+Problem-solving
+
+Data Structure
