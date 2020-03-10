@@ -5,7 +5,7 @@ widget = "about"
 [[education.courses]]
 course = "Information Technology, Software Development"
 institution = "Griffith University"
-year = "2018"
+year = "Present"
 [[education.courses]]
 course = "Queensland Certificate of Education (QCE)"
 institution = "Glenala State High School"
@@ -15,7 +15,7 @@ course = "Malawi Certificate of Education (MCE)"
 institution = "Dzaleka Community Day Secondary School"
 year = "2015"
 [interests]
-interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputation", "Data Visualization", "Bayesian Methods for Analysis", "Statistical Programming", "Gardening for food", "Responsible pitbull owners", "Being outdoors"]
+interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputation", "Data Visualization", "Statistical Programming", "Gardening for food", "Responsible pitbull owners"]
 
 +++
 # Welcome!
