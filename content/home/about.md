@@ -22,7 +22,7 @@ interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputat
 +++
 # Welcome!
 
-I write, create, collaborate and solve problems. I love learning new things, and I'm particularly interested in emerging technology, community building, and entrepreneurship
+👋 I write, create, collaborate and solve problems. I love learning new things, and I'm particularly interested in emerging technology, community building, and entrepreneurship
 
 Welcome to my portfolio where you can learn more about my skills, experience and current position and project that I am currently working or have completed.
 
