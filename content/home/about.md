@@ -2,6 +2,8 @@
 date = 2016-04-20T00:00:00Z
 weight = 1
 widget = "about"
+[Skills]
+Skills = ["Object Oriented Design", "Web & Mobile Development", "Information management", "Research", "Teamwork", "Easily Adaptable", "Creativity", "Problem solving", "Data Structure"]
 [[education.courses]]
 course = "Information Technology, Software Development"
 institution = "Griffith University"
@@ -16,23 +18,11 @@ institution = "Dzaleka Community Day Secondary School"
 year = "2015"
 [interests]
 interests = ["Data Science", "Statistical Consulting", "Data Editing and Imputation", "Data Visualization", "Statistical Programming", "Gardening for food", "Responsible pitbull owners"]
-[Skills]
-  Skills = [
-    "Object Oriented Design",
-    "Web & Mobile Development",
-    "Information management",
-    "Research", 
-    "Teamwork", 
-    "Easily Adaptable", 
-    "Creativity", 
-    "Problem solving", 
-    "Data Structure"
-  ]
 
 +++
 # Welcome!
 
-I write, create, collaborate and solve problems. I love learning new things, and I particularly interested in emerging technology, community building, and entrepreneurship
+I write, create, collaborate and solve problems. I love learning new things, and I'm particularly interested in emerging technology, community building, and entrepreneurship
 
 Welcome to my portfolio where you can learn more about my skills, experience and current position and project that I am currently working or have completed.
 
