@@ -1,23 +1,14 @@
 +++
-abstract = "This analysis assessed patterns of sexual experience, the order in which behaviors were initiated, and associated factors, among Latino and African American ninth grade students (average age 15.2) who self-administered audio-computer-assisted surveys on netbooks in classes at 10 Los Angeles–area public high schools. Lifetime experiences with vaginal and oral sex were most common (19% and 16%, respectively); fewer reported anal sex (6%). Of the 23% reporting any sex, 91% fell into four categories: 36% reporting both oral and vaginal sex; 23% vaginal only; 18% all three; and 13% oral only. Most sexually experienced students (88%) initiated with vaginal or oral sex (46% vaginal, 33% oral, 9% both same day). No dominant pathway of sexual onset emerged for those reporting all three types of sex. We found no evidence that oral or anal sex substituted for or delayed vaginal sex. Males, those with a current partner, and those reporting multiple partners were more likely than others to report all three sexual behaviors versus vaginal only (odds ratios [ORs] 2.0, 1.5, 3.0; p = .02, .06, < .01, respectively). Although vaginal intercourse dominated their early sexual behavior, one-fifth of sexually experienced students reported anal intercourse, highlighting the need for specific prevention messages surrounding this higher-risk behavior."
-
-authors = ["Robin A. Donatello", "Christine J. De Rosa", "Bret D. Moulton", "Emily Q. Chung", "Rachel Viola", "Louise Ann Rohrbach", "Abdelmonem A. Afifi"]
-date = "2016-05-02"
+abstract = "Most software defect prediction approaches are trained and applied on data from the same project. However, often a new project does not have enough training data. Cross-project defect prediction, which uses data from other projects to predict defects in a particular project, provides a new perspective to defect prediction. In this work, we propose a HYbrid moDel Reconstruction Approach (HYDRA) for cross-project defect prediction, which includes two phases: genetic algorithm (GA) phase and ensemble learning (EL) phase. These two phases create a massive composition of classifiers. To examine the benefits of HYDRA, we perform experiments on 29 datasets from the PROMISE repository which contains a total of 11,196 instances (i.e., Java classes) labeled as defective or clean. We experiment with logistic regression as the underlying classification algorithm of HYDRA. We compare our approach with the most recently proposed cross-project defect prediction approaches: TCA+ by Nam et al., Peters filter by Peters et al., GP by Liu et al., MO by Canfora et al., and CODEP by Panichella et al. Our results show that HYDRA achieves an average F1-score of 0.544. On average, across the 29 datasets, these results correspond to an improvement in the F1-scores of 26.22 , 34.99, 47.43, 28.61, and 30.14 percent over TCA+, Peters filter, GP, MO, and CODEP, respectively. In addition, HYDRA on average can discover 33 percent of all bugs if developers inspect the top 20 percent lines of code, which improves the best baseline approach (TCA+) by 44.41 percent. We also find that HYDRA improves the F1-score of Zero-R which predict all the instances to be defective by 5.42 percent, but improves Zero-R by 58.65 percent when inspecting the top 20 percent lines of code. In practice, Zero-R can be hard to use since it simply predicts all of the instances to be defective, and thus developers have to inspect all of the instances to find the defective ones. Moreover, we notice the improvement of HYDRA over other baseline approaches in terms of F1-score and when inspecting the top 20 percent lines of code are substantial, and in most cases the improvements are significant and have large effect sizes across the 29 datasets."
+authors = ["Xinyu Wang", "Nachiappan Nagappan", "Sinno Jialin Pan", "David Lo", "Xin Xia"]
+date = 2016-10-04T14:00:00Z
 image_preview = ""
 math = false
-
+publication = "In *IEEE Transactions on Software Engineering*"
+publication_short = "In *IEEE Transactions on Software Engineering*"
 publication_types = ["2"]
-publication = "In *Journal of Sex Research*"
-publication_short = "In *Journal of Sex Research*"
 selected = true
-
-title = "Patterns of Sexual Experience Among Urban Latino and African American Ninth Grade Students"
-url_pdf = "http://dx.doi.org/10.1080/00224499.2016.1164800"
-
-# Optional featured image (relative to `static/img/` folder).
-#[header]
-#image = "headers/bubbles-wide.jpg"
-#caption = "My caption :smile:"
+title = "HYDRA: Massively Compositional Model for Cross-Project Defect Prediction"
+url_pdf = "https://www.computer.org/csdl/journal/ts/2016/10/07435328/13rRUwInuY1"
 
 +++
-
