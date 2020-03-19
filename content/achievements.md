@@ -4,7 +4,7 @@ draft = true
 subtitle = ""
 title = "achievements"
 weight = 2
-widget = ""
+widget = "custom"
 
 +++
 ### aMush Gallery & SBS (10/2016)
