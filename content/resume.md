@@ -21,19 +21,42 @@ Queensland Certificate of Education
 
 # EXPERIENCE
 
-### [GitHub](https://www.github.com/)
+### Griffith university
 
-Design Systems Intern · June 2019 to Aug 2019
+Peer Assistant Learning & Mentor · 2018  - **Present**
 
-Created prototyping tools to speed up product design exploration flow, documentation sites to ease onboarding for new designers, and core components for Primer, GitHub’s open source design system.
+PAL program aims to improve student performance and retention in target university courses that are traditionally or perceived to be difficult.
 
-### [Cornell AppDev](https://cornellappdev.com/)
+### Australian Red Cross
 
-Product Designer · Jan 2019 to Present
+Emergency service Volunteer · Feb 2019 - Oct 2019
 
-Designed for Eatery, an application to help students find food on campus. Shipped the Collegetown Eatery expansion to the App Store to support students residing off-campus.
+* Helping communities prepare for emergencies, by sharing information about RediPlan.
+* Help communities recover long after a disaster has past
+* Helping run community projects and supporting people with their healing process
 
-# PROJECTS
+### GetOnlineQLD
+
+Digital Mentor Volunteer  ·  Apr 2018 - **Present**
+
+* Encouraging Queenslander to learn digital skills and to use technology to improve their lives
+* Providing free, one-on-one help so that they can learn the basic digital skills and have access to social, educational and financial benefits of being online
+* Present information using a variety of instructional techniques or formats, such as role-playing, simulations, team exercises, group discussions, videos
+* Helping others how to safely access relevant information, create and share content, and to confidently use online portals, including government services.
+* Helping others learn, discover and grow through the use of digital skills.
+
+### Curiocity Brisbane
+
+Curiocity Rover ·  Mar 2019 - May 2019
+
+* Greeting visitors (including tourists), helping them navigate the installation and answering general questions
+* Keeping a count of the number of visitors to the installation
+* Providing a report at the end of my shift on timing, attendance numbers, questions received, and any issues raised
+* Working with other teams including research, site groups and way finders who are working with augmented reality and real-time viewing
+* Making magic happen.
+* Helping Queenslander how to use their device in a way that is safe and relevant to them.
+
+PROJECTS
 
 ### Starbucks Sampler
 
@@ -121,7 +144,7 @@ Created an environmental education program for the City of Carrollton for childr
 4. Solution-oriented
 5. Creativity
 6. Detailed Oriented
-7. Detail-Oriented 
+7. Detail-Oriented
 
 # LANGUAGE
 
