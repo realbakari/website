@@ -1,7 +1,7 @@
 +++
 date = ""
 subtitle = ""
-title = "achievements"
+title = "Achievements"
 weight = 2
 widget = "custom"
 
@@ -16,8 +16,17 @@ Hummaritian Settlement service (HSS) Oriented program
 
 ### Glenala State High School
 
-Information, Digital Media and Technology
+* Information, Digital Media and Technology
+* Queensland Certificate of Education
 
 ### Queensland Young Achiever 2018 Nominee 2018
 
 Queensland Young Achiever Awards acknowledge, encourage and most importantly promote the positive achievements of all young people in Queensland and beyond.
+
+### 3 Day Startup
+
+Griffith university
+
+### Griffith University
+
+Diploma in Information Technology
