@@ -9,15 +9,12 @@ widget = "contact"
 +++
 # Have any questions?
 
-For all general comments, feedback, criticism, stories, and thank-yous or are interested in working with me then please get in touch.
+If you’re looking to work with me or want to grab some coffee, feel free to email me at [bakari.mustafa@griffithuni.edu.au](mailto:bakari.mustafa@griffithuni.edu.au)
 
+  
 Availability!
 
-* Mon 10-12, Tehama 116 
+* Mon 10-12, Tehama 116
 * Tue 2-4 pm, N54 (Nathan Campus)
 * Wed 5:30-7 pm, Butte 518
 * Fri hours are pending.
-
-<!---
-<a href="https://radonatello.youcanbook.me/" data-ycbm-modal="true"><img src="https://youcanbook.me/resources/pics/ycbm-button.png" style="border-style:none;"/></a>
-\--->
