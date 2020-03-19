@@ -56,47 +56,25 @@ Curiocity Rover ·  Mar 2019 - May 2019
 * Making magic happen.
 * Helping Queenslander how to use their device in a way that is safe and relevant to them.
 
-PROJECTS
+# PROJECTS
 
-### Starbucks Sampler
+### P5.js Experiments
 
-Jan 2019 to May 2019
+2018 - 2019
 
-Analyzed user needs and ideated a solution to encourage users to try new drinks. Designed and prototyped a feature encouraging users to try new drinks and share customized drinks with friends.
+### Restaurant App
 
-### Respond
+2019
 
-September 2018
+Designed a web-based application using the laravel framework. 
 
-Designed a mobile app using machine learning to prioritize situations for first responders during natural disasters. Recognized by Microsoft’s Azure team and IBM’s Call for Code competition for creating unique solutions to natural disasters.
+# ACCOMPLISHMENT
 
-# ACTIVITIES
+### QLD Young Achiever / 7NEWS
 
-### [xREZ Art + Science Lab](http://www.xrezlab.com/)
+2017 - 2018
 
-Research Assistant · Aug 2017 to May 2018
-
-Analyzed data from 52 participants to further explore the concept of presence in virtual reality. Co-authored paper in the Engineering Reality of Virtual Reality conference 2018. Read more at [https://bit.ly/xREZVR](https://bit.ly/xREZVR "https://bit.ly/xREZVR").
-
-### [Aga Khan Foundation](https://www.akfusa.org/)
-
-University Ambassador · Sept 2016 to Present
-
-Organized the annual Aga Khan Foundation Walk/Run, raising $1 million towards the alleviation of global poverty. Co-founded the Innovative Solutions Challenge, inviting students to solve issues faced by local communities.
-
-# AWARDS
-
-### a16z Generation Design Program
-
-Jan 2019 to May 2019
-
-Selected as part of a cohort of design mentees to connect with designers from companieswithin the a16z portfolio.
-
-### Eagle Scout
-
-April 2015
-
-Created an environmental education program for the City of Carrollton for children in elementary and middle school.
+Selected as part of Queensland young achiever nominee
 
 # SKILLS
 
