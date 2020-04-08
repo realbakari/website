@@ -1,0 +1,19 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: boolean
+  name: math
+  label: math
+- type: text
+  name: summary
+  label: summary
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: title
+  label: title
