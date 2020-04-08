@@ -1,9 +1,9 @@
 +++
-date = ""
+date = 2020-04-07T14:00:00Z
 subtitle = ""
 title = "Recommendations"
-weight = nil
-widget = ""
+weight = 2
+widget = "custom"
 
 +++
 **Duku Forè MAICD**
