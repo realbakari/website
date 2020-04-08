@@ -180,14 +180,19 @@ defaultContentLanguageInSubdir = false
   weight = 3  
   
 [[menu.main]]
+  name = "Recommendations"
+  url = "recommendations"
+  weight = 4
+  
+[[menu.main]]
   name = "Resume"
   url = "#curriculum-vitae"
-  weight = 4  
+  weight = 5  
  
 [[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 5
+  weight = 6
  
   
 #[[menu.main]]
