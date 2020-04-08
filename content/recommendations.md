@@ -17,3 +17,9 @@ Intellectually Curious | TEDx Speaker | UN Delegate | Founder
 Energy Consultant at Peak Services
 
 > Bakari is one of the most geniun, thoughtful and hard working person i know. Always trying to find alternative approaches to do things better and always promoting people with outstanding talents.
+
+**Ronish solapurwala**
+
+Student at Griffith University
+
+> Bakari is an amazing person to work with. He is very solution oriented with exceptional problem solving skills. He’s always ready to take up new challenges and to prove his determination.
