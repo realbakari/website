@@ -19,4 +19,5 @@ fields:
   label: widget
 pages:
 - content/achievements.md
+- content/recommendations.md
 - content/resume.md
