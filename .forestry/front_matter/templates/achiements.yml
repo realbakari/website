@@ -19,5 +19,6 @@ fields:
   label: widget
 pages:
 - content/achievements.md
+- content/project/covid19-tracker.md
 - content/recommendations.md
 - content/resume.md
