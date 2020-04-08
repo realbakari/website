@@ -147,11 +147,6 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//github.com/realbakari"
 
-  [[params.social]]
-    icon = "linkedin"
-    icon_pack = "fa"
-    link = "https://www.linkedin.com/in/rajeffries/"
-
  # [[params.social]]
  # icon = "stack-exchange"
  # icon_pack = "fa"
