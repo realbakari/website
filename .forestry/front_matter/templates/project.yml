@@ -19,3 +19,4 @@ fields:
   label: title
 pages:
 - content/project/covid19-tracker.md
+- content/project/mentors-outreach.md
