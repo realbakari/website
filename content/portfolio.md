@@ -12,7 +12,7 @@ widget = "custom"
 
 This assessment piece looks at the career pathways and opportunities available for a career in accounting. It delves into prospective employers, success in the job seeking and understanding the duties and roles of an accountant.
 
-### **👉🏼** Written Report Worksheet
+### **👉🏼** [Written Report Worksheet](/docs/something.pdf)
 
 This assessment piece explores the factors that influence and enhance graduate employability after graduation from university. Two aspects were focused on including networking and communication with related soft skills.
 
