@@ -44,10 +44,6 @@ This is an interview reflection assessment on the work interview last year.
 * Completed Management Concepts, where social responsibility and ethics was covered, allowing me to understand the importance of these aspects
 * Participate in University clubs and organizations
 
-**Culturally capable when working with First Australians**
-
-* I have had limited interaction with First Australians, however, I am experienced in cultural diversity and multiculturalism. Therefore, I am confident that I possess the abilities to respect and understand the cultures and rituals of First Australians
-
 **Effective in culturally diverse and international environments**
 
 * Having experience of different cultures and religions, through travels abroad, I am capable of interacting effectively with a diverse range of people of different cultures and religions
