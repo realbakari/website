@@ -26,4 +26,4 @@ interests = ["Technology", "Entrepreneurship", "Networking", "Photography", "TV 
 
 Welcome to my portfolio where you can learn more about my skills, experience and current position and project that I am currently working or have completed.
 
-Interested in working together? Reach me at [bakari@mentorsoutreach.org](mailto:mentorsoutreach)
+Interested in working together? Reach me at [bakari@mentorsoutreach.org](mailto:bakari@mentorsoutreach.org "Email")
