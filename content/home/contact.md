@@ -11,10 +11,8 @@ widget = "contact"
 
 If you’re looking to work with me or want to grab some coffee, feel free to email me at [bakari.mustafa@griffithuni.edu.au](mailto:bakari.mustafa@griffithuni.edu.au)
 
-  
 Availability!
 
-* Mon 10-12, Tehama 116
-* Tue 2-4 pm, N54 (Nathan Campus)
-* Wed 5:30-7 pm, Butte 518
+* Tue 2 pm - 4:00 pm, N54 \[Nathan Campus, GU\]
+* Wed 5:30 pm - 7:00 pm library \[Nathan Campus, GU\]
 * Fri hours are pending.
