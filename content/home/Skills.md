@@ -6,13 +6,17 @@ weight = 2
 widget = "custom"
 
 +++
-Object-Oriented Design
+Team player with an ability to communicate well with stakeholders and learn new systems quickly
 
-Web & Mobile Development
+Excellent oral and written communication skills
+
+Strong knowledge of object-oriented programming and software design principles
+
+Stable work history and an ability to collaborate effectively
 
 Information management
 
-Research
+Ability to produce quality work products with attention to detail
 
 Teamwork
 
@@ -20,6 +24,6 @@ Easily Adaptable
 
 Creativity
 
-Problem-solving
+Ability to apply analytical and problem-solving skills
 
-Data Structure
+Detail-oriented work ethic with a strong commitment to code quality
