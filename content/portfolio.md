@@ -8,11 +8,11 @@ widget = "custom"
 +++
 ## Assessment Pieces
 
-### 👉🏼 [Career Focus Worksheet](/docs/Career Focus Worksheet.pdf "Career Focus")
+### 👉🏼 [Career Focus Worksheet](/docs/Career Focus Worksheet.pdf "Career Focus") \[PDF\]
 
-### **👉🏼** [Written Report Worksheet](/docs/something.pdf)
+### **👉🏼** [Written Report Worksheet](/docs/something.pdf) \[PDF\]
 
-### **👉🏼** [Interview Reflection Worksheet](/docs/Reflection on field research Worksheet.pdf "Interview Reflection Worksheet")
+### **👉🏼** [Interview Reflection Worksheet](/docs/Reflection on field research Worksheet.pdf "Interview Reflection Worksheet") \[PDF\]
 
 # Graduate Attributes
 
