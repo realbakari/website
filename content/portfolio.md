@@ -10,7 +10,7 @@ widget = "custom"
 
 ### 👉🏼 [Career Focus Worksheet](/docs/Career Focus Worksheet.pdf "Career Focus") \[PDF\]
 
-### **👉🏼** [Written Report Worksheet](docs/Employability%20Report%20Work%20Sample_Challenges%20with%20Graduate%20Employment.pdf) \[PDF\]
+### **👉🏼** [Written Report Worksheet](/docs/Employability%20Report%20Work%20Sample_Challenges%20with%20Graduate%20Employment.pdf) \[PDF\]
 
 ### **👉🏼** [Interview Reflection Worksheet](/docs/Reflection on field research Worksheet.pdf "Interview Reflection Worksheet") \[PDF\]
 
