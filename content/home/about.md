@@ -22,8 +22,8 @@ interests = ["Technology", "Entrepreneurship", "Networking", "Photography", "TV 
 +++
 # Welcome!
 
-👋 I write, create, collaborate and solve problems. I love learning new things, and I'm particularly interested in emerging technology, community building, and entrepreneurship
+👋 I write, create, collaborate, and solve problems. I love learning new things, and I'm particularly interested in emerging technology, community building, and entrepreneurship. [Learn more here](https://www.youtube.com/watch?v=p_1xejX5PAQ&feature=youtu.be) \[Self-Introduction Video Link\]
 
-Welcome to my portfolio where you can learn more about my skills, experience and current position and project that I am currently working or have completed.
+Welcome to my portfolio where you can learn more about my skills, experience, and current position and project that I am currently working or have completed.
 
 Interested in working together? Reach me at [bakari@mentorsoutreach.org](mailto:bakari@mentorsoutreach.org "Email")
