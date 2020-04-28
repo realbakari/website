@@ -1,5 +1,5 @@
 # End your URL with a `/` trailing slash.
-baseurl = "https://eportfolio.bakarimustafa.com/ "
+baseurl = "https://eportfolio.bakarimustafa.com/"
 title = "Bakari Mustafa - ePortfolio"
 copyright = "&copy; 2020 Bakari Mustafa"
 theme = "hugo-academic"
@@ -27,7 +27,7 @@ defaultContentLanguageInSubdir = false
   organization_url = "http://www.griffith.edu.au/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   #avatar = "Zombatar.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  avatar = " Bakari-Mustafa_Headshot.png "  
+  avatar = "Bakari-Mustafa_Headshot.png"  
   email = "bakari.mustafa@griffithuni.edu.au"
   address = "170 Kessels Rd, Nathan QLD 4111"
   office_hours = "Tuesday & Wednesday"
