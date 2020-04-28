@@ -18,8 +18,6 @@ Information management
 
 Ability to produce quality work products with attention to detail
 
-Teamwork
-
 Easily Adaptable
 
 Creativity
