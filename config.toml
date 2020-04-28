@@ -1,6 +1,6 @@
 # End your URL with a `/` trailing slash.
 baseurl = "https://eportfolio.bakarimustafa.com/ "
-title = "Bakari Mustafa"
+title = "Bakari Mustafa - ePortfolio"
 copyright = "&copy; 2020 Bakari Mustafa"
 theme = "hugo-academic"
 enableEmoji = true
@@ -11,7 +11,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-69813719-2"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -27,10 +27,10 @@ defaultContentLanguageInSubdir = false
   organization_url = "http://www.griffith.edu.au/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   #avatar = "Zombatar.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  avatar = "Bakari-Mustafa_Headshot.png"  
+  avatar = " Bakari-Mustafa_Headshot.png "  
   email = "bakari.mustafa@griffithuni.edu.au"
   address = "170 Kessels Rd, Nathan QLD 4111"
-  office_hours = "Tuesday & Friday"
+  office_hours = "Tuesday & Wednesday"
   phone = "(07) 3879 0434"
   skype = ""
   telegram = ""
