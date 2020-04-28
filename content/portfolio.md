@@ -10,7 +10,7 @@ widget = "custom"
 
 ### 👉🏼 [Career Focus Worksheet](/docs/Career Focus Worksheet.pdf "Career Focus") \[PDF\]
 
-### **👉🏼** [Written Report Worksheet](/docs/something.pdf) \[PDF\]
+### **👉🏼** [Written Report Worksheet](docs/Employability%20Report%20Work%20Sample_Challenges%20with%20Graduate%20Employment.pdf) \[PDF\]
 
 ### **👉🏼** [Interview Reflection Worksheet](/docs/Reflection on field research Worksheet.pdf "Interview Reflection Worksheet") \[PDF\]
 
@@ -20,26 +20,26 @@ widget = "custom"
 
 **Information literacy**
 
-* the ability to find and access information using appropriate media and technologies
-* the ability to evaluate that information
+* ability to find and access information using appropriate media and technologies
+* ability to evaluate that information
 * an understanding of the economic, legal, ethical, social and cultural issues involved in the use of information
-* the ability to select and organize information and to communicate it accurately, cogently, coherently, creatively and ethically
+* ability to select and organize information and to communicate it accurately, cogently, coherently, creatively and ethically
 
 **Critical thinking and problem solving**
 
-* the ability to think critically, to analyze and evaluate claims, evidence, and arguments, and to reason and deploy evidence clearly and logically
-* the ability to adapt knowledge to new situations
-* the ability to deploy critically evaluated information to practical ends
-* the ability to define and to solve problems in at least one discipline area
+* ability to think critically, to analyze and evaluate claims, evidence, and arguments, and to reason and deploy evidence clearly and logically
+* ability to adapt knowledge to new situations
+* ability to deploy critically evaluated information to practical ends
+* ability to define and to solve problems in at least one discipline area
 
 **Self-reliance and interpersonal understanding**
 
-* the ability to communicate effectively with a range of audiences
-* the ability to lead, manage and contribute effectively to teams
-* the ability to work with people of different gender, age, ethnicity, culture, religion, and political persuasion
-* the ability to work individually and independently
+* ability to communicate effectively with a range of audiences
+* ability to lead, manage and contribute effectively to teams
+* ability to work with people of different gender, age, ethnicity, culture, religion, and political persuasion
+* ability to work individually and independently
 
 **Using tools and technologies**
 
-* the ability to select and use appropriate tools and technologies
-* the ability to use online technologies effectively and ethically
+* ability to select and use appropriate tools and technologies
+* able to use online technologies effectively and ethically
